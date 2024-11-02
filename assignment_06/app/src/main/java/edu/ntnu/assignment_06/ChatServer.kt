@@ -1,61 +1,67 @@
 package edu.ntnu.assignment_06
 
 import android.widget.TextView
+import kotlinx.coroutines.*
+import java.io.PrintWriter
 import java.net.ServerSocket
 import java.net.Socket
-import kotlinx.coroutines.*
+import java.util.concurrent.CopyOnWriteArrayList
 
-class ChatServer(private val textView: TextView,
-                 private val port: Int = 8080) {
-    private val clients = mutableListOf<Socket>()
-    private val coroutineScope = CoroutineScope(Dispatchers.IO)
+class ChatServer(private val textView: TextView, private val serverUsername: String) {
+    private val serverPort = 12345
+    private lateinit var serverSocket: ServerSocket
+    private val clientSockets = CopyOnWriteArrayList<Socket>()
 
     fun startServer() {
-        coroutineScope.launch {
+        CoroutineScope(Dispatchers.IO).launch {
             try {
-                val serverSocket = ServerSocket(port)
-                setUI("Server started on port: $port")
-
+                serverSocket = ServerSocket(serverPort)
+                textView.append("Server ($serverUsername) startet på port $serverPort\n")
                 while (true) {
                     val clientSocket = serverSocket.accept()
-                    clients.add(clientSocket)
-                    setUI("Client connected: ${clientSocket.inetAddress.hostAddress}")
-
+                    clientSockets.add(clientSocket)
+                    textView.append("Klient tilkoblet: ${clientSocket.inetAddress.hostAddress}\n")
                     handleClient(clientSocket)
                 }
             } catch (e: Exception) {
-                setUI("Server error: ${e.message}")
+                textView.append("Feil i server: ${e.message}\n")
+                e.printStackTrace()
             }
         }
     }
 
-    private fun handleClient(socket: Socket) {
-        coroutineScope.launch {
-            val reader = socket.getInputStream().bufferedReader()
-
+    private fun handleClient(clientSocket: Socket) {
+        CoroutineScope(Dispatchers.IO).launch {
             try {
+                val reader = clientSocket.getInputStream().bufferedReader()
                 while (true) {
                     val message = reader.readLine() ?: break
-                    broadcastMessage("Client ${socket.inetAddress.hostAddress}: $message")
+                    textView.append("$message\n")
+                    sendMessageToClients(message)
                 }
+            } catch (e: Exception) {
+                textView.append("Feil ved klienthåndtering: ${e.message}\n")
+                e.printStackTrace()
             } finally {
-                socket.close()
-                clients.remove(socket)
-                setUI("Client disconnected: ${socket.inetAddress.hostAddress}")
+                clientSockets.remove(clientSocket)
+                clientSocket.close()
+                textView.append("Klient frakoblet\n")
             }
         }
     }
 
-    private fun broadcastMessage(message: String) {
-        for (client in clients) {
-            client.getOutputStream().write((message + "\n").toByteArray())
-        }
-        setUI("Broadcasted: $message")
-    }
-
-    private fun setUI(text: String) {
-        MainScope().launch {
-            textView.append("$text\n")
+    fun sendMessageToClients(message: String) {
+        CoroutineScope(Dispatchers.IO).launch {
+            for (clientSocket in clientSockets) {
+                try {
+                    val writer = PrintWriter(clientSocket.getOutputStream(), true)
+                    writer.println("$serverUsername (Server): $message")
+                } catch (e: Exception) {
+                    textView.append("Feil ved sending til klient: ${e.message}\n")
+                    e.printStackTrace()
+                }
+            }
+            textView.append("Sendt fra $serverUsername: $message\n")
         }
     }
 }

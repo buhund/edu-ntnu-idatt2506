@@ -5,53 +5,64 @@ import java.io.InputStreamReader
 import java.io.PrintWriter
 import java.net.Socket
 
-class ChatClient(private val textView: TextView,
-                 private val serverIp: String = "10.0.2.2",
-                 private val port: Int = 8080) {
-  private var socket: Socket? = null
-  private val coroutineScope = CoroutineScope(Dispatchers.IO)
+class ChatClient(private val textView: TextView, private val clientUsername: String) {
+    private val serverIp = "10.0.2.2"
+    private val serverPort = 12345
+    private lateinit var clientSocket: Socket
+    private lateinit var writer: PrintWriter
 
-  fun connectToServer() {
-    coroutineScope.launch {
-      try {
-        socket = Socket(serverIp, port)
-        updateUI("Connected to server")
-
-        listenForMessages()
-      } catch (e: Exception) {
-        updateUI("Connection error: ${e.message}")
-      }
-    }
-  }
-
-  fun sendMessage(message: String) {
-    coroutineScope.launch {
-      socket?.let {
-        PrintWriter(it.getOutputStream(), true).println(message)
-        updateUI("Sent: $message")
-      }
-    }
-  }
-
-  private fun listenForMessages() {
-    coroutineScope.launch {
-      val reader = BufferedReader(InputStreamReader(socket?.getInputStream()))
-
-      try {
-        while (true) {
-          val message = reader?.readLine() ?: break
-          updateUI("Received: $message")
+    fun connectToServer() {
+        CoroutineScope(Dispatchers.IO).launch {
+            try {
+                clientSocket = Socket(serverIp, serverPort)
+                writer = PrintWriter(clientSocket.getOutputStream(), true)
+                textView.append("$clientUsername tilkoblet server\n")
+                readMessagesFromServer()
+            } catch (e: Exception) {
+                textView.append("Tilkobling feilet: ${e.message}\n")
+                e.printStackTrace()
+            }
         }
-      } finally {
-        socket?.close()
-        updateUI("Disconnected from server")
-      }
     }
-  }
 
-  private fun updateUI(text: String) {
-    MainScope().launch {
-      textView.append("$text\n")
+    private suspend fun readMessagesFromServer() {
+        withContext(Dispatchers.IO) {
+            try {
+                val reader = BufferedReader(InputStreamReader(clientSocket.getInputStream()))
+                var message: String?
+                while (true) {
+                    message = reader.readLine() ?: break
+                    withContext(Dispatchers.Main) {
+                        textView.append("$message\n")
+                    }
+                }
+            } catch (e: Exception) {
+                withContext(Dispatchers.Main) {
+                    textView.append("Feil ved mottak fra server: ${e.message}\n")
+                }
+                e.printStackTrace()
+            } finally {
+                clientSocket.close()
+                withContext(Dispatchers.Main) {
+                    textView.append("$clientUsername frakoblet\n")
+                }
+            }
+        }
     }
-  }
+
+    fun sendMessage(message: String) {
+        CoroutineScope(Dispatchers.IO).launch {
+            try {
+                writer.println("$clientUsername: $message")
+                withContext(Dispatchers.Main) {
+                    textView.append("Sendt fra $clientUsername: $message\n")
+                }
+            } catch (e: Exception) {
+                withContext(Dispatchers.Main) {
+                    textView.append("Feil ved sending til server: ${e.message}\n")
+                }
+                e.printStackTrace()
+            }
+        }
+    }
 }
