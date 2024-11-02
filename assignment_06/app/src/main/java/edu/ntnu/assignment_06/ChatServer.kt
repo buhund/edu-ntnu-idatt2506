@@ -5,7 +5,8 @@ import java.net.ServerSocket
 import java.net.Socket
 import kotlinx.coroutines.*
 
-class ChatServer(private val textView: TextView, private val port: Int = 12345) {
+class ChatServer(private val textView: TextView,
+                 private val port: Int = 8080) {
     private val clients = mutableListOf<Socket>()
     private val coroutineScope = CoroutineScope(Dispatchers.IO)
 

@@ -5,7 +5,9 @@ import java.io.InputStreamReader
 import java.io.PrintWriter
 import java.net.Socket
 
-class ChatClient(private val textView: TextView, private val serverIp: String = "10.0.2.2", private val port: Int = 12345) {
+class ChatClient(private val textView: TextView,
+                 private val serverIp: String = "10.0.2.2",
+                 private val port: Int = 8080) {
   private var socket: Socket? = null
   private val coroutineScope = CoroutineScope(Dispatchers.IO)
 
