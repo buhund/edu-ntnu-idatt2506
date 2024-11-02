@@ -1,4 +1,4 @@
-# MacOS system files
+# macOS system files
 .DS_Store
 
 # Linux system files
@@ -12,83 +12,63 @@
 .kateconfig
 
 # Android Studio specific files
-.idea/
-*.iml
-.gradle/
-local.properties
+**/*.iml
+**/.gradle/
+**/local.properties
+**/.idea/
 **/build/
 **/captures/
-output.json
-.externalNativeBuild/
-.cxx/
+**/output.json
+**/.navigation/
+**/.cxx/
+**/.externalNativeBuild/
 
 # Android Studio lint and asset wizard files
-lint/intermediates/
-lint/generated/
-lint/output/
-.idea/assetWizardSettings.xml
+**/lint/intermediates/
+**/lint/generated/
+**/lint/output/
+**/.idea/assetWizardSettings.xml
 
-# Additional Android Studio files
-local.properties
-captures/
-.idea/caches/
-.idea/libraries/
-.idea/modules.xml
-.idea/workspace.xml
-.idea/navEditor.xml
+# Build outputs (general exclusion of all build directories)
+**/build/
+
+# JetBrains IDEs (IntelliJ, PyCharm, WebStorm, CLion, etc.)
+**/.idea/
+**/*.iws
+**/*.iml
+**/*.ipr
+**/out/
+
+# Gradle files
+gradlew
+gradlew.bat
+gradle.properties
+**/gradle/wrapper/gradle-wrapper.properties
+**/gradle/wrapper/gradle-wrapper.jar
 
 # Keystore files (for Android signing)
 *.jks
 *.keystore
 
-# JetBrains IDEs (IntelliJ, PyCharm, WebStorm, CLion, etc.)
-.idea/
-*.iws
-*.iml
-*.ipr
-out/
-
-# Temporary files used during development
-*.log
-*.tmp
-*.temp
-*.bak
-*.swp
-*.swo
-*.swn
-*.orig
-*.rej
-
-# User-specific IDE settings
-workspace.xml
-tasks.xml
-usage.statistics.xml
-dictionaries/
-shelf/
+# Python-specific (for any Python files)
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/*.egg
+**/*.egg-info/
+**/dist/
+**/build/
+**/env/
+**/venv/
+**/ENV/
+**/.mypy_cache/
+**/.pytest_cache/
+**/*.sqlite3
 
 # CMake files for CLion and similar IDEs
-CMakeLists.txt.user
-cmake-build-debug/
-cmake-build-release/
-cmake-build-*
-
-# Python-specific (for any Python files)
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.egg
-*.egg-info/
-dist/
-build/
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-.mypy_cache/
-.pytest_cache/
-*.sqlite3
+**/CMakeLists.txt.user
+**/cmake-build-*/
 
 # Miniconda specific (optional, add if needed)
 miniconda3/
@@ -96,15 +76,15 @@ miniconda3/
 *.ipynb_checkpoints
 envs/
 
-# General Node.js specific (optional, add if needed)
-node_modules/
+# Node.js specific files (if any Node projects are included)
+**/node_modules/
 npm-debug.log
 yarn-error.log
 
-# General Visual Studio Code files
+# Visual Studio Code files
 .vscode/
 
-# General configuration files
+# General configuration and environment files
 *.env
 .env.local
 .env.development.local

@@ -1,0 +1,3218 @@
+.
+├── assignment_01
+│   ├── app
+│   │   ├── build.gradle.kts
+│   │   ├── proguard-rules.pro
+│   │   └── src
+│   │       ├── androidTest
+│   │       │   └── java
+│   │       │       └── edu
+│   │       │           └── ntnu
+│   │       │               └── sprout
+│   │       │                   └── ExampleInstrumentedTest.kt
+│   │       ├── main
+│   │       │   ├── AndroidManifest.xml
+│   │       │   ├── java
+│   │       │   │   └── edu
+│   │       │   │       └── ntnu
+│   │       │   │           └── sprout
+│   │       │   │               ├── FirstFragment.kt
+│   │       │   │               ├── MainActivity.kt
+│   │       │   │               └── SecondFragment.kt
+│   │       │   └── res
+│   │       │       ├── drawable
+│   │       │       │   ├── ic_launcher_background.xml
+│   │       │       │   └── ic_launcher_foreground.xml
+│   │       │       ├── layout
+│   │       │       │   ├── activity_main.xml
+│   │       │       │   ├── content_main.xml
+│   │       │       │   ├── fragment_first.xml
+│   │       │       │   └── fragment_second.xml
+│   │       │       ├── menu
+│   │       │       │   └── menu_main.xml
+│   │       │       ├── mipmap-anydpi-v26
+│   │       │       │   ├── ic_launcher_round.xml
+│   │       │       │   └── ic_launcher.xml
+│   │       │       ├── mipmap-hdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-mdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-xhdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-xxhdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-xxxhdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── navigation
+│   │       │       │   └── nav_graph.xml
+│   │       │       ├── values
+│   │       │       │   ├── colors.xml
+│   │       │       │   ├── dimens.xml
+│   │       │       │   ├── strings.xml
+│   │       │       │   └── themes.xml
+│   │       │       ├── values-land
+│   │       │       │   └── dimens.xml
+│   │       │       ├── values-night
+│   │       │       │   └── themes.xml
+│   │       │       ├── values-v23
+│   │       │       │   └── themes.xml
+│   │       │       ├── values-w1240dp
+│   │       │       │   └── dimens.xml
+│   │       │       ├── values-w600dp
+│   │       │       │   └── dimens.xml
+│   │       │       └── xml
+│   │       │           ├── backup_rules.xml
+│   │       │           └── data_extraction_rules.xml
+│   │       └── test
+│   │           └── java
+│   │               └── edu
+│   │                   └── ntnu
+│   │                       └── sprout
+│   │                           └── ExampleUnitTest.kt
+│   ├── build.gradle.kts
+│   ├── gradle
+│   │   ├── libs.versions.toml
+│   │   └── wrapper
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
+│   ├── gradle.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── local.properties
+│   └── settings.gradle.kts
+├── assignment_02
+│   ├── app
+│   │   ├── build.gradle.kts
+│   │   ├── proguard-rules.pro
+│   │   └── src
+│   │       ├── androidTest
+│   │       │   └── java
+│   │       │       └── edu
+│   │       │           └── ntnu
+│   │       │               └── exercise02
+│   │       │                   └── ExampleInstrumentedTest.kt
+│   │       ├── main
+│   │       │   ├── AndroidManifest.xml
+│   │       │   ├── java
+│   │       │   │   └── edu
+│   │       │   │       └── ntnu
+│   │       │   │           └── exercise02
+│   │       │   │               └── MainActivity.kt
+│   │       │   └── res
+│   │       │       ├── drawable
+│   │       │       │   ├── ic_launcher_background.xml
+│   │       │       │   └── ic_launcher_foreground.xml
+│   │       │       ├── layout
+│   │       │       │   └── activity_main.xml
+│   │       │       ├── mipmap-anydpi-v26
+│   │       │       │   ├── ic_launcher_round.xml
+│   │       │       │   └── ic_launcher.xml
+│   │       │       ├── mipmap-hdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-mdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-xhdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-xxhdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-xxxhdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── values
+│   │       │       │   ├── colors.xml
+│   │       │       │   ├── strings.xml
+│   │       │       │   └── themes.xml
+│   │       │       ├── values-night
+│   │       │       │   └── themes.xml
+│   │       │       └── xml
+│   │       │           ├── backup_rules.xml
+│   │       │           └── data_extraction_rules.xml
+│   │       └── test
+│   │           └── java
+│   │               └── edu
+│   │                   └── ntnu
+│   │                       └── exercise02
+│   │                           └── ExampleUnitTest.kt
+│   ├── build.gradle.kts
+│   ├── gradle
+│   │   ├── libs.versions.toml
+│   │   └── wrapper
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
+│   ├── gradle.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── local.properties
+│   └── settings.gradle.kts
+├── assignment_03
+│   ├── app
+│   │   ├── build
+│   │   │   ├── generated
+│   │   │   │   └── res
+│   │   │   │       ├── pngs
+│   │   │   │       │   └── debug
+│   │   │   │       └── resValues
+│   │   │   │           ├── androidTest
+│   │   │   │           │   └── debug
+│   │   │   │           └── debug
+│   │   │   ├── intermediates
+│   │   │   │   ├── aar_metadata_check
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── checkDebugAarMetadata
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── checkDebugAndroidTestAarMetadata
+│   │   │   │   ├── annotation_processor_list
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── javaPreCompileDebug
+│   │   │   │   │   │       └── annotationProcessors.json
+│   │   │   │   │   ├── debugAndroidTest
+│   │   │   │   │   │   └── javaPreCompileDebugAndroidTest
+│   │   │   │   │   │       └── annotationProcessors.json
+│   │   │   │   │   └── debugUnitTest
+│   │   │   │   │       └── javaPreCompileDebugUnitTest
+│   │   │   │   │           └── annotationProcessors.json
+│   │   │   │   ├── apk
+│   │   │   │   │   └── debug
+│   │   │   │   │       ├── app-debug.apk
+│   │   │   │   │       └── output-metadata.json
+│   │   │   │   ├── apk_ide_redirect_file
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── createDebugApkListingFileRedirect
+│   │   │   │   │   │       └── redirect.txt
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── createDebugAndroidTestApkListingFileRedirect
+│   │   │   │   │           └── redirect.txt
+│   │   │   │   ├── app_metadata
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── writeDebugAppMetadata
+│   │   │   │   │           └── app-metadata.properties
+│   │   │   │   ├── assets
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── mergeDebugAssets
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── mergeDebugAndroidTestAssets
+│   │   │   │   ├── compatible_screen_manifest
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── createDebugCompatibleScreenManifests
+│   │   │   │   │           └── output-metadata.json
+│   │   │   │   ├── compile_and_runtime_not_namespaced_r_class_jar
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── processDebugResources
+│   │   │   │   │   │       └── R.jar
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── processDebugAndroidTestResources
+│   │   │   │   │           └── R.jar
+│   │   │   │   ├── compile_app_classes_jar
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── bundleDebugClassesToCompileJar
+│   │   │   │   │           └── classes.jar
+│   │   │   │   ├── compressed_assets
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── compressDebugAssets
+│   │   │   │   │   │       └── out
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── compressDebugAndroidTestAssets
+│   │   │   │   │           └── out
+│   │   │   │   ├── data_binding_layout_info_type_merge
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── mergeDebugResources
+│   │   │   │   │   │       └── out
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── mergeDebugAndroidTestResources
+│   │   │   │   │           └── out
+│   │   │   │   ├── data_binding_layout_info_type_package
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── packageDebugResources
+│   │   │   │   │           └── out
+│   │   │   │   ├── desugar_graph
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── dexBuilderDebug
+│   │   │   │   │   │       └── out
+│   │   │   │   │   │           ├── currentProject
+│   │   │   │   │   │           │   ├── dirs_bucket_0
+│   │   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │   │           │   ├── dirs_bucket_1
+│   │   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │   │           │   ├── dirs_bucket_2
+│   │   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │   │           │   ├── dirs_bucket_3
+│   │   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │   │           │   ├── dirs_bucket_4
+│   │   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │   │           │   ├── dirs_bucket_5
+│   │   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │   │           │   ├── dirs_bucket_6
+│   │   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │   │           │   ├── dirs_bucket_7
+│   │   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │   │           │   ├── jar_2e99d85cd9c467ca54743edd9e610b1f0627188afdc4dc1ef005f25702eb8b19_bucket_0
+│   │   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │   │           │   ├── jar_2e99d85cd9c467ca54743edd9e610b1f0627188afdc4dc1ef005f25702eb8b19_bucket_1
+│   │   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │   │           │   ├── jar_2e99d85cd9c467ca54743edd9e610b1f0627188afdc4dc1ef005f25702eb8b19_bucket_2
+│   │   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │   │           │   ├── jar_2e99d85cd9c467ca54743edd9e610b1f0627188afdc4dc1ef005f25702eb8b19_bucket_3
+│   │   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │   │           │   ├── jar_2e99d85cd9c467ca54743edd9e610b1f0627188afdc4dc1ef005f25702eb8b19_bucket_4
+│   │   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │   │           │   ├── jar_2e99d85cd9c467ca54743edd9e610b1f0627188afdc4dc1ef005f25702eb8b19_bucket_5
+│   │   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │   │           │   ├── jar_2e99d85cd9c467ca54743edd9e610b1f0627188afdc4dc1ef005f25702eb8b19_bucket_6
+│   │   │   │   │   │           │   │   └── graph.bin
+│   │   │   │   │   │           │   └── jar_2e99d85cd9c467ca54743edd9e610b1f0627188afdc4dc1ef005f25702eb8b19_bucket_7
+│   │   │   │   │   │           │       └── graph.bin
+│   │   │   │   │   │           ├── externalLibs
+│   │   │   │   │   │           ├── mixedScopes
+│   │   │   │   │   │           └── otherProjects
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── dexBuilderDebugAndroidTest
+│   │   │   │   │           └── out
+│   │   │   │   │               ├── currentProject
+│   │   │   │   │               │   ├── dirs_bucket_0
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_1
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_2
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_3
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_4
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_5
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_6
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_7
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_55782e2bd89f5fe3c9aeecf99c1ed62cddd73a2fc0047d3a3b0dda0c24220088_bucket_0
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_55782e2bd89f5fe3c9aeecf99c1ed62cddd73a2fc0047d3a3b0dda0c24220088_bucket_1
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_55782e2bd89f5fe3c9aeecf99c1ed62cddd73a2fc0047d3a3b0dda0c24220088_bucket_2
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_55782e2bd89f5fe3c9aeecf99c1ed62cddd73a2fc0047d3a3b0dda0c24220088_bucket_3
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_55782e2bd89f5fe3c9aeecf99c1ed62cddd73a2fc0047d3a3b0dda0c24220088_bucket_4
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_55782e2bd89f5fe3c9aeecf99c1ed62cddd73a2fc0047d3a3b0dda0c24220088_bucket_5
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_55782e2bd89f5fe3c9aeecf99c1ed62cddd73a2fc0047d3a3b0dda0c24220088_bucket_6
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   └── jar_55782e2bd89f5fe3c9aeecf99c1ed62cddd73a2fc0047d3a3b0dda0c24220088_bucket_7
+│   │   │   │   │               │       └── graph.bin
+│   │   │   │   │               ├── externalLibs
+│   │   │   │   │               ├── mixedScopes
+│   │   │   │   │               └── otherProjects
+│   │   │   │   ├── dex
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   ├── mergeExtDexDebug
+│   │   │   │   │   │   │   └── classes.dex
+│   │   │   │   │   │   ├── mergeLibDexDebug
+│   │   │   │   │   │   │   ├── 0
+│   │   │   │   │   │   │   ├── 1
+│   │   │   │   │   │   │   ├── 10
+│   │   │   │   │   │   │   ├── 11
+│   │   │   │   │   │   │   ├── 12
+│   │   │   │   │   │   │   ├── 13
+│   │   │   │   │   │   │   ├── 14
+│   │   │   │   │   │   │   ├── 15
+│   │   │   │   │   │   │   ├── 2
+│   │   │   │   │   │   │   ├── 3
+│   │   │   │   │   │   │   ├── 4
+│   │   │   │   │   │   │   ├── 5
+│   │   │   │   │   │   │   ├── 6
+│   │   │   │   │   │   │   ├── 7
+│   │   │   │   │   │   │   ├── 8
+│   │   │   │   │   │   │   └── 9
+│   │   │   │   │   │   └── mergeProjectDexDebug
+│   │   │   │   │   │       ├── 0
+│   │   │   │   │   │       │   └── classes.dex
+│   │   │   │   │   │       ├── 1
+│   │   │   │   │   │       ├── 10
+│   │   │   │   │   │       ├── 11
+│   │   │   │   │   │       ├── 12
+│   │   │   │   │   │       ├── 13
+│   │   │   │   │   │       ├── 14
+│   │   │   │   │   │       │   └── classes.dex
+│   │   │   │   │   │       ├── 15
+│   │   │   │   │   │       ├── 2
+│   │   │   │   │   │       ├── 3
+│   │   │   │   │   │       ├── 4
+│   │   │   │   │   │       ├── 5
+│   │   │   │   │   │       ├── 6
+│   │   │   │   │   │       ├── 7
+│   │   │   │   │   │       ├── 8
+│   │   │   │   │   │       └── 9
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       ├── mergeExtDexDebugAndroidTest
+│   │   │   │   │       │   └── classes.dex
+│   │   │   │   │       ├── mergeLibDexDebugAndroidTest
+│   │   │   │   │       │   ├── 0
+│   │   │   │   │       │   ├── 1
+│   │   │   │   │       │   ├── 10
+│   │   │   │   │       │   ├── 11
+│   │   │   │   │       │   ├── 12
+│   │   │   │   │       │   ├── 13
+│   │   │   │   │       │   ├── 14
+│   │   │   │   │       │   ├── 15
+│   │   │   │   │       │   ├── 2
+│   │   │   │   │       │   ├── 3
+│   │   │   │   │       │   ├── 4
+│   │   │   │   │       │   ├── 5
+│   │   │   │   │       │   ├── 6
+│   │   │   │   │       │   ├── 7
+│   │   │   │   │       │   ├── 8
+│   │   │   │   │       │   └── 9
+│   │   │   │   │       └── mergeProjectDexDebugAndroidTest
+│   │   │   │   │           ├── 0
+│   │   │   │   │           │   └── classes.dex
+│   │   │   │   │           ├── 1
+│   │   │   │   │           ├── 10
+│   │   │   │   │           ├── 11
+│   │   │   │   │           ├── 12
+│   │   │   │   │           ├── 13
+│   │   │   │   │           ├── 14
+│   │   │   │   │           │   └── classes.dex
+│   │   │   │   │           ├── 15
+│   │   │   │   │           ├── 2
+│   │   │   │   │           ├── 3
+│   │   │   │   │           ├── 4
+│   │   │   │   │           ├── 5
+│   │   │   │   │           ├── 6
+│   │   │   │   │           ├── 7
+│   │   │   │   │           ├── 8
+│   │   │   │   │           └── 9
+│   │   │   │   ├── dex_archive_input_jar_hashes
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── dexBuilderDebug
+│   │   │   │   │   │       └── out
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── dexBuilderDebugAndroidTest
+│   │   │   │   │           └── out
+│   │   │   │   ├── dex_number_of_buckets_file
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── dexBuilderDebug
+│   │   │   │   │   │       └── out
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── dexBuilderDebugAndroidTest
+│   │   │   │   │           └── out
+│   │   │   │   ├── duplicate_classes_check
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── checkDebugDuplicateClasses
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── checkDebugAndroidTestDuplicateClasses
+│   │   │   │   ├── external_file_lib_dex_archives
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── desugarDebugFileDependencies
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── desugarDebugAndroidTestFileDependencies
+│   │   │   │   ├── external_libs_dex_archive
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── dexBuilderDebug
+│   │   │   │   │   │       └── out
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── dexBuilderDebugAndroidTest
+│   │   │   │   │           └── out
+│   │   │   │   ├── external_libs_dex_archive_with_artifact_transforms
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── dexBuilderDebug
+│   │   │   │   │   │       └── out
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── dexBuilderDebugAndroidTest
+│   │   │   │   │           └── out
+│   │   │   │   ├── incremental
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   ├── mergeDebugResources
+│   │   │   │   │   │   │   ├── compile-file-map.properties
+│   │   │   │   │   │   │   ├── merged.dir
+│   │   │   │   │   │   │   ├── merger.xml
+│   │   │   │   │   │   │   └── stripped.dir
+│   │   │   │   │   │   └── packageDebugResources
+│   │   │   │   │   │       ├── compile-file-map.properties
+│   │   │   │   │   │       ├── merged.dir
+│   │   │   │   │   │       ├── merger.xml
+│   │   │   │   │   │       └── stripped.dir
+│   │   │   │   │   ├── debugAndroidTest
+│   │   │   │   │   │   └── mergeDebugAndroidTestResources
+│   │   │   │   │   │       ├── compile-file-map.properties
+│   │   │   │   │   │       ├── merged.dir
+│   │   │   │   │   │       │   ├── values
+│   │   │   │   │   │       │   │   └── values.xml
+│   │   │   │   │   │       │   ├── values-v18
+│   │   │   │   │   │       │   │   └── values-v18.xml
+│   │   │   │   │   │       │   ├── values-v21
+│   │   │   │   │   │       │   │   └── values-v21.xml
+│   │   │   │   │   │       │   └── values-v28
+│   │   │   │   │   │       │       └── values-v28.xml
+│   │   │   │   │   │       ├── merger.xml
+│   │   │   │   │   │       └── stripped.dir
+│   │   │   │   │   ├── debugAndroidTest-mergeJavaRes
+│   │   │   │   │   │   ├── merge-state
+│   │   │   │   │   │   └── zip-cache
+│   │   │   │   │   │       ├── 70G+roxDcEr7cYlg6k3aZnTTh04=
+│   │   │   │   │   │       ├── 8V5bNg+bLWMXw1TzQkHFg+G1KWs=
+│   │   │   │   │   │       ├── awdmuBCJjEnKLpXmSf9CqysPf+A=
+│   │   │   │   │   │       ├── EwH1Uj19gtvpaf6M7U4c+e4isL4=
+│   │   │   │   │   │       ├── FYoizYk+8ByVPAY3QNIQbih6+3E=
+│   │   │   │   │   │       ├── hInQaD0Od+TFBYhpgYogB0rvhN4=
+│   │   │   │   │   │       ├── iZmy8zUzB4p4TN7I7pICKJFEg9Q=
+│   │   │   │   │   │       ├── oj6Dm8m7MB3LhmTf_M+8nKz0Rmw=
+│   │   │   │   │   │       ├── Q11Jk9ZqHgrXTtCp1uOi9p+VhG4=
+│   │   │   │   │   │       ├── VSMVo37dUpmcv7hOSiWtm6p2GQQ=
+│   │   │   │   │   │       ├── VyTMxcu68qEedGy1h_5RwnPzqPc=
+│   │   │   │   │   │       ├── xD9_Es5nkTDvxv29XL8TjP7tdMU=
+│   │   │   │   │   │       └── Xx8WWLwZdBGhx_EzADHj1MiMQR0=
+│   │   │   │   │   ├── debug-mergeJavaRes
+│   │   │   │   │   │   ├── merge-state
+│   │   │   │   │   │   └── zip-cache
+│   │   │   │   │   │       ├── +0bRfgZwtAyT1vhar0ItrMbNIWM=
+│   │   │   │   │   │       ├── 0YTQU_sgNh0MIR4UY3epu52p8eU=
+│   │   │   │   │   │       ├── 1UeKCDFaeRhhOxdkbC134kdt0DE=
+│   │   │   │   │   │       ├── 21KLQWbHrA3pUPzFp3+ZiDFl4NY=
+│   │   │   │   │   │       ├── 2tE2Bie5sgr3TNMzU7dPR+SXdUQ=
+│   │   │   │   │   │       ├── 3zHeJjf7amQouEvyaNobcM_0QX8=
+│   │   │   │   │   │       ├── 4_jD0R6PO7yv90k1nuXZvp1tOPw=
+│   │   │   │   │   │       ├── 5k3bmXCqQk3QZuOUbLxswMHkz2k=
+│   │   │   │   │   │       ├── _5pTR8AUneSjb1M523xlXXHB9V0=
+│   │   │   │   │   │       ├── 7ctOnaBb4cINy9Siyln4atJW5D4=
+│   │   │   │   │   │       ├── 7r_R3sNViXQguv1JDj3xYAgKSdg=
+│   │   │   │   │   │       ├── AzfIiEYQ2Yv82prBsRB6N8n5k_U=
+│   │   │   │   │   │       ├── b2WNCHsS53rJ7I1ePHezuMKXcSo=
+│   │   │   │   │   │       ├── BENbFwCDEvBRtZyGEpvuAGLubfs=
+│   │   │   │   │   │       ├── bSkSTfadWzptXchicB_5nv58QCE=
+│   │   │   │   │   │       ├── DfdD9z_q_YWm9cYj7okK8cvZZn0=
+│   │   │   │   │   │       ├── DKM_YEonRYTnQdbodi6LClXvzlc=
+│   │   │   │   │   │       ├── dkUA_TIZB6ZX15+AeaQzJQSUuPA=
+│   │   │   │   │   │       ├── Dt24lWgRWYSEs9vTcPGEIZzZs60=
+│   │   │   │   │   │       ├── _eRkucaSmwU5UeZgftdm0pfxAxs=
+│   │   │   │   │   │       ├── ExtJRgKuv1EqH+QTy14B2o_uK8w=
+│   │   │   │   │   │       ├── fzSh8_M5BfwgQHX3NRDaH5HKCWI=
+│   │   │   │   │   │       ├── hcn0eXK3o3tah3dX7oGDgn3SyZo=
+│   │   │   │   │   │       ├── iEgITHSEpstG59MTbEQCYcBJkIg=
+│   │   │   │   │   │       ├── ItnV_bwhDFPzZkDlxMMpeCzkbTc=
+│   │   │   │   │   │       ├── JwkpSq9KUX4Ov6ksmcwIoBscHoY=
+│   │   │   │   │   │       ├── JyMXMVnGSJhDlegwZWI245QtgV8=
+│   │   │   │   │   │       ├── kNi7wYMQPDnP1fhPLowIhBOOko0=
+│   │   │   │   │   │       ├── +kxHxFTnrykqfGYVs2Jup5lOvGY=
+│   │   │   │   │   │       ├── mfKoflh5wrqQxcxhgofFsR63gyQ=
+│   │   │   │   │   │       ├── n8tiSZDCzWYHmRVB57uHoyemIsM=
+│   │   │   │   │   │       ├── NprEEuQejEYn8I87ftGG6OKnND8=
+│   │   │   │   │   │       ├── NUbaO+wT9oDU2hN7__yRx5L7Wp0=
+│   │   │   │   │   │       ├── OezJq_m5PO73FxMaU_EITRf1xtk=
+│   │   │   │   │   │       ├── Pdufhq2fqyGL4AV6Aw2A5yyEiTU=
+│   │   │   │   │   │       ├── pQOI793I8ystjqgXEayeanU+_WU=
+│   │   │   │   │   │       ├── q9QiaMfBhb+igBVNnxDhYzKTIvI=
+│   │   │   │   │   │       ├── QUbapq8rbHCtEYKSl2xKyqBkYfA=
+│   │   │   │   │   │       ├── Qx9I9IbXJlRm3ohQlGBAnxehMxo=
+│   │   │   │   │   │       ├── RQB1ARU+prdpWOb1428xukLEKfo=
+│   │   │   │   │   │       ├── SHKk7C8QQiyn4o9ClkBbpO_1f_Q=
+│   │   │   │   │   │       ├── SKWXCZXWL4HbV_FYVLUjdrkuyGA=
+│   │   │   │   │   │       ├── sLxDFwnEloWGpIQ6lxLVExOadJw=
+│   │   │   │   │   │       ├── sNQr2H4AJkhCQgrGeeqVNE0Q608=
+│   │   │   │   │   │       ├── _u2hMwJDgdTO+563iQeMRTd0KXE=
+│   │   │   │   │   │       ├── Ud6JZl6BS_4mzUIIp7lhT0C+5kk=
+│   │   │   │   │   │       ├── uGUFATaMijFYeFOt7XEWOTICOkA=
+│   │   │   │   │   │       ├── VJgqshN11cZtJesff3m6H3Ecl2Q=
+│   │   │   │   │   │       ├── vvQjkrs2R+k1+46r01om2HkKIQ0=
+│   │   │   │   │   │       ├── w6QGxbW7apOLI0Upq8oDQV3g2PI=
+│   │   │   │   │   │       ├── WR4ffu77v2VkKyFzkB86quOAmAw=
+│   │   │   │   │   │       ├── wxVomqSvd7oT2Jf3joxEC0VEdnM=
+│   │   │   │   │   │       ├── xspy_6t1l7ZXWXe_0zaEAQT6y98=
+│   │   │   │   │   │       ├── yHWYK77uAyvrUlDH3XZPh0AT8zk=
+│   │   │   │   │   │       ├── yJFnKY4087Be5osO9TVtr4CRocA=
+│   │   │   │   │   │       ├── YvF2Yh1nVlTN2XUt2+6aA2yYLiI=
+│   │   │   │   │   │       ├── Z6WYh0cCkEFpog4H32Lne6QUIkA=
+│   │   │   │   │   │       ├── zAEyVF0xs_NmB_8wcn9iXbLRplw=
+│   │   │   │   │   │       └── Zivb7FMFTGi1KYYhXNL0tJaWVZo=
+│   │   │   │   │   ├── mergeDebugAndroidTestAssets
+│   │   │   │   │   │   └── merger.xml
+│   │   │   │   │   ├── mergeDebugAndroidTestJniLibFolders
+│   │   │   │   │   │   └── merger.xml
+│   │   │   │   │   ├── mergeDebugAndroidTestShaders
+│   │   │   │   │   │   └── merger.xml
+│   │   │   │   │   ├── mergeDebugAssets
+│   │   │   │   │   │   └── merger.xml
+│   │   │   │   │   ├── mergeDebugJniLibFolders
+│   │   │   │   │   │   └── merger.xml
+│   │   │   │   │   ├── mergeDebugShaders
+│   │   │   │   │   │   └── merger.xml
+│   │   │   │   │   ├── packageDebug
+│   │   │   │   │   │   └── tmp
+│   │   │   │   │   │       └── debug
+│   │   │   │   │   │           ├── dex-renamer-state.txt
+│   │   │   │   │   │           └── zip-cache
+│   │   │   │   │   │               ├── androidResources
+│   │   │   │   │   │               └── javaResources0
+│   │   │   │   │   └── packageDebugAndroidTest
+│   │   │   │   │       └── tmp
+│   │   │   │   │           └── debugAndroidTest
+│   │   │   │   │               ├── dex-renamer-state.txt
+│   │   │   │   │               └── zip-cache
+│   │   │   │   │                   ├── androidResources
+│   │   │   │   │                   └── javaResources0
+│   │   │   │   ├── java_res
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── processDebugJavaRes
+│   │   │   │   │   │       └── out
+│   │   │   │   │   │           ├── edu
+│   │   │   │   │   │           │   └── ntnu
+│   │   │   │   │   │           │       └── exercise03
+│   │   │   │   │   │           └── META-INF
+│   │   │   │   │   │               └── app_debug.kotlin_module
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── processDebugAndroidTestJavaRes
+│   │   │   │   │           └── out
+│   │   │   │   │               ├── edu
+│   │   │   │   │               │   └── ntnu
+│   │   │   │   │               │       └── exercise03
+│   │   │   │   │               └── META-INF
+│   │   │   │   │                   └── app_debugAndroidTest.kotlin_module
+│   │   │   │   ├── linked_resources_binary_format
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── processDebugResources
+│   │   │   │   │   │       ├── linked-resources-binary-format-debug.ap_
+│   │   │   │   │   │       └── output-metadata.json
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── processDebugAndroidTestResources
+│   │   │   │   │           ├── linked-resources-binary-format.ap_
+│   │   │   │   │           └── output-metadata.json
+│   │   │   │   ├── local_only_symbol_list
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── parseDebugLocalResources
+│   │   │   │   │           └── R-def.txt
+│   │   │   │   ├── manifest_merge_blame_file
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── processDebugMainManifest
+│   │   │   │   │   │       └── manifest-merger-blame-debug-report.txt
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── processDebugAndroidTestManifest
+│   │   │   │   │           └── manifest-merger-blame-debug-androidTest-report.txt
+│   │   │   │   ├── merged_java_res
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── mergeDebugJavaResource
+│   │   │   │   │   │       └── base.jar
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── mergeDebugAndroidTestJavaResource
+│   │   │   │   │           └── feature-app.jar
+│   │   │   │   ├── merged_jni_libs
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── mergeDebugJniLibFolders
+│   │   │   │   │   │       └── out
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── mergeDebugAndroidTestJniLibFolders
+│   │   │   │   │           └── out
+│   │   │   │   ├── merged_manifest
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugMainManifest
+│   │   │   │   │           └── AndroidManifest.xml
+│   │   │   │   ├── merged_manifests
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugManifest
+│   │   │   │   │           ├── AndroidManifest.xml
+│   │   │   │   │           └── output-metadata.json
+│   │   │   │   ├── merged_res
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── mergeDebugResources
+│   │   │   │   │   │       ├── drawable_ic_launcher_background.xml.flat
+│   │   │   │   │   │       ├── drawable_ic_launcher_foreground.xml.flat
+│   │   │   │   │   │       ├── layout_activity_add_friend.xml.flat
+│   │   │   │   │   │       ├── layout_activity_main.xml.flat
+│   │   │   │   │   │       ├── layout_friend_item.xml.flat
+│   │   │   │   │   │       ├── mipmap-anydpi-v26_ic_launcher_round.xml.flat
+│   │   │   │   │   │       ├── mipmap-anydpi-v26_ic_launcher.xml.flat
+│   │   │   │   │   │       ├── mipmap-hdpi_ic_launcher_round.webp.flat
+│   │   │   │   │   │       ├── mipmap-hdpi_ic_launcher.webp.flat
+│   │   │   │   │   │       ├── mipmap-mdpi_ic_launcher_round.webp.flat
+│   │   │   │   │   │       ├── mipmap-mdpi_ic_launcher.webp.flat
+│   │   │   │   │   │       ├── mipmap-xhdpi_ic_launcher_round.webp.flat
+│   │   │   │   │   │       ├── mipmap-xhdpi_ic_launcher.webp.flat
+│   │   │   │   │   │       ├── mipmap-xxhdpi_ic_launcher_round.webp.flat
+│   │   │   │   │   │       ├── mipmap-xxhdpi_ic_launcher.webp.flat
+│   │   │   │   │   │       ├── mipmap-xxxhdpi_ic_launcher_round.webp.flat
+│   │   │   │   │   │       ├── mipmap-xxxhdpi_ic_launcher.webp.flat
+│   │   │   │   │   │       ├── values-af_values-af.arsc.flat
+│   │   │   │   │   │       ├── values-am_values-am.arsc.flat
+│   │   │   │   │   │       ├── values-ar_values-ar.arsc.flat
+│   │   │   │   │   │       ├── values-as_values-as.arsc.flat
+│   │   │   │   │   │       ├── values-az_values-az.arsc.flat
+│   │   │   │   │   │       ├── values-b+es+419_values-b+es+419.arsc.flat
+│   │   │   │   │   │       ├── values-be_values-be.arsc.flat
+│   │   │   │   │   │       ├── values-bg_values-bg.arsc.flat
+│   │   │   │   │   │       ├── values-bn_values-bn.arsc.flat
+│   │   │   │   │   │       ├── values-b+sr+Latn_values-b+sr+Latn.arsc.flat
+│   │   │   │   │   │       ├── values-bs_values-bs.arsc.flat
+│   │   │   │   │   │       ├── values-ca_values-ca.arsc.flat
+│   │   │   │   │   │       ├── values-cs_values-cs.arsc.flat
+│   │   │   │   │   │       ├── values-da_values-da.arsc.flat
+│   │   │   │   │   │       ├── values-de_values-de.arsc.flat
+│   │   │   │   │   │       ├── values-el_values-el.arsc.flat
+│   │   │   │   │   │       ├── values-en-rAU_values-en-rAU.arsc.flat
+│   │   │   │   │   │       ├── values-en-rCA_values-en-rCA.arsc.flat
+│   │   │   │   │   │       ├── values-en-rGB_values-en-rGB.arsc.flat
+│   │   │   │   │   │       ├── values-en-rIN_values-en-rIN.arsc.flat
+│   │   │   │   │   │       ├── values-en-rXC_values-en-rXC.arsc.flat
+│   │   │   │   │   │       ├── values-es-rUS_values-es-rUS.arsc.flat
+│   │   │   │   │   │       ├── values-es_values-es.arsc.flat
+│   │   │   │   │   │       ├── values-et_values-et.arsc.flat
+│   │   │   │   │   │       ├── values-eu_values-eu.arsc.flat
+│   │   │   │   │   │       ├── values-fa_values-fa.arsc.flat
+│   │   │   │   │   │       ├── values-fi_values-fi.arsc.flat
+│   │   │   │   │   │       ├── values-fr-rCA_values-fr-rCA.arsc.flat
+│   │   │   │   │   │       ├── values-fr_values-fr.arsc.flat
+│   │   │   │   │   │       ├── values-gl_values-gl.arsc.flat
+│   │   │   │   │   │       ├── values-gu_values-gu.arsc.flat
+│   │   │   │   │   │       ├── values-h320dp-port-v13_values-h320dp-port-v13.arsc.flat
+│   │   │   │   │   │       ├── values-h360dp-land-v13_values-h360dp-land-v13.arsc.flat
+│   │   │   │   │   │       ├── values-h480dp-land-v13_values-h480dp-land-v13.arsc.flat
+│   │   │   │   │   │       ├── values-h550dp-port-v13_values-h550dp-port-v13.arsc.flat
+│   │   │   │   │   │       ├── values-h720dp-v13_values-h720dp-v13.arsc.flat
+│   │   │   │   │   │       ├── values-hdpi-v4_values-hdpi-v4.arsc.flat
+│   │   │   │   │   │       ├── values-hi_values-hi.arsc.flat
+│   │   │   │   │   │       ├── values-hr_values-hr.arsc.flat
+│   │   │   │   │   │       ├── values-hu_values-hu.arsc.flat
+│   │   │   │   │   │       ├── values-hy_values-hy.arsc.flat
+│   │   │   │   │   │       ├── values-in_values-in.arsc.flat
+│   │   │   │   │   │       ├── values-is_values-is.arsc.flat
+│   │   │   │   │   │       ├── values-it_values-it.arsc.flat
+│   │   │   │   │   │       ├── values-iw_values-iw.arsc.flat
+│   │   │   │   │   │       ├── values-ja_values-ja.arsc.flat
+│   │   │   │   │   │       ├── values-ka_values-ka.arsc.flat
+│   │   │   │   │   │       ├── values-kk_values-kk.arsc.flat
+│   │   │   │   │   │       ├── values-km_values-km.arsc.flat
+│   │   │   │   │   │       ├── values-kn_values-kn.arsc.flat
+│   │   │   │   │   │       ├── values-ko_values-ko.arsc.flat
+│   │   │   │   │   │       ├── values-ky_values-ky.arsc.flat
+│   │   │   │   │   │       ├── values-land_values-land.arsc.flat
+│   │   │   │   │   │       ├── values-large-v4_values-large-v4.arsc.flat
+│   │   │   │   │   │       ├── values-ldltr-v21_values-ldltr-v21.arsc.flat
+│   │   │   │   │   │       ├── values-ldrtl-v17_values-ldrtl-v17.arsc.flat
+│   │   │   │   │   │       ├── values-lo_values-lo.arsc.flat
+│   │   │   │   │   │       ├── values-lt_values-lt.arsc.flat
+│   │   │   │   │   │       ├── values-lv_values-lv.arsc.flat
+│   │   │   │   │   │       ├── values-mk_values-mk.arsc.flat
+│   │   │   │   │   │       ├── values-ml_values-ml.arsc.flat
+│   │   │   │   │   │       ├── values-mn_values-mn.arsc.flat
+│   │   │   │   │   │       ├── values-mr_values-mr.arsc.flat
+│   │   │   │   │   │       ├── values-ms_values-ms.arsc.flat
+│   │   │   │   │   │       ├── values-my_values-my.arsc.flat
+│   │   │   │   │   │       ├── values-nb_values-nb.arsc.flat
+│   │   │   │   │   │       ├── values-ne_values-ne.arsc.flat
+│   │   │   │   │   │       ├── values-night-v8_values-night-v8.arsc.flat
+│   │   │   │   │   │       ├── values-nl_values-nl.arsc.flat
+│   │   │   │   │   │       ├── values-or_values-or.arsc.flat
+│   │   │   │   │   │       ├── values-pa_values-pa.arsc.flat
+│   │   │   │   │   │       ├── values-pl_values-pl.arsc.flat
+│   │   │   │   │   │       ├── values-port_values-port.arsc.flat
+│   │   │   │   │   │       ├── values-pt-rBR_values-pt-rBR.arsc.flat
+│   │   │   │   │   │       ├── values-pt-rPT_values-pt-rPT.arsc.flat
+│   │   │   │   │   │       ├── values-pt_values-pt.arsc.flat
+│   │   │   │   │   │       ├── values-ro_values-ro.arsc.flat
+│   │   │   │   │   │       ├── values-ru_values-ru.arsc.flat
+│   │   │   │   │   │       ├── values-si_values-si.arsc.flat
+│   │   │   │   │   │       ├── values-sk_values-sk.arsc.flat
+│   │   │   │   │   │       ├── values-sl_values-sl.arsc.flat
+│   │   │   │   │   │       ├── values-small-v4_values-small-v4.arsc.flat
+│   │   │   │   │   │       ├── values-sq_values-sq.arsc.flat
+│   │   │   │   │   │       ├── values-sr_values-sr.arsc.flat
+│   │   │   │   │   │       ├── values-sv_values-sv.arsc.flat
+│   │   │   │   │   │       ├── values-sw600dp-v13_values-sw600dp-v13.arsc.flat
+│   │   │   │   │   │       ├── values-sw_values-sw.arsc.flat
+│   │   │   │   │   │       ├── values-ta_values-ta.arsc.flat
+│   │   │   │   │   │       ├── values-te_values-te.arsc.flat
+│   │   │   │   │   │       ├── values-th_values-th.arsc.flat
+│   │   │   │   │   │       ├── values-tl_values-tl.arsc.flat
+│   │   │   │   │   │       ├── values-tr_values-tr.arsc.flat
+│   │   │   │   │   │       ├── values-uk_values-uk.arsc.flat
+│   │   │   │   │   │       ├── values-ur_values-ur.arsc.flat
+│   │   │   │   │   │       ├── values-uz_values-uz.arsc.flat
+│   │   │   │   │   │       ├── values-v16_values-v16.arsc.flat
+│   │   │   │   │   │       ├── values-v17_values-v17.arsc.flat
+│   │   │   │   │   │       ├── values-v18_values-v18.arsc.flat
+│   │   │   │   │   │       ├── values-v21_values-v21.arsc.flat
+│   │   │   │   │   │       ├── values-v22_values-v22.arsc.flat
+│   │   │   │   │   │       ├── values-v23_values-v23.arsc.flat
+│   │   │   │   │   │       ├── values-v24_values-v24.arsc.flat
+│   │   │   │   │   │       ├── values-v25_values-v25.arsc.flat
+│   │   │   │   │   │       ├── values-v26_values-v26.arsc.flat
+│   │   │   │   │   │       ├── values-v28_values-v28.arsc.flat
+│   │   │   │   │   │       ├── values-v31_values-v31.arsc.flat
+│   │   │   │   │   │       ├── values-v34_values-v34.arsc.flat
+│   │   │   │   │   │       ├── values_values.arsc.flat
+│   │   │   │   │   │       ├── values-vi_values-vi.arsc.flat
+│   │   │   │   │   │       ├── values-w320dp-land-v13_values-w320dp-land-v13.arsc.flat
+│   │   │   │   │   │       ├── values-w360dp-port-v13_values-w360dp-port-v13.arsc.flat
+│   │   │   │   │   │       ├── values-w400dp-port-v13_values-w400dp-port-v13.arsc.flat
+│   │   │   │   │   │       ├── values-w600dp-land-v13_values-w600dp-land-v13.arsc.flat
+│   │   │   │   │   │       ├── values-watch-v20_values-watch-v20.arsc.flat
+│   │   │   │   │   │       ├── values-watch-v21_values-watch-v21.arsc.flat
+│   │   │   │   │   │       ├── values-xlarge-v4_values-xlarge-v4.arsc.flat
+│   │   │   │   │   │       ├── values-zh-rCN_values-zh-rCN.arsc.flat
+│   │   │   │   │   │       ├── values-zh-rHK_values-zh-rHK.arsc.flat
+│   │   │   │   │   │       ├── values-zh-rTW_values-zh-rTW.arsc.flat
+│   │   │   │   │   │       ├── values-zu_values-zu.arsc.flat
+│   │   │   │   │   │       ├── xml_backup_rules.xml.flat
+│   │   │   │   │   │       └── xml_data_extraction_rules.xml.flat
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── mergeDebugAndroidTestResources
+│   │   │   │   │           ├── values-v18_values-v18.arsc.flat
+│   │   │   │   │           ├── values-v21_values-v21.arsc.flat
+│   │   │   │   │           ├── values-v28_values-v28.arsc.flat
+│   │   │   │   │           └── values_values.arsc.flat
+│   │   │   │   ├── merged_res_blame_folder
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── mergeDebugResources
+│   │   │   │   │   │       └── out
+│   │   │   │   │   │           ├── multi-v2
+│   │   │   │   │   │           │   ├── mergeDebugResources.json
+│   │   │   │   │   │           │   ├── values-af.json
+│   │   │   │   │   │           │   ├── values-am.json
+│   │   │   │   │   │           │   ├── values-ar.json
+│   │   │   │   │   │           │   ├── values-as.json
+│   │   │   │   │   │           │   ├── values-az.json
+│   │   │   │   │   │           │   ├── values-be.json
+│   │   │   │   │   │           │   ├── values-b+es+419.json
+│   │   │   │   │   │           │   ├── values-bg.json
+│   │   │   │   │   │           │   ├── values-bn.json
+│   │   │   │   │   │           │   ├── values-bs.json
+│   │   │   │   │   │           │   ├── values-b+sr+Latn.json
+│   │   │   │   │   │           │   ├── values-ca.json
+│   │   │   │   │   │           │   ├── values-cs.json
+│   │   │   │   │   │           │   ├── values-da.json
+│   │   │   │   │   │           │   ├── values-de.json
+│   │   │   │   │   │           │   ├── values-el.json
+│   │   │   │   │   │           │   ├── values-en-rAU.json
+│   │   │   │   │   │           │   ├── values-en-rCA.json
+│   │   │   │   │   │           │   ├── values-en-rGB.json
+│   │   │   │   │   │           │   ├── values-en-rIN.json
+│   │   │   │   │   │           │   ├── values-en-rXC.json
+│   │   │   │   │   │           │   ├── values-es.json
+│   │   │   │   │   │           │   ├── values-es-rUS.json
+│   │   │   │   │   │           │   ├── values-et.json
+│   │   │   │   │   │           │   ├── values-eu.json
+│   │   │   │   │   │           │   ├── values-fa.json
+│   │   │   │   │   │           │   ├── values-fi.json
+│   │   │   │   │   │           │   ├── values-fr.json
+│   │   │   │   │   │           │   ├── values-fr-rCA.json
+│   │   │   │   │   │           │   ├── values-gl.json
+│   │   │   │   │   │           │   ├── values-gu.json
+│   │   │   │   │   │           │   ├── values-h320dp-port-v13.json
+│   │   │   │   │   │           │   ├── values-h360dp-land-v13.json
+│   │   │   │   │   │           │   ├── values-h480dp-land-v13.json
+│   │   │   │   │   │           │   ├── values-h550dp-port-v13.json
+│   │   │   │   │   │           │   ├── values-h720dp-v13.json
+│   │   │   │   │   │           │   ├── values-hdpi-v4.json
+│   │   │   │   │   │           │   ├── values-hi.json
+│   │   │   │   │   │           │   ├── values-hr.json
+│   │   │   │   │   │           │   ├── values-hu.json
+│   │   │   │   │   │           │   ├── values-hy.json
+│   │   │   │   │   │           │   ├── values-in.json
+│   │   │   │   │   │           │   ├── values-is.json
+│   │   │   │   │   │           │   ├── values-it.json
+│   │   │   │   │   │           │   ├── values-iw.json
+│   │   │   │   │   │           │   ├── values-ja.json
+│   │   │   │   │   │           │   ├── values.json
+│   │   │   │   │   │           │   ├── values-ka.json
+│   │   │   │   │   │           │   ├── values-kk.json
+│   │   │   │   │   │           │   ├── values-km.json
+│   │   │   │   │   │           │   ├── values-kn.json
+│   │   │   │   │   │           │   ├── values-ko.json
+│   │   │   │   │   │           │   ├── values-ky.json
+│   │   │   │   │   │           │   ├── values-land.json
+│   │   │   │   │   │           │   ├── values-large-v4.json
+│   │   │   │   │   │           │   ├── values-ldltr-v21.json
+│   │   │   │   │   │           │   ├── values-ldrtl-v17.json
+│   │   │   │   │   │           │   ├── values-lo.json
+│   │   │   │   │   │           │   ├── values-lt.json
+│   │   │   │   │   │           │   ├── values-lv.json
+│   │   │   │   │   │           │   ├── values-mk.json
+│   │   │   │   │   │           │   ├── values-ml.json
+│   │   │   │   │   │           │   ├── values-mn.json
+│   │   │   │   │   │           │   ├── values-mr.json
+│   │   │   │   │   │           │   ├── values-ms.json
+│   │   │   │   │   │           │   ├── values-my.json
+│   │   │   │   │   │           │   ├── values-nb.json
+│   │   │   │   │   │           │   ├── values-ne.json
+│   │   │   │   │   │           │   ├── values-night-v8.json
+│   │   │   │   │   │           │   ├── values-nl.json
+│   │   │   │   │   │           │   ├── values-or.json
+│   │   │   │   │   │           │   ├── values-pa.json
+│   │   │   │   │   │           │   ├── values-pl.json
+│   │   │   │   │   │           │   ├── values-port.json
+│   │   │   │   │   │           │   ├── values-pt.json
+│   │   │   │   │   │           │   ├── values-pt-rBR.json
+│   │   │   │   │   │           │   ├── values-pt-rPT.json
+│   │   │   │   │   │           │   ├── values-ro.json
+│   │   │   │   │   │           │   ├── values-ru.json
+│   │   │   │   │   │           │   ├── values-si.json
+│   │   │   │   │   │           │   ├── values-sk.json
+│   │   │   │   │   │           │   ├── values-sl.json
+│   │   │   │   │   │           │   ├── values-small-v4.json
+│   │   │   │   │   │           │   ├── values-sq.json
+│   │   │   │   │   │           │   ├── values-sr.json
+│   │   │   │   │   │           │   ├── values-sv.json
+│   │   │   │   │   │           │   ├── values-sw600dp-v13.json
+│   │   │   │   │   │           │   ├── values-sw.json
+│   │   │   │   │   │           │   ├── values-ta.json
+│   │   │   │   │   │           │   ├── values-te.json
+│   │   │   │   │   │           │   ├── values-th.json
+│   │   │   │   │   │           │   ├── values-tl.json
+│   │   │   │   │   │           │   ├── values-tr.json
+│   │   │   │   │   │           │   ├── values-uk.json
+│   │   │   │   │   │           │   ├── values-ur.json
+│   │   │   │   │   │           │   ├── values-uz.json
+│   │   │   │   │   │           │   ├── values-v16.json
+│   │   │   │   │   │           │   ├── values-v17.json
+│   │   │   │   │   │           │   ├── values-v18.json
+│   │   │   │   │   │           │   ├── values-v21.json
+│   │   │   │   │   │           │   ├── values-v22.json
+│   │   │   │   │   │           │   ├── values-v23.json
+│   │   │   │   │   │           │   ├── values-v24.json
+│   │   │   │   │   │           │   ├── values-v25.json
+│   │   │   │   │   │           │   ├── values-v26.json
+│   │   │   │   │   │           │   ├── values-v28.json
+│   │   │   │   │   │           │   ├── values-v31.json
+│   │   │   │   │   │           │   ├── values-v34.json
+│   │   │   │   │   │           │   ├── values-vi.json
+│   │   │   │   │   │           │   ├── values-w320dp-land-v13.json
+│   │   │   │   │   │           │   ├── values-w360dp-port-v13.json
+│   │   │   │   │   │           │   ├── values-w400dp-port-v13.json
+│   │   │   │   │   │           │   ├── values-w600dp-land-v13.json
+│   │   │   │   │   │           │   ├── values-watch-v20.json
+│   │   │   │   │   │           │   ├── values-watch-v21.json
+│   │   │   │   │   │           │   ├── values-xlarge-v4.json
+│   │   │   │   │   │           │   ├── values-zh-rCN.json
+│   │   │   │   │   │           │   ├── values-zh-rHK.json
+│   │   │   │   │   │           │   ├── values-zh-rTW.json
+│   │   │   │   │   │           │   └── values-zu.json
+│   │   │   │   │   │           └── single
+│   │   │   │   │   │               └── mergeDebugResources.json
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── mergeDebugAndroidTestResources
+│   │   │   │   │           └── out
+│   │   │   │   │               └── multi-v2
+│   │   │   │   │                   ├── mergeDebugAndroidTestResources.json
+│   │   │   │   │                   ├── values.json
+│   │   │   │   │                   ├── values-v18.json
+│   │   │   │   │                   ├── values-v21.json
+│   │   │   │   │                   └── values-v28.json
+│   │   │   │   ├── merged_shaders
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── mergeDebugShaders
+│   │   │   │   │   │       └── out
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── mergeDebugAndroidTestShaders
+│   │   │   │   │           └── out
+│   │   │   │   ├── mixed_scope_dex_archive
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── dexBuilderDebug
+│   │   │   │   │   │       └── out
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── dexBuilderDebugAndroidTest
+│   │   │   │   │           └── out
+│   │   │   │   ├── navigation_json
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── extractDeepLinksDebug
+│   │   │   │   │           └── navigation.json
+│   │   │   │   ├── nested_resources_validation_report
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── generateDebugResources
+│   │   │   │   │   │       └── nestedResourcesValidationReport.txt
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── generateDebugAndroidTestResources
+│   │   │   │   │           └── nestedResourcesValidationReport.txt
+│   │   │   │   ├── packaged_manifests
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── processDebugManifestForPackage
+│   │   │   │   │   │       ├── AndroidManifest.xml
+│   │   │   │   │   │       └── output-metadata.json
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── processDebugAndroidTestManifest
+│   │   │   │   │           ├── AndroidManifest.xml
+│   │   │   │   │           └── output-metadata.json
+│   │   │   │   ├── packaged_res
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── packageDebugResources
+│   │   │   │   │           ├── drawable
+│   │   │   │   │           │   ├── ic_launcher_background.xml
+│   │   │   │   │           │   └── ic_launcher_foreground.xml
+│   │   │   │   │           ├── layout
+│   │   │   │   │           │   ├── activity_add_friend.xml
+│   │   │   │   │           │   ├── activity_main.xml
+│   │   │   │   │           │   └── friend_item.xml
+│   │   │   │   │           ├── mipmap-anydpi-v26
+│   │   │   │   │           │   ├── ic_launcher_round.xml
+│   │   │   │   │           │   └── ic_launcher.xml
+│   │   │   │   │           ├── mipmap-hdpi-v4
+│   │   │   │   │           │   ├── ic_launcher_round.webp
+│   │   │   │   │           │   └── ic_launcher.webp
+│   │   │   │   │           ├── mipmap-mdpi-v4
+│   │   │   │   │           │   ├── ic_launcher_round.webp
+│   │   │   │   │           │   └── ic_launcher.webp
+│   │   │   │   │           ├── mipmap-xhdpi-v4
+│   │   │   │   │           │   ├── ic_launcher_round.webp
+│   │   │   │   │           │   └── ic_launcher.webp
+│   │   │   │   │           ├── mipmap-xxhdpi-v4
+│   │   │   │   │           │   ├── ic_launcher_round.webp
+│   │   │   │   │           │   └── ic_launcher.webp
+│   │   │   │   │           ├── mipmap-xxxhdpi-v4
+│   │   │   │   │           │   ├── ic_launcher_round.webp
+│   │   │   │   │           │   └── ic_launcher.webp
+│   │   │   │   │           ├── values
+│   │   │   │   │           │   └── values.xml
+│   │   │   │   │           ├── values-night-v8
+│   │   │   │   │           │   └── values-night-v8.xml
+│   │   │   │   │           └── xml
+│   │   │   │   │               ├── backup_rules.xml
+│   │   │   │   │               └── data_extraction_rules.xml
+│   │   │   │   ├── project_dex_archive
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── dexBuilderDebug
+│   │   │   │   │   │       └── out
+│   │   │   │   │   │           ├── 07bcbcc8a24d732660cceeea7943fbd550c79102802d55ff31e2a20229359cee_0.jar
+│   │   │   │   │   │           ├── 07bcbcc8a24d732660cceeea7943fbd550c79102802d55ff31e2a20229359cee_1.jar
+│   │   │   │   │   │           ├── 07bcbcc8a24d732660cceeea7943fbd550c79102802d55ff31e2a20229359cee_2.jar
+│   │   │   │   │   │           ├── 07bcbcc8a24d732660cceeea7943fbd550c79102802d55ff31e2a20229359cee_3.jar
+│   │   │   │   │   │           ├── 07bcbcc8a24d732660cceeea7943fbd550c79102802d55ff31e2a20229359cee_4.jar
+│   │   │   │   │   │           ├── 07bcbcc8a24d732660cceeea7943fbd550c79102802d55ff31e2a20229359cee_5.jar
+│   │   │   │   │   │           ├── 07bcbcc8a24d732660cceeea7943fbd550c79102802d55ff31e2a20229359cee_6.jar
+│   │   │   │   │   │           ├── 07bcbcc8a24d732660cceeea7943fbd550c79102802d55ff31e2a20229359cee_7.jar
+│   │   │   │   │   │           └── edu
+│   │   │   │   │   │               └── ntnu
+│   │   │   │   │   │                   └── exercise03
+│   │   │   │   │   │                       ├── AddFriendActivity.dex
+│   │   │   │   │   │                       ├── Friend.dex
+│   │   │   │   │   │                       ├── FriendsAdapter$FriendViewHolder.dex
+│   │   │   │   │   │                       ├── FriendsAdapter.dex
+│   │   │   │   │   │                       ├── MainActivity$Companion.dex
+│   │   │   │   │   │                       ├── MainActivity$onCreate$1.dex
+│   │   │   │   │   │                       └── MainActivity.dex
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── dexBuilderDebugAndroidTest
+│   │   │   │   │           └── out
+│   │   │   │   │               ├── 4d7af57dad472076774a6c439f1fe66ae6b16be11c752188cdd43a3f262bc2fe_1.jar
+│   │   │   │   │               ├── 4d7af57dad472076774a6c439f1fe66ae6b16be11c752188cdd43a3f262bc2fe_3.jar
+│   │   │   │   │               ├── 4d7af57dad472076774a6c439f1fe66ae6b16be11c752188cdd43a3f262bc2fe_5.jar
+│   │   │   │   │               ├── 4d7af57dad472076774a6c439f1fe66ae6b16be11c752188cdd43a3f262bc2fe_6.jar
+│   │   │   │   │               ├── 4d7af57dad472076774a6c439f1fe66ae6b16be11c752188cdd43a3f262bc2fe_7.jar
+│   │   │   │   │               └── edu
+│   │   │   │   │                   └── ntnu
+│   │   │   │   │                       └── exercise03
+│   │   │   │   │                           └── ExampleInstrumentedTest.dex
+│   │   │   │   ├── runtime_symbol_list
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── processDebugResources
+│   │   │   │   │   │       └── R.txt
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── processDebugAndroidTestResources
+│   │   │   │   │           └── R.txt
+│   │   │   │   ├── signing_config_versions
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── writeDebugSigningConfigVersions
+│   │   │   │   │   │       └── signing-config-versions.json
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── writeDebugAndroidTestSigningConfigVersions
+│   │   │   │   │           └── signing-config-versions.json
+│   │   │   │   ├── source_set_path_map
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── mapDebugSourceSetPaths
+│   │   │   │   │   │       └── file-map.txt
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── mapDebugAndroidTestSourceSetPaths
+│   │   │   │   │           └── file-map.txt
+│   │   │   │   ├── stable_resource_ids_file
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── processDebugResources
+│   │   │   │   │   │       └── stableIds.txt
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── processDebugAndroidTestResources
+│   │   │   │   │           └── stableIds.txt
+│   │   │   │   ├── sub_project_dex_archive
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── dexBuilderDebug
+│   │   │   │   │   │       └── out
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── dexBuilderDebugAndroidTest
+│   │   │   │   │           └── out
+│   │   │   │   ├── symbol_list_with_package_name
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   └── processDebugResources
+│   │   │   │   │   │       └── package-aware-r.txt
+│   │   │   │   │   └── debugAndroidTest
+│   │   │   │   │       └── processDebugAndroidTestResources
+│   │   │   │   │           └── package-aware-r.txt
+│   │   │   │   ├── tmp
+│   │   │   │   │   └── manifest
+│   │   │   │   │       └── androidTest
+│   │   │   │   │           └── debug
+│   │   │   │   └── validate_signing_config
+│   │   │   │       ├── debug
+│   │   │   │       │   └── validateSigningDebug
+│   │   │   │       └── debugAndroidTest
+│   │   │   │           └── validateSigningDebugAndroidTest
+│   │   │   ├── kotlin
+│   │   │   │   ├── compileDebugAndroidTestKotlin
+│   │   │   │   │   ├── cacheable
+│   │   │   │   │   │   ├── caches-jvm
+│   │   │   │   │   │   │   ├── inputs
+│   │   │   │   │   │   │   │   ├── source-to-output.tab
+│   │   │   │   │   │   │   │   ├── source-to-output.tab_i
+│   │   │   │   │   │   │   │   ├── source-to-output.tab_i.len
+│   │   │   │   │   │   │   │   ├── source-to-output.tab.keystream
+│   │   │   │   │   │   │   │   ├── source-to-output.tab.keystream.len
+│   │   │   │   │   │   │   │   ├── source-to-output.tab.len
+│   │   │   │   │   │   │   │   └── source-to-output.tab.values.at
+│   │   │   │   │   │   │   ├── jvm
+│   │   │   │   │   │   │   │   └── kotlin
+│   │   │   │   │   │   │   │       ├── class-attributes.tab
+│   │   │   │   │   │   │   │       ├── class-attributes.tab_i
+│   │   │   │   │   │   │   │       ├── class-attributes.tab_i.len
+│   │   │   │   │   │   │   │       ├── class-attributes.tab.keystream
+│   │   │   │   │   │   │   │       ├── class-attributes.tab.keystream.len
+│   │   │   │   │   │   │   │       ├── class-attributes.tab.len
+│   │   │   │   │   │   │   │       ├── class-attributes.tab.values.at
+│   │   │   │   │   │   │   │       ├── class-fq-name-to-source.tab
+│   │   │   │   │   │   │   │       ├── class-fq-name-to-source.tab_i
+│   │   │   │   │   │   │   │       ├── class-fq-name-to-source.tab_i.len
+│   │   │   │   │   │   │   │       ├── class-fq-name-to-source.tab.keystream
+│   │   │   │   │   │   │   │       ├── class-fq-name-to-source.tab.keystream.len
+│   │   │   │   │   │   │   │       ├── class-fq-name-to-source.tab.len
+│   │   │   │   │   │   │   │       ├── class-fq-name-to-source.tab.values.at
+│   │   │   │   │   │   │   │       ├── internal-name-to-source.tab
+│   │   │   │   │   │   │   │       ├── internal-name-to-source.tab_i
+│   │   │   │   │   │   │   │       ├── internal-name-to-source.tab_i.len
+│   │   │   │   │   │   │   │       ├── internal-name-to-source.tab.keystream
+│   │   │   │   │   │   │   │       ├── internal-name-to-source.tab.keystream.len
+│   │   │   │   │   │   │   │       ├── internal-name-to-source.tab.len
+│   │   │   │   │   │   │   │       ├── internal-name-to-source.tab.values.at
+│   │   │   │   │   │   │   │       ├── proto.tab
+│   │   │   │   │   │   │   │       ├── proto.tab_i
+│   │   │   │   │   │   │   │       ├── proto.tab_i.len
+│   │   │   │   │   │   │   │       ├── proto.tab.keystream
+│   │   │   │   │   │   │   │       ├── proto.tab.keystream.len
+│   │   │   │   │   │   │   │       ├── proto.tab.len
+│   │   │   │   │   │   │   │       ├── proto.tab.values.at
+│   │   │   │   │   │   │   │       ├── source-to-classes.tab
+│   │   │   │   │   │   │   │       ├── source-to-classes.tab_i
+│   │   │   │   │   │   │   │       ├── source-to-classes.tab_i.len
+│   │   │   │   │   │   │   │       ├── source-to-classes.tab.keystream
+│   │   │   │   │   │   │   │       ├── source-to-classes.tab.keystream.len
+│   │   │   │   │   │   │   │       ├── source-to-classes.tab.len
+│   │   │   │   │   │   │   │       └── source-to-classes.tab.values.at
+│   │   │   │   │   │   │   └── lookups
+│   │   │   │   │   │   │       ├── counters.tab
+│   │   │   │   │   │   │       ├── file-to-id.tab
+│   │   │   │   │   │   │       ├── file-to-id.tab_i
+│   │   │   │   │   │   │       ├── file-to-id.tab_i.len
+│   │   │   │   │   │   │       ├── file-to-id.tab.keystream
+│   │   │   │   │   │   │       ├── file-to-id.tab.keystream.len
+│   │   │   │   │   │   │       ├── file-to-id.tab.len
+│   │   │   │   │   │   │       ├── file-to-id.tab.values.at
+│   │   │   │   │   │   │       ├── id-to-file.tab
+│   │   │   │   │   │   │       ├── id-to-file.tab_i.len
+│   │   │   │   │   │   │       ├── id-to-file.tab.keystream
+│   │   │   │   │   │   │       ├── id-to-file.tab.keystream.len
+│   │   │   │   │   │   │       ├── id-to-file.tab.len
+│   │   │   │   │   │   │       ├── id-to-file.tab.values.at
+│   │   │   │   │   │   │       ├── lookups.tab
+│   │   │   │   │   │   │       ├── lookups.tab_i
+│   │   │   │   │   │   │       ├── lookups.tab_i.len
+│   │   │   │   │   │   │       ├── lookups.tab.keystream
+│   │   │   │   │   │   │       ├── lookups.tab.keystream.len
+│   │   │   │   │   │   │       ├── lookups.tab.len
+│   │   │   │   │   │   │       └── lookups.tab.values.at
+│   │   │   │   │   │   └── last-build.bin
+│   │   │   │   │   ├── classpath-snapshot
+│   │   │   │   │   │   └── shrunk-classpath-snapshot.bin
+│   │   │   │   │   └── local-state
+│   │   │   │   │       └── build-history.bin
+│   │   │   │   ├── compileDebugKotlin
+│   │   │   │   │   ├── cacheable
+│   │   │   │   │   │   ├── caches-jvm
+│   │   │   │   │   │   │   ├── inputs
+│   │   │   │   │   │   │   │   ├── source-to-output.tab
+│   │   │   │   │   │   │   │   ├── source-to-output.tab_i
+│   │   │   │   │   │   │   │   ├── source-to-output.tab_i.len
+│   │   │   │   │   │   │   │   ├── source-to-output.tab.keystream
+│   │   │   │   │   │   │   │   ├── source-to-output.tab.keystream.len
+│   │   │   │   │   │   │   │   ├── source-to-output.tab.len
+│   │   │   │   │   │   │   │   └── source-to-output.tab.values.at
+│   │   │   │   │   │   │   ├── jvm
+│   │   │   │   │   │   │   │   └── kotlin
+│   │   │   │   │   │   │   │       ├── class-attributes.tab
+│   │   │   │   │   │   │   │       ├── class-attributes.tab_i
+│   │   │   │   │   │   │   │       ├── class-attributes.tab_i.len
+│   │   │   │   │   │   │   │       ├── class-attributes.tab.keystream
+│   │   │   │   │   │   │   │       ├── class-attributes.tab.keystream.len
+│   │   │   │   │   │   │   │       ├── class-attributes.tab.len
+│   │   │   │   │   │   │   │       ├── class-attributes.tab.values.at
+│   │   │   │   │   │   │   │       ├── class-fq-name-to-source.tab
+│   │   │   │   │   │   │   │       ├── class-fq-name-to-source.tab_i
+│   │   │   │   │   │   │   │       ├── class-fq-name-to-source.tab_i.len
+│   │   │   │   │   │   │   │       ├── class-fq-name-to-source.tab.keystream
+│   │   │   │   │   │   │   │       ├── class-fq-name-to-source.tab.keystream.len
+│   │   │   │   │   │   │   │       ├── class-fq-name-to-source.tab.len
+│   │   │   │   │   │   │   │       ├── class-fq-name-to-source.tab.values.at
+│   │   │   │   │   │   │   │       ├── constants.tab
+│   │   │   │   │   │   │   │       ├── constants.tab_i
+│   │   │   │   │   │   │   │       ├── constants.tab_i.len
+│   │   │   │   │   │   │   │       ├── constants.tab.keystream
+│   │   │   │   │   │   │   │       ├── constants.tab.keystream.len
+│   │   │   │   │   │   │   │       ├── constants.tab.len
+│   │   │   │   │   │   │   │       ├── constants.tab.values.at
+│   │   │   │   │   │   │   │       ├── internal-name-to-source.tab
+│   │   │   │   │   │   │   │       ├── internal-name-to-source.tab_i
+│   │   │   │   │   │   │   │       ├── internal-name-to-source.tab_i.len
+│   │   │   │   │   │   │   │       ├── internal-name-to-source.tab.keystream
+│   │   │   │   │   │   │   │       ├── internal-name-to-source.tab.keystream.len
+│   │   │   │   │   │   │   │       ├── internal-name-to-source.tab.len
+│   │   │   │   │   │   │   │       ├── internal-name-to-source.tab.values.at
+│   │   │   │   │   │   │   │       ├── proto.tab
+│   │   │   │   │   │   │   │       ├── proto.tab_i
+│   │   │   │   │   │   │   │       ├── proto.tab_i.len
+│   │   │   │   │   │   │   │       ├── proto.tab.keystream
+│   │   │   │   │   │   │   │       ├── proto.tab.keystream.len
+│   │   │   │   │   │   │   │       ├── proto.tab.len
+│   │   │   │   │   │   │   │       ├── proto.tab.values.at
+│   │   │   │   │   │   │   │       ├── source-to-classes.tab
+│   │   │   │   │   │   │   │       ├── source-to-classes.tab_i
+│   │   │   │   │   │   │   │       ├── source-to-classes.tab_i.len
+│   │   │   │   │   │   │   │       ├── source-to-classes.tab.keystream
+│   │   │   │   │   │   │   │       ├── source-to-classes.tab.keystream.len
+│   │   │   │   │   │   │   │       ├── source-to-classes.tab.len
+│   │   │   │   │   │   │   │       ├── source-to-classes.tab.values.at
+│   │   │   │   │   │   │   │       ├── subtypes.tab
+│   │   │   │   │   │   │   │       ├── subtypes.tab_i
+│   │   │   │   │   │   │   │       ├── subtypes.tab_i.len
+│   │   │   │   │   │   │   │       ├── subtypes.tab.keystream
+│   │   │   │   │   │   │   │       ├── subtypes.tab.keystream.len
+│   │   │   │   │   │   │   │       ├── subtypes.tab.len
+│   │   │   │   │   │   │   │       ├── subtypes.tab.values.at
+│   │   │   │   │   │   │   │       ├── supertypes.tab
+│   │   │   │   │   │   │   │       ├── supertypes.tab_i
+│   │   │   │   │   │   │   │       ├── supertypes.tab_i.len
+│   │   │   │   │   │   │   │       ├── supertypes.tab.keystream
+│   │   │   │   │   │   │   │       ├── supertypes.tab.keystream.len
+│   │   │   │   │   │   │   │       ├── supertypes.tab.len
+│   │   │   │   │   │   │   │       └── supertypes.tab.values.at
+│   │   │   │   │   │   │   └── lookups
+│   │   │   │   │   │   │       ├── counters.tab
+│   │   │   │   │   │   │       ├── file-to-id.tab
+│   │   │   │   │   │   │       ├── file-to-id.tab_i
+│   │   │   │   │   │   │       ├── file-to-id.tab_i.len
+│   │   │   │   │   │   │       ├── file-to-id.tab.keystream
+│   │   │   │   │   │   │       ├── file-to-id.tab.keystream.len
+│   │   │   │   │   │   │       ├── file-to-id.tab.len
+│   │   │   │   │   │   │       ├── file-to-id.tab.values.at
+│   │   │   │   │   │   │       ├── id-to-file.tab
+│   │   │   │   │   │   │       ├── id-to-file.tab_i
+│   │   │   │   │   │   │       ├── id-to-file.tab_i.len
+│   │   │   │   │   │   │       ├── id-to-file.tab.keystream
+│   │   │   │   │   │   │       ├── id-to-file.tab.keystream.len
+│   │   │   │   │   │   │       ├── id-to-file.tab.len
+│   │   │   │   │   │   │       ├── id-to-file.tab.values.at
+│   │   │   │   │   │   │       ├── lookups.tab
+│   │   │   │   │   │   │       ├── lookups.tab_i
+│   │   │   │   │   │   │       ├── lookups.tab_i.len
+│   │   │   │   │   │   │       ├── lookups.tab.keystream
+│   │   │   │   │   │   │       ├── lookups.tab.keystream.len
+│   │   │   │   │   │   │       ├── lookups.tab.len
+│   │   │   │   │   │   │       └── lookups.tab.values.at
+│   │   │   │   │   │   └── last-build.bin
+│   │   │   │   │   ├── classpath-snapshot
+│   │   │   │   │   │   └── shrunk-classpath-snapshot.bin
+│   │   │   │   │   └── local-state
+│   │   │   │   │       └── build-history.bin
+│   │   │   │   └── compileDebugUnitTestKotlin
+│   │   │   │       ├── cacheable
+│   │   │   │       │   ├── caches-jvm
+│   │   │   │       │   │   ├── inputs
+│   │   │   │       │   │   │   ├── source-to-output.tab
+│   │   │   │       │   │   │   ├── source-to-output.tab_i
+│   │   │   │       │   │   │   ├── source-to-output.tab_i.len
+│   │   │   │       │   │   │   ├── source-to-output.tab.keystream
+│   │   │   │       │   │   │   ├── source-to-output.tab.keystream.len
+│   │   │   │       │   │   │   ├── source-to-output.tab.len
+│   │   │   │       │   │   │   └── source-to-output.tab.values.at
+│   │   │   │       │   │   ├── jvm
+│   │   │   │       │   │   │   └── kotlin
+│   │   │   │       │   │   │       ├── class-attributes.tab
+│   │   │   │       │   │   │       ├── class-attributes.tab_i
+│   │   │   │       │   │   │       ├── class-attributes.tab_i.len
+│   │   │   │       │   │   │       ├── class-attributes.tab.keystream
+│   │   │   │       │   │   │       ├── class-attributes.tab.keystream.len
+│   │   │   │       │   │   │       ├── class-attributes.tab.len
+│   │   │   │       │   │   │       ├── class-attributes.tab.values.at
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab_i
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab_i.len
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab.keystream
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab.keystream.len
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab.len
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab.values.at
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab_i
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab_i.len
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab.keystream
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab.keystream.len
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab.len
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab.values.at
+│   │   │   │       │   │   │       ├── proto.tab
+│   │   │   │       │   │   │       ├── proto.tab_i
+│   │   │   │       │   │   │       ├── proto.tab_i.len
+│   │   │   │       │   │   │       ├── proto.tab.keystream
+│   │   │   │       │   │   │       ├── proto.tab.keystream.len
+│   │   │   │       │   │   │       ├── proto.tab.len
+│   │   │   │       │   │   │       ├── proto.tab.values.at
+│   │   │   │       │   │   │       ├── source-to-classes.tab
+│   │   │   │       │   │   │       ├── source-to-classes.tab_i
+│   │   │   │       │   │   │       ├── source-to-classes.tab_i.len
+│   │   │   │       │   │   │       ├── source-to-classes.tab.keystream
+│   │   │   │       │   │   │       ├── source-to-classes.tab.keystream.len
+│   │   │   │       │   │   │       ├── source-to-classes.tab.len
+│   │   │   │       │   │   │       └── source-to-classes.tab.values.at
+│   │   │   │       │   │   └── lookups
+│   │   │   │       │   │       ├── counters.tab
+│   │   │   │       │   │       ├── file-to-id.tab
+│   │   │   │       │   │       ├── file-to-id.tab_i
+│   │   │   │       │   │       ├── file-to-id.tab_i.len
+│   │   │   │       │   │       ├── file-to-id.tab.keystream
+│   │   │   │       │   │       ├── file-to-id.tab.keystream.len
+│   │   │   │       │   │       ├── file-to-id.tab.len
+│   │   │   │       │   │       ├── file-to-id.tab.values.at
+│   │   │   │       │   │       ├── id-to-file.tab
+│   │   │   │       │   │       ├── id-to-file.tab_i.len
+│   │   │   │       │   │       ├── id-to-file.tab.keystream
+│   │   │   │       │   │       ├── id-to-file.tab.keystream.len
+│   │   │   │       │   │       ├── id-to-file.tab.len
+│   │   │   │       │   │       ├── id-to-file.tab.values.at
+│   │   │   │       │   │       ├── lookups.tab
+│   │   │   │       │   │       ├── lookups.tab_i
+│   │   │   │       │   │       ├── lookups.tab_i.len
+│   │   │   │       │   │       ├── lookups.tab.keystream
+│   │   │   │       │   │       ├── lookups.tab.keystream.len
+│   │   │   │       │   │       ├── lookups.tab.len
+│   │   │   │       │   │       └── lookups.tab.values.at
+│   │   │   │       │   └── last-build.bin
+│   │   │   │       ├── classpath-snapshot
+│   │   │   │       │   └── shrunk-classpath-snapshot.bin
+│   │   │   │       └── local-state
+│   │   │   │           └── build-history.bin
+│   │   │   ├── outputs
+│   │   │   │   ├── apk
+│   │   │   │   │   ├── androidTest
+│   │   │   │   │   │   └── debug
+│   │   │   │   │   │       ├── app-debug-androidTest.apk
+│   │   │   │   │   │       └── output-metadata.json
+│   │   │   │   │   └── debug
+│   │   │   │   │       ├── app-debug.apk
+│   │   │   │   │       └── output-metadata.json
+│   │   │   │   └── logs
+│   │   │   │       └── manifest-merger-debug-report.txt
+│   │   │   ├── snapshot
+│   │   │   │   └── kotlin
+│   │   │   └── tmp
+│   │   │       └── kotlin-classes
+│   │   │           ├── debug
+│   │   │           │   ├── edu
+│   │   │           │   │   └── ntnu
+│   │   │           │   │       └── exercise03
+│   │   │           │   │           ├── AddFriendActivity.class
+│   │   │           │   │           ├── Friend.class
+│   │   │           │   │           ├── FriendsAdapter$FriendViewHolder.class
+│   │   │           │   │           ├── FriendsAdapter.class
+│   │   │           │   │           ├── MainActivity$Companion.class
+│   │   │           │   │           ├── MainActivity$onCreate$1.class
+│   │   │           │   │           └── MainActivity.class
+│   │   │           │   └── META-INF
+│   │   │           │       └── app_debug.kotlin_module
+│   │   │           ├── debugAndroidTest
+│   │   │           │   ├── edu
+│   │   │           │   │   └── ntnu
+│   │   │           │   │       └── exercise03
+│   │   │           │   │           └── ExampleInstrumentedTest.class
+│   │   │           │   └── META-INF
+│   │   │           │       └── app_debugAndroidTest.kotlin_module
+│   │   │           └── debugUnitTest
+│   │   │               ├── edu
+│   │   │               │   └── ntnu
+│   │   │               │       └── exercise03
+│   │   │               │           └── ExampleUnitTest.class
+│   │   │               └── META-INF
+│   │   │                   └── app_debugUnitTest.kotlin_module
+│   │   ├── build.gradle.kts
+│   │   ├── proguard-rules.pro
+│   │   └── src
+│   │       ├── androidTest
+│   │       │   └── java
+│   │       │       └── edu
+│   │       │           └── ntnu
+│   │       │               └── exercise03
+│   │       │                   └── ExampleInstrumentedTest.kt
+│   │       ├── main
+│   │       │   ├── AndroidManifest.xml
+│   │       │   ├── java
+│   │       │   │   └── edu
+│   │       │   │       └── ntnu
+│   │       │   │           └── exercise03
+│   │       │   │               ├── AddFriendActivity.kt
+│   │       │   │               ├── Friend.kt
+│   │       │   │               ├── FriendsAdapter.kt
+│   │       │   │               └── MainActivity.kt
+│   │       │   └── res
+│   │       │       ├── drawable
+│   │       │       │   ├── ic_launcher_background.xml
+│   │       │       │   └── ic_launcher_foreground.xml
+│   │       │       ├── layout
+│   │       │       │   ├── activity_add_friend.xml
+│   │       │       │   ├── activity_main.xml
+│   │       │       │   └── friend_item.xml
+│   │       │       ├── mipmap-anydpi-v26
+│   │       │       │   ├── ic_launcher_round.xml
+│   │       │       │   └── ic_launcher.xml
+│   │       │       ├── mipmap-hdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-mdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-xhdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-xxhdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-xxxhdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── values
+│   │       │       │   ├── colors.xml
+│   │       │       │   ├── strings.xml
+│   │       │       │   └── themes.xml
+│   │       │       ├── values-night
+│   │       │       │   └── themes.xml
+│   │       │       └── xml
+│   │       │           ├── backup_rules.xml
+│   │       │           └── data_extraction_rules.xml
+│   │       └── test
+│   │           └── java
+│   │               └── edu
+│   │                   └── ntnu
+│   │                       └── exercise03
+│   │                           └── ExampleUnitTest.kt
+│   ├── build.gradle.kts
+│   ├── friendster-preview-01.gif
+│   ├── gradle
+│   │   ├── libs.versions.toml
+│   │   └── wrapper
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
+│   ├── gradle.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── local.properties
+│   └── settings.gradle.kts
+├── assignment_04
+│   ├── app
+│   │   ├── build.gradle.kts
+│   │   ├── proguard-rules.pro
+│   │   └── src
+│   │       ├── androidTest
+│   │       │   └── java
+│   │       │       └── edu
+│   │       │           └── ntnu
+│   │       │               └── exercise04
+│   │       │                   └── ExampleInstrumentedTest.kt
+│   │       ├── main
+│   │       │   ├── AndroidManifest.xml
+│   │       │   ├── java
+│   │       │   │   └── edu
+│   │       │   │       └── ntnu
+│   │       │   │           └── exercise04
+│   │       │   │               ├── DetailFragment.kt
+│   │       │   │               ├── ItemAdapter.kt
+│   │       │   │               ├── Item.kt
+│   │       │   │               ├── ListFragment.kt
+│   │       │   │               └── MainActivity.kt
+│   │       │   └── res
+│   │       │       ├── drawable
+│   │       │       │   ├── film01.webp
+│   │       │       │   ├── film02.webp
+│   │       │       │   ├── film03.webp
+│   │       │       │   ├── ic_launcher_background.xml
+│   │       │       │   └── ic_launcher_foreground.xml
+│   │       │       ├── layout
+│   │       │       │   ├── activity_main.xml
+│   │       │       │   ├── fragment_detail.xml
+│   │       │       │   ├── fragment_list.xml
+│   │       │       │   └── item_list_element.xml
+│   │       │       ├── layout-land
+│   │       │       │   └── activity_main.xml
+│   │       │       ├── mipmap-anydpi-v26
+│   │       │       │   ├── ic_launcher_round.xml
+│   │       │       │   └── ic_launcher.xml
+│   │       │       ├── mipmap-hdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-mdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-xhdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-xxhdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-xxxhdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── values
+│   │       │       │   ├── colors.xml
+│   │       │       │   ├── strings.xml
+│   │       │       │   └── themes.xml
+│   │       │       ├── values-night
+│   │       │       │   └── themes.xml
+│   │       │       └── xml
+│   │       │           ├── backup_rules.xml
+│   │       │           └── data_extraction_rules.xml
+│   │       └── test
+│   │           └── java
+│   │               └── edu
+│   │                   └── ntnu
+│   │                       └── exercise04
+│   │                           └── ExampleUnitTest.kt
+│   ├── build.gradle.kts
+│   ├── gradle
+│   │   ├── libs.versions.toml
+│   │   └── wrapper
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
+│   ├── gradle.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── local.properties
+│   └── settings.gradle.kts
+├── assignment_05
+│   ├── app
+│   │   ├── build
+│   │   │   ├── generated
+│   │   │   │   └── res
+│   │   │   │       ├── pngs
+│   │   │   │       │   └── debug
+│   │   │   │       └── resValues
+│   │   │   │           └── debug
+│   │   │   ├── intermediates
+│   │   │   │   ├── aar_metadata_check
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── checkDebugAarMetadata
+│   │   │   │   ├── annotation_processor_list
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── javaPreCompileDebug
+│   │   │   │   │           └── annotationProcessors.json
+│   │   │   │   ├── apk
+│   │   │   │   │   └── debug
+│   │   │   │   │       ├── app-debug.apk
+│   │   │   │   │       └── output-metadata.json
+│   │   │   │   ├── apk_ide_redirect_file
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── createDebugApkListingFileRedirect
+│   │   │   │   │           └── redirect.txt
+│   │   │   │   ├── app_metadata
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── writeDebugAppMetadata
+│   │   │   │   │           └── app-metadata.properties
+│   │   │   │   ├── assets
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugAssets
+│   │   │   │   ├── compatible_screen_manifest
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── createDebugCompatibleScreenManifests
+│   │   │   │   │           └── output-metadata.json
+│   │   │   │   ├── compile_and_runtime_not_namespaced_r_class_jar
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugResources
+│   │   │   │   │           └── R.jar
+│   │   │   │   ├── compressed_assets
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── compressDebugAssets
+│   │   │   │   │           └── out
+│   │   │   │   ├── data_binding_layout_info_type_merge
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugResources
+│   │   │   │   │           └── out
+│   │   │   │   ├── data_binding_layout_info_type_package
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── packageDebugResources
+│   │   │   │   │           └── out
+│   │   │   │   ├── desugar_graph
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   │               ├── currentProject
+│   │   │   │   │               │   ├── dirs_bucket_0
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_1
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_2
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_3
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_4
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_5
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_6
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_7
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_1037ff3e1e09928a6a7237f24a8d5cab25d13f17f82b905904bfa2ceba60a2f0_bucket_0
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_1037ff3e1e09928a6a7237f24a8d5cab25d13f17f82b905904bfa2ceba60a2f0_bucket_1
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_1037ff3e1e09928a6a7237f24a8d5cab25d13f17f82b905904bfa2ceba60a2f0_bucket_2
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_1037ff3e1e09928a6a7237f24a8d5cab25d13f17f82b905904bfa2ceba60a2f0_bucket_3
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_1037ff3e1e09928a6a7237f24a8d5cab25d13f17f82b905904bfa2ceba60a2f0_bucket_4
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_1037ff3e1e09928a6a7237f24a8d5cab25d13f17f82b905904bfa2ceba60a2f0_bucket_5
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_1037ff3e1e09928a6a7237f24a8d5cab25d13f17f82b905904bfa2ceba60a2f0_bucket_6
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   └── jar_1037ff3e1e09928a6a7237f24a8d5cab25d13f17f82b905904bfa2ceba60a2f0_bucket_7
+│   │   │   │   │               │       └── graph.bin
+│   │   │   │   │               ├── externalLibs
+│   │   │   │   │               ├── mixedScopes
+│   │   │   │   │               └── otherProjects
+│   │   │   │   ├── dex
+│   │   │   │   │   └── debug
+│   │   │   │   │       ├── mergeExtDexDebug
+│   │   │   │   │       │   ├── classes2.dex
+│   │   │   │   │       │   └── classes.dex
+│   │   │   │   │       ├── mergeLibDexDebug
+│   │   │   │   │       │   ├── 0
+│   │   │   │   │       │   ├── 1
+│   │   │   │   │       │   ├── 10
+│   │   │   │   │       │   ├── 11
+│   │   │   │   │       │   ├── 12
+│   │   │   │   │       │   ├── 13
+│   │   │   │   │       │   ├── 14
+│   │   │   │   │       │   ├── 15
+│   │   │   │   │       │   ├── 2
+│   │   │   │   │       │   ├── 3
+│   │   │   │   │       │   ├── 4
+│   │   │   │   │       │   ├── 5
+│   │   │   │   │       │   ├── 6
+│   │   │   │   │       │   ├── 7
+│   │   │   │   │       │   ├── 8
+│   │   │   │   │       │   └── 9
+│   │   │   │   │       └── mergeProjectDexDebug
+│   │   │   │   │           ├── 0
+│   │   │   │   │           │   └── classes.dex
+│   │   │   │   │           ├── 1
+│   │   │   │   │           ├── 10
+│   │   │   │   │           ├── 11
+│   │   │   │   │           ├── 12
+│   │   │   │   │           ├── 13
+│   │   │   │   │           ├── 14
+│   │   │   │   │           ├── 15
+│   │   │   │   │           ├── 2
+│   │   │   │   │           │   └── classes.dex
+│   │   │   │   │           ├── 3
+│   │   │   │   │           │   └── classes.dex
+│   │   │   │   │           ├── 4
+│   │   │   │   │           ├── 5
+│   │   │   │   │           ├── 6
+│   │   │   │   │           ├── 7
+│   │   │   │   │           ├── 8
+│   │   │   │   │           └── 9
+│   │   │   │   ├── dex_archive_input_jar_hashes
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── dex_number_of_buckets_file
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── duplicate_classes_check
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── checkDebugDuplicateClasses
+│   │   │   │   ├── external_file_lib_dex_archives
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── desugarDebugFileDependencies
+│   │   │   │   ├── external_libs_dex_archive
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── external_libs_dex_archive_with_artifact_transforms
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── incremental
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   ├── mergeDebugResources
+│   │   │   │   │   │   │   ├── compile-file-map.properties
+│   │   │   │   │   │   │   ├── merged.dir
+│   │   │   │   │   │   │   ├── merger.xml
+│   │   │   │   │   │   │   └── stripped.dir
+│   │   │   │   │   │   └── packageDebugResources
+│   │   │   │   │   │       ├── compile-file-map.properties
+│   │   │   │   │   │       ├── merged.dir
+│   │   │   │   │   │       ├── merger.xml
+│   │   │   │   │   │       └── stripped.dir
+│   │   │   │   │   ├── debug-mergeJavaRes
+│   │   │   │   │   │   ├── merge-state
+│   │   │   │   │   │   └── zip-cache
+│   │   │   │   │   │       ├── 0YTQU_sgNh0MIR4UY3epu52p8eU=
+│   │   │   │   │   │       ├── 2o6vTvs+80+_jwHA0dfUyxS3rSA=
+│   │   │   │   │   │       ├── 3p9mzPhXXN+nkYp_liafJFiB3A8=
+│   │   │   │   │   │       ├── 3uBb2Sa4TKdInXe7ttH0ZJcqb+o=
+│   │   │   │   │   │       ├── 4CmqHJIOb_8XW28YNbboVvQ3zkk=
+│   │   │   │   │   │       ├── 4eOI+yPExLZmztyM6Nrb6KElF4A=
+│   │   │   │   │   │       ├── 5TLdILg5a6v+LI038FUIPrHetKo=
+│   │   │   │   │   │       ├── 7b_+0QwTKswA+Waeh8Xss7sJW9s=
+│   │   │   │   │   │       ├── 8Pifd0S9Gl1xcUj4EjEllSCO4dw=
+│   │   │   │   │   │       ├── 9BUiKAaqVaKrC8Mp+SA26JJ3yhU=
+│   │   │   │   │   │       ├── b+jvviTkiIlVYkUs5robDEKTnXY=
+│   │   │   │   │   │       ├── BvQ7pipjvgYGWPUPAaGwDwQpRq8=
+│   │   │   │   │   │       ├── CkHTRHnBX1YHMu2yRq7cWKrqqX4=
+│   │   │   │   │   │       ├── ckrmJvdM6ntFxJJg6QFFaxqU+fo=
+│   │   │   │   │   │       ├── cMTm7RLnrSvM8VM1w2FTIixlLbE=
+│   │   │   │   │   │       ├── ddzZolDdLGyUcEEixZgQrZBXLNA=
+│   │   │   │   │   │       ├── dplnQS67FM3Fnxn1Ww_EWWx_4jI=
+│   │   │   │   │   │       ├── dQLYWYO9aPEon6FWDbjZRrBx598=
+│   │   │   │   │   │       ├── fH9Shs0PMlql7QcpA8shtYWtDDU=
+│   │   │   │   │   │       ├── FTvDzXWu4v3F4GedYDQRGR0XxJE=
+│   │   │   │   │   │       ├── h0vDeIXoagXLa3412eSZOxtQ66E=
+│   │   │   │   │   │       ├── HBt+MVYfOE4K9npH0gUz+yJHzqk=
+│   │   │   │   │   │       ├── HrdExvHC7_dlP1DSb29cqos0zc0=
+│   │   │   │   │   │       ├── i_QGidRaesEt5GAPqaJxtqybyz0=
+│   │   │   │   │   │       ├── JyMXMVnGSJhDlegwZWI245QtgV8=
+│   │   │   │   │   │       ├── k5Jn5nRXzKREPpt+5CQeBDUc25E=
+│   │   │   │   │   │       ├── K8y1opr8kKjaOFmN9i0gH8Y49pg=
+│   │   │   │   │   │       ├── kKjvijJyoOdjVqXeKLlfaR3hNiQ=
+│   │   │   │   │   │       ├── KRHhwrc52ndZuIMTYg3FjV_VM+o=
+│   │   │   │   │   │       ├── kyUH7jL8HL5OgCr5LDP6As1lifI=
+│   │   │   │   │   │       ├── m2Sq6iRWrBZGBuaVnAfY3jHJubA=
+│   │   │   │   │   │       ├── ndzBvEj77CtDM+RBpLMrY50q5WE=
+│   │   │   │   │   │       ├── NJAtZju17q9LIjfidvdnok5M6W0=
+│   │   │   │   │   │       ├── NprEEuQejEYn8I87ftGG6OKnND8=
+│   │   │   │   │   │       ├── NsX2bRUdlWs4cYK_bLyZ1yhMYu0=
+│   │   │   │   │   │       ├── NvEKFDKrS3upCpaoGn2joYx58kk=
+│   │   │   │   │   │       ├── pStMao6zAXp8jLvBmB5zN0l7BgE=
+│   │   │   │   │   │       ├── q5RR7WO+op_hyCSmqiA3LxmCPL0=
+│   │   │   │   │   │       ├── qUxVPa_tW_tzmtnfFClqAXPOQbE=
+│   │   │   │   │   │       ├── QZjbuoAOnVOOs3gpHsDmKy2DvqA=
+│   │   │   │   │   │       ├── RD+UGez51Yi+uzi8nmW0TIBFF_g=
+│   │   │   │   │   │       ├── rioZUS5sEPybsGjbng_ikHoCqd4=
+│   │   │   │   │   │       ├── rpbzU0i9TzfuKB2Fzo2BzMvTsH8=
+│   │   │   │   │   │       ├── trMSzpPUSu258K0Vy1sZM9aBcSI=
+│   │   │   │   │   │       ├── Txg2V1UjytKe9DCvFjzFHxAQY98=
+│   │   │   │   │   │       ├── TXmMJXjaKMZZ1KCm1OIjDdi5uM0=
+│   │   │   │   │   │       ├── uGUFATaMijFYeFOt7XEWOTICOkA=
+│   │   │   │   │   │       ├── uU5VVjCmGPkiszTwRaReD29fYgE=
+│   │   │   │   │   │       ├── UwueR4a7jLNu6H3tRKRMLuXDbVM=
+│   │   │   │   │   │       ├── V4nyFvBtFVrYqM5JaByZYRvaiCI=
+│   │   │   │   │   │       ├── vfws8nzhVxxqcxKPD+0AEwlceV4=
+│   │   │   │   │   │       ├── wCppQimVk6Qtx8geSrIgO+OxbPc=
+│   │   │   │   │   │       ├── WWpsIflw0TgDmZjvPWfsDZSzGJo=
+│   │   │   │   │   │       ├── XkoXosOdoQu9iZfnYdCOQC0uY+I=
+│   │   │   │   │   │       ├── XLsAa+N8VXRdHOQzLsx9OZWDXF8=
+│   │   │   │   │   │       ├── _XYAohrcd64XoUdSz+fb90AnmaU=
+│   │   │   │   │   │       ├── XY+ONChev6w9oq67FjRaO6m0bck=
+│   │   │   │   │   │       ├── Y_ryxo367afzw7CbkfbxGtWRVv0=
+│   │   │   │   │   │       └── Za2A66jtj0ZvVFPsdt_rYMRbv14=
+│   │   │   │   │   ├── mergeDebugAssets
+│   │   │   │   │   │   └── merger.xml
+│   │   │   │   │   ├── mergeDebugJniLibFolders
+│   │   │   │   │   │   └── merger.xml
+│   │   │   │   │   ├── mergeDebugShaders
+│   │   │   │   │   │   └── merger.xml
+│   │   │   │   │   └── packageDebug
+│   │   │   │   │       └── tmp
+│   │   │   │   │           └── debug
+│   │   │   │   │               ├── dex-renamer-state.txt
+│   │   │   │   │               └── zip-cache
+│   │   │   │   │                   ├── androidResources
+│   │   │   │   │                   └── javaResources0
+│   │   │   │   ├── java_res
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugJavaRes
+│   │   │   │   │           └── out
+│   │   │   │   │               ├── edu
+│   │   │   │   │               │   └── ntnu
+│   │   │   │   │               │       └── assignment_05
+│   │   │   │   │               │           └── ui
+│   │   │   │   │               │               └── theme
+│   │   │   │   │               └── META-INF
+│   │   │   │   │                   └── app_debug.kotlin_module
+│   │   │   │   ├── linked_resources_binary_format
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugResources
+│   │   │   │   │           ├── linked-resources-binary-format-debug.ap_
+│   │   │   │   │           └── output-metadata.json
+│   │   │   │   ├── local_only_symbol_list
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── parseDebugLocalResources
+│   │   │   │   │           └── R-def.txt
+│   │   │   │   ├── manifest_merge_blame_file
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugMainManifest
+│   │   │   │   │           └── manifest-merger-blame-debug-report.txt
+│   │   │   │   ├── merged_java_res
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugJavaResource
+│   │   │   │   │           └── base.jar
+│   │   │   │   ├── merged_jni_libs
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugJniLibFolders
+│   │   │   │   │           └── out
+│   │   │   │   ├── merged_manifest
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugMainManifest
+│   │   │   │   │           └── AndroidManifest.xml
+│   │   │   │   ├── merged_manifests
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugManifest
+│   │   │   │   │           ├── AndroidManifest.xml
+│   │   │   │   │           └── output-metadata.json
+│   │   │   │   ├── merged_res
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugResources
+│   │   │   │   │           ├── drawable_ic_launcher_background.xml.flat
+│   │   │   │   │           ├── drawable_ic_launcher_foreground.xml.flat
+│   │   │   │   │           ├── layout_activity_main.xml.flat
+│   │   │   │   │           ├── mipmap-anydpi-v26_ic_launcher_round.xml.flat
+│   │   │   │   │           ├── mipmap-anydpi-v26_ic_launcher.xml.flat
+│   │   │   │   │           ├── mipmap-hdpi_ic_launcher_round.webp.flat
+│   │   │   │   │           ├── mipmap-hdpi_ic_launcher.webp.flat
+│   │   │   │   │           ├── mipmap-mdpi_ic_launcher_round.webp.flat
+│   │   │   │   │           ├── mipmap-mdpi_ic_launcher.webp.flat
+│   │   │   │   │           ├── mipmap-xhdpi_ic_launcher_round.webp.flat
+│   │   │   │   │           ├── mipmap-xhdpi_ic_launcher.webp.flat
+│   │   │   │   │           ├── mipmap-xxhdpi_ic_launcher_round.webp.flat
+│   │   │   │   │           ├── mipmap-xxhdpi_ic_launcher.webp.flat
+│   │   │   │   │           ├── mipmap-xxxhdpi_ic_launcher_round.webp.flat
+│   │   │   │   │           ├── mipmap-xxxhdpi_ic_launcher.webp.flat
+│   │   │   │   │           ├── values-af_values-af.arsc.flat
+│   │   │   │   │           ├── values-am_values-am.arsc.flat
+│   │   │   │   │           ├── values-ar_values-ar.arsc.flat
+│   │   │   │   │           ├── values-as_values-as.arsc.flat
+│   │   │   │   │           ├── values-az_values-az.arsc.flat
+│   │   │   │   │           ├── values-be_values-be.arsc.flat
+│   │   │   │   │           ├── values-bg_values-bg.arsc.flat
+│   │   │   │   │           ├── values-bn_values-bn.arsc.flat
+│   │   │   │   │           ├── values-b+sr+Latn_values-b+sr+Latn.arsc.flat
+│   │   │   │   │           ├── values-bs_values-bs.arsc.flat
+│   │   │   │   │           ├── values-ca_values-ca.arsc.flat
+│   │   │   │   │           ├── values-cs_values-cs.arsc.flat
+│   │   │   │   │           ├── values-da_values-da.arsc.flat
+│   │   │   │   │           ├── values-de_values-de.arsc.flat
+│   │   │   │   │           ├── values-el_values-el.arsc.flat
+│   │   │   │   │           ├── values-en-rAU_values-en-rAU.arsc.flat
+│   │   │   │   │           ├── values-en-rCA_values-en-rCA.arsc.flat
+│   │   │   │   │           ├── values-en-rGB_values-en-rGB.arsc.flat
+│   │   │   │   │           ├── values-en-rIN_values-en-rIN.arsc.flat
+│   │   │   │   │           ├── values-en-rXC_values-en-rXC.arsc.flat
+│   │   │   │   │           ├── values-es-rUS_values-es-rUS.arsc.flat
+│   │   │   │   │           ├── values-es_values-es.arsc.flat
+│   │   │   │   │           ├── values-et_values-et.arsc.flat
+│   │   │   │   │           ├── values-eu_values-eu.arsc.flat
+│   │   │   │   │           ├── values-fa_values-fa.arsc.flat
+│   │   │   │   │           ├── values-fi_values-fi.arsc.flat
+│   │   │   │   │           ├── values-fr-rCA_values-fr-rCA.arsc.flat
+│   │   │   │   │           ├── values-fr_values-fr.arsc.flat
+│   │   │   │   │           ├── values-gl_values-gl.arsc.flat
+│   │   │   │   │           ├── values-gu_values-gu.arsc.flat
+│   │   │   │   │           ├── values-hi_values-hi.arsc.flat
+│   │   │   │   │           ├── values-hr_values-hr.arsc.flat
+│   │   │   │   │           ├── values-hu_values-hu.arsc.flat
+│   │   │   │   │           ├── values-hy_values-hy.arsc.flat
+│   │   │   │   │           ├── values-in_values-in.arsc.flat
+│   │   │   │   │           ├── values-is_values-is.arsc.flat
+│   │   │   │   │           ├── values-it_values-it.arsc.flat
+│   │   │   │   │           ├── values-iw_values-iw.arsc.flat
+│   │   │   │   │           ├── values-ja_values-ja.arsc.flat
+│   │   │   │   │           ├── values-ka_values-ka.arsc.flat
+│   │   │   │   │           ├── values-kk_values-kk.arsc.flat
+│   │   │   │   │           ├── values-km_values-km.arsc.flat
+│   │   │   │   │           ├── values-kn_values-kn.arsc.flat
+│   │   │   │   │           ├── values-ko_values-ko.arsc.flat
+│   │   │   │   │           ├── values-ky_values-ky.arsc.flat
+│   │   │   │   │           ├── values-lo_values-lo.arsc.flat
+│   │   │   │   │           ├── values-lt_values-lt.arsc.flat
+│   │   │   │   │           ├── values-lv_values-lv.arsc.flat
+│   │   │   │   │           ├── values-mk_values-mk.arsc.flat
+│   │   │   │   │           ├── values-ml_values-ml.arsc.flat
+│   │   │   │   │           ├── values-mn_values-mn.arsc.flat
+│   │   │   │   │           ├── values-mr_values-mr.arsc.flat
+│   │   │   │   │           ├── values-ms_values-ms.arsc.flat
+│   │   │   │   │           ├── values-my_values-my.arsc.flat
+│   │   │   │   │           ├── values-nb_values-nb.arsc.flat
+│   │   │   │   │           ├── values-ne_values-ne.arsc.flat
+│   │   │   │   │           ├── values-nl_values-nl.arsc.flat
+│   │   │   │   │           ├── values-or_values-or.arsc.flat
+│   │   │   │   │           ├── values-pa_values-pa.arsc.flat
+│   │   │   │   │           ├── values-pl_values-pl.arsc.flat
+│   │   │   │   │           ├── values-pt-rBR_values-pt-rBR.arsc.flat
+│   │   │   │   │           ├── values-pt-rPT_values-pt-rPT.arsc.flat
+│   │   │   │   │           ├── values-pt_values-pt.arsc.flat
+│   │   │   │   │           ├── values-ro_values-ro.arsc.flat
+│   │   │   │   │           ├── values-ru_values-ru.arsc.flat
+│   │   │   │   │           ├── values-si_values-si.arsc.flat
+│   │   │   │   │           ├── values-sk_values-sk.arsc.flat
+│   │   │   │   │           ├── values-sl_values-sl.arsc.flat
+│   │   │   │   │           ├── values-sq_values-sq.arsc.flat
+│   │   │   │   │           ├── values-sr_values-sr.arsc.flat
+│   │   │   │   │           ├── values-sv_values-sv.arsc.flat
+│   │   │   │   │           ├── values-sw_values-sw.arsc.flat
+│   │   │   │   │           ├── values-ta_values-ta.arsc.flat
+│   │   │   │   │           ├── values-te_values-te.arsc.flat
+│   │   │   │   │           ├── values-th_values-th.arsc.flat
+│   │   │   │   │           ├── values-tl_values-tl.arsc.flat
+│   │   │   │   │           ├── values-tr_values-tr.arsc.flat
+│   │   │   │   │           ├── values-uk_values-uk.arsc.flat
+│   │   │   │   │           ├── values-ur_values-ur.arsc.flat
+│   │   │   │   │           ├── values-uz_values-uz.arsc.flat
+│   │   │   │   │           ├── values-v21_values-v21.arsc.flat
+│   │   │   │   │           ├── values_values.arsc.flat
+│   │   │   │   │           ├── values-vi_values-vi.arsc.flat
+│   │   │   │   │           ├── values-zh-rCN_values-zh-rCN.arsc.flat
+│   │   │   │   │           ├── values-zh-rHK_values-zh-rHK.arsc.flat
+│   │   │   │   │           ├── values-zh-rTW_values-zh-rTW.arsc.flat
+│   │   │   │   │           ├── values-zu_values-zu.arsc.flat
+│   │   │   │   │           ├── xml_backup_rules.xml.flat
+│   │   │   │   │           └── xml_data_extraction_rules.xml.flat
+│   │   │   │   ├── merged_res_blame_folder
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugResources
+│   │   │   │   │           └── out
+│   │   │   │   │               ├── multi-v2
+│   │   │   │   │               │   ├── mergeDebugResources.json
+│   │   │   │   │               │   ├── values-af.json
+│   │   │   │   │               │   ├── values-am.json
+│   │   │   │   │               │   ├── values-ar.json
+│   │   │   │   │               │   ├── values-as.json
+│   │   │   │   │               │   ├── values-az.json
+│   │   │   │   │               │   ├── values-be.json
+│   │   │   │   │               │   ├── values-bg.json
+│   │   │   │   │               │   ├── values-bn.json
+│   │   │   │   │               │   ├── values-bs.json
+│   │   │   │   │               │   ├── values-b+sr+Latn.json
+│   │   │   │   │               │   ├── values-ca.json
+│   │   │   │   │               │   ├── values-cs.json
+│   │   │   │   │               │   ├── values-da.json
+│   │   │   │   │               │   ├── values-de.json
+│   │   │   │   │               │   ├── values-el.json
+│   │   │   │   │               │   ├── values-en-rAU.json
+│   │   │   │   │               │   ├── values-en-rCA.json
+│   │   │   │   │               │   ├── values-en-rGB.json
+│   │   │   │   │               │   ├── values-en-rIN.json
+│   │   │   │   │               │   ├── values-en-rXC.json
+│   │   │   │   │               │   ├── values-es.json
+│   │   │   │   │               │   ├── values-es-rUS.json
+│   │   │   │   │               │   ├── values-et.json
+│   │   │   │   │               │   ├── values-eu.json
+│   │   │   │   │               │   ├── values-fa.json
+│   │   │   │   │               │   ├── values-fi.json
+│   │   │   │   │               │   ├── values-fr.json
+│   │   │   │   │               │   ├── values-fr-rCA.json
+│   │   │   │   │               │   ├── values-gl.json
+│   │   │   │   │               │   ├── values-gu.json
+│   │   │   │   │               │   ├── values-hi.json
+│   │   │   │   │               │   ├── values-hr.json
+│   │   │   │   │               │   ├── values-hu.json
+│   │   │   │   │               │   ├── values-hy.json
+│   │   │   │   │               │   ├── values-in.json
+│   │   │   │   │               │   ├── values-is.json
+│   │   │   │   │               │   ├── values-it.json
+│   │   │   │   │               │   ├── values-iw.json
+│   │   │   │   │               │   ├── values-ja.json
+│   │   │   │   │               │   ├── values.json
+│   │   │   │   │               │   ├── values-ka.json
+│   │   │   │   │               │   ├── values-kk.json
+│   │   │   │   │               │   ├── values-km.json
+│   │   │   │   │               │   ├── values-kn.json
+│   │   │   │   │               │   ├── values-ko.json
+│   │   │   │   │               │   ├── values-ky.json
+│   │   │   │   │               │   ├── values-lo.json
+│   │   │   │   │               │   ├── values-lt.json
+│   │   │   │   │               │   ├── values-lv.json
+│   │   │   │   │               │   ├── values-mk.json
+│   │   │   │   │               │   ├── values-ml.json
+│   │   │   │   │               │   ├── values-mn.json
+│   │   │   │   │               │   ├── values-mr.json
+│   │   │   │   │               │   ├── values-ms.json
+│   │   │   │   │               │   ├── values-my.json
+│   │   │   │   │               │   ├── values-nb.json
+│   │   │   │   │               │   ├── values-ne.json
+│   │   │   │   │               │   ├── values-nl.json
+│   │   │   │   │               │   ├── values-or.json
+│   │   │   │   │               │   ├── values-pa.json
+│   │   │   │   │               │   ├── values-pl.json
+│   │   │   │   │               │   ├── values-pt.json
+│   │   │   │   │               │   ├── values-pt-rBR.json
+│   │   │   │   │               │   ├── values-pt-rPT.json
+│   │   │   │   │               │   ├── values-ro.json
+│   │   │   │   │               │   ├── values-ru.json
+│   │   │   │   │               │   ├── values-si.json
+│   │   │   │   │               │   ├── values-sk.json
+│   │   │   │   │               │   ├── values-sl.json
+│   │   │   │   │               │   ├── values-sq.json
+│   │   │   │   │               │   ├── values-sr.json
+│   │   │   │   │               │   ├── values-sv.json
+│   │   │   │   │               │   ├── values-sw.json
+│   │   │   │   │               │   ├── values-ta.json
+│   │   │   │   │               │   ├── values-te.json
+│   │   │   │   │               │   ├── values-th.json
+│   │   │   │   │               │   ├── values-tl.json
+│   │   │   │   │               │   ├── values-tr.json
+│   │   │   │   │               │   ├── values-uk.json
+│   │   │   │   │               │   ├── values-ur.json
+│   │   │   │   │               │   ├── values-uz.json
+│   │   │   │   │               │   ├── values-v21.json
+│   │   │   │   │               │   ├── values-vi.json
+│   │   │   │   │               │   ├── values-zh-rCN.json
+│   │   │   │   │               │   ├── values-zh-rHK.json
+│   │   │   │   │               │   ├── values-zh-rTW.json
+│   │   │   │   │               │   └── values-zu.json
+│   │   │   │   │               └── single
+│   │   │   │   │                   └── mergeDebugResources.json
+│   │   │   │   ├── merged_shaders
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugShaders
+│   │   │   │   │           └── out
+│   │   │   │   ├── mixed_scope_dex_archive
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── navigation_json
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── extractDeepLinksDebug
+│   │   │   │   │           └── navigation.json
+│   │   │   │   ├── nested_resources_validation_report
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── generateDebugResources
+│   │   │   │   │           └── nestedResourcesValidationReport.txt
+│   │   │   │   ├── packaged_manifests
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugManifestForPackage
+│   │   │   │   │           ├── AndroidManifest.xml
+│   │   │   │   │           └── output-metadata.json
+│   │   │   │   ├── packaged_res
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── packageDebugResources
+│   │   │   │   │           ├── drawable
+│   │   │   │   │           │   ├── ic_launcher_background.xml
+│   │   │   │   │           │   └── ic_launcher_foreground.xml
+│   │   │   │   │           ├── layout
+│   │   │   │   │           │   └── activity_main.xml
+│   │   │   │   │           ├── mipmap-anydpi-v26
+│   │   │   │   │           │   ├── ic_launcher_round.xml
+│   │   │   │   │           │   └── ic_launcher.xml
+│   │   │   │   │           ├── mipmap-hdpi-v4
+│   │   │   │   │           │   ├── ic_launcher_round.webp
+│   │   │   │   │           │   └── ic_launcher.webp
+│   │   │   │   │           ├── mipmap-mdpi-v4
+│   │   │   │   │           │   ├── ic_launcher_round.webp
+│   │   │   │   │           │   └── ic_launcher.webp
+│   │   │   │   │           ├── mipmap-xhdpi-v4
+│   │   │   │   │           │   ├── ic_launcher_round.webp
+│   │   │   │   │           │   └── ic_launcher.webp
+│   │   │   │   │           ├── mipmap-xxhdpi-v4
+│   │   │   │   │           │   ├── ic_launcher_round.webp
+│   │   │   │   │           │   └── ic_launcher.webp
+│   │   │   │   │           ├── mipmap-xxxhdpi-v4
+│   │   │   │   │           │   ├── ic_launcher_round.webp
+│   │   │   │   │           │   └── ic_launcher.webp
+│   │   │   │   │           ├── values
+│   │   │   │   │           │   └── values.xml
+│   │   │   │   │           └── xml
+│   │   │   │   │               ├── backup_rules.xml
+│   │   │   │   │               └── data_extraction_rules.xml
+│   │   │   │   ├── project_dex_archive
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   │               ├── b633788628e48e6ebe77c6b44e0ecaabeb1370c843241641c4a2b5b40e67a9b2_0.jar
+│   │   │   │   │               ├── b633788628e48e6ebe77c6b44e0ecaabeb1370c843241641c4a2b5b40e67a9b2_1.jar
+│   │   │   │   │               ├── b633788628e48e6ebe77c6b44e0ecaabeb1370c843241641c4a2b5b40e67a9b2_2.jar
+│   │   │   │   │               ├── b633788628e48e6ebe77c6b44e0ecaabeb1370c843241641c4a2b5b40e67a9b2_3.jar
+│   │   │   │   │               ├── b633788628e48e6ebe77c6b44e0ecaabeb1370c843241641c4a2b5b40e67a9b2_4.jar
+│   │   │   │   │               ├── b633788628e48e6ebe77c6b44e0ecaabeb1370c843241641c4a2b5b40e67a9b2_5.jar
+│   │   │   │   │               ├── b633788628e48e6ebe77c6b44e0ecaabeb1370c843241641c4a2b5b40e67a9b2_6.jar
+│   │   │   │   │               ├── b633788628e48e6ebe77c6b44e0ecaabeb1370c843241641c4a2b5b40e67a9b2_7.jar
+│   │   │   │   │               └── edu
+│   │   │   │   │                   └── ntnu
+│   │   │   │   │                       └── assignment_05
+│   │   │   │   │                           ├── MainActivity$startGame$1$1.dex
+│   │   │   │   │                           ├── MainActivity$startGame$1.dex
+│   │   │   │   │                           ├── MainActivity$submitGuess$1$1.dex
+│   │   │   │   │                           ├── MainActivity$submitGuess$1.dex
+│   │   │   │   │                           ├── MainActivity.dex
+│   │   │   │   │                           └── ui
+│   │   │   │   │                               └── theme
+│   │   │   │   │                                   ├── ColorKt.dex
+│   │   │   │   │                                   ├── ThemeKt.dex
+│   │   │   │   │                                   └── TypeKt.dex
+│   │   │   │   ├── runtime_symbol_list
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugResources
+│   │   │   │   │           └── R.txt
+│   │   │   │   ├── signing_config_versions
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── writeDebugSigningConfigVersions
+│   │   │   │   │           └── signing-config-versions.json
+│   │   │   │   ├── source_set_path_map
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mapDebugSourceSetPaths
+│   │   │   │   │           └── file-map.txt
+│   │   │   │   ├── stable_resource_ids_file
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugResources
+│   │   │   │   │           └── stableIds.txt
+│   │   │   │   ├── sub_project_dex_archive
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── symbol_list_with_package_name
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugResources
+│   │   │   │   │           └── package-aware-r.txt
+│   │   │   │   └── validate_signing_config
+│   │   │   │       └── debug
+│   │   │   │           └── validateSigningDebug
+│   │   │   ├── kotlin
+│   │   │   │   └── compileDebugKotlin
+│   │   │   │       ├── cacheable
+│   │   │   │       │   ├── caches-jvm
+│   │   │   │       │   │   ├── inputs
+│   │   │   │       │   │   │   ├── source-to-output.tab
+│   │   │   │       │   │   │   ├── source-to-output.tab_i
+│   │   │   │       │   │   │   ├── source-to-output.tab_i.len
+│   │   │   │       │   │   │   ├── source-to-output.tab.keystream
+│   │   │   │       │   │   │   ├── source-to-output.tab.keystream.len
+│   │   │   │       │   │   │   ├── source-to-output.tab.len
+│   │   │   │       │   │   │   └── source-to-output.tab.values.at
+│   │   │   │       │   │   ├── jvm
+│   │   │   │       │   │   │   └── kotlin
+│   │   │   │       │   │   │       ├── class-attributes.tab
+│   │   │   │       │   │   │       ├── class-attributes.tab_i
+│   │   │   │       │   │   │       ├── class-attributes.tab_i.len
+│   │   │   │       │   │   │       ├── class-attributes.tab.keystream
+│   │   │   │       │   │   │       ├── class-attributes.tab.keystream.len
+│   │   │   │       │   │   │       ├── class-attributes.tab.len
+│   │   │   │       │   │   │       ├── class-attributes.tab.values.at
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab_i
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab_i.len
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab.keystream
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab.keystream.len
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab.len
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab.values.at
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab_i
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab_i.len
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab.keystream
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab.keystream.len
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab.len
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab.values.at
+│   │   │   │       │   │   │       ├── package-parts.tab
+│   │   │   │       │   │   │       ├── package-parts.tab_i
+│   │   │   │       │   │   │       ├── package-parts.tab_i.len
+│   │   │   │       │   │   │       ├── package-parts.tab.keystream
+│   │   │   │       │   │   │       ├── package-parts.tab.keystream.len
+│   │   │   │       │   │   │       ├── package-parts.tab.len
+│   │   │   │       │   │   │       ├── package-parts.tab.values.at
+│   │   │   │       │   │   │       ├── proto.tab
+│   │   │   │       │   │   │       ├── proto.tab_i
+│   │   │   │       │   │   │       ├── proto.tab_i.len
+│   │   │   │       │   │   │       ├── proto.tab.keystream
+│   │   │   │       │   │   │       ├── proto.tab.keystream.len
+│   │   │   │       │   │   │       ├── proto.tab.len
+│   │   │   │       │   │   │       ├── proto.tab.values.at
+│   │   │   │       │   │   │       ├── source-to-classes.tab
+│   │   │   │       │   │   │       ├── source-to-classes.tab_i
+│   │   │   │       │   │   │       ├── source-to-classes.tab_i.len
+│   │   │   │       │   │   │       ├── source-to-classes.tab.keystream
+│   │   │   │       │   │   │       ├── source-to-classes.tab.keystream.len
+│   │   │   │       │   │   │       ├── source-to-classes.tab.len
+│   │   │   │       │   │   │       ├── source-to-classes.tab.values.at
+│   │   │   │       │   │   │       ├── subtypes.tab
+│   │   │   │       │   │   │       ├── subtypes.tab_i
+│   │   │   │       │   │   │       ├── subtypes.tab_i.len
+│   │   │   │       │   │   │       ├── subtypes.tab.keystream
+│   │   │   │       │   │   │       ├── subtypes.tab.keystream.len
+│   │   │   │       │   │   │       ├── subtypes.tab.len
+│   │   │   │       │   │   │       ├── subtypes.tab.values.at
+│   │   │   │       │   │   │       ├── supertypes.tab
+│   │   │   │       │   │   │       ├── supertypes.tab_i
+│   │   │   │       │   │   │       ├── supertypes.tab_i.len
+│   │   │   │       │   │   │       ├── supertypes.tab.keystream
+│   │   │   │       │   │   │       ├── supertypes.tab.keystream.len
+│   │   │   │       │   │   │       ├── supertypes.tab.len
+│   │   │   │       │   │   │       └── supertypes.tab.values.at
+│   │   │   │       │   │   └── lookups
+│   │   │   │       │   │       ├── counters.tab
+│   │   │   │       │   │       ├── file-to-id.tab
+│   │   │   │       │   │       ├── file-to-id.tab_i
+│   │   │   │       │   │       ├── file-to-id.tab_i.len
+│   │   │   │       │   │       ├── file-to-id.tab.keystream
+│   │   │   │       │   │       ├── file-to-id.tab.keystream.len
+│   │   │   │       │   │       ├── file-to-id.tab.len
+│   │   │   │       │   │       ├── file-to-id.tab.values.at
+│   │   │   │       │   │       ├── id-to-file.tab
+│   │   │   │       │   │       ├── id-to-file.tab_i
+│   │   │   │       │   │       ├── id-to-file.tab_i.len
+│   │   │   │       │   │       ├── id-to-file.tab.keystream
+│   │   │   │       │   │       ├── id-to-file.tab.keystream.len
+│   │   │   │       │   │       ├── id-to-file.tab.len
+│   │   │   │       │   │       ├── id-to-file.tab.values.at
+│   │   │   │       │   │       ├── lookups.tab
+│   │   │   │       │   │       ├── lookups.tab_i
+│   │   │   │       │   │       ├── lookups.tab_i.len
+│   │   │   │       │   │       ├── lookups.tab.keystream
+│   │   │   │       │   │       ├── lookups.tab.keystream.len
+│   │   │   │       │   │       ├── lookups.tab.len
+│   │   │   │       │   │       └── lookups.tab.values.at
+│   │   │   │       │   └── last-build.bin
+│   │   │   │       ├── classpath-snapshot
+│   │   │   │       │   └── shrunk-classpath-snapshot.bin
+│   │   │   │       └── local-state
+│   │   │   │           └── build-history.bin
+│   │   │   ├── outputs
+│   │   │   │   └── logs
+│   │   │   │       └── manifest-merger-debug-report.txt
+│   │   │   └── tmp
+│   │   │       └── kotlin-classes
+│   │   │           └── debug
+│   │   │               ├── edu
+│   │   │               │   └── ntnu
+│   │   │               │       └── assignment_05
+│   │   │               │           ├── MainActivity$startGame$1$1.class
+│   │   │               │           ├── MainActivity$startGame$1.class
+│   │   │               │           ├── MainActivity$submitGuess$1$1.class
+│   │   │               │           ├── MainActivity$submitGuess$1.class
+│   │   │               │           ├── MainActivity.class
+│   │   │               │           └── ui
+│   │   │               │               └── theme
+│   │   │               │                   ├── ColorKt.class
+│   │   │               │                   ├── ThemeKt.class
+│   │   │               │                   └── TypeKt.class
+│   │   │               └── META-INF
+│   │   │                   └── app_debug.kotlin_module
+│   │   ├── build.gradle.kts
+│   │   ├── proguard-rules.pro
+│   │   ├── sampledata
+│   │   └── src
+│   │       ├── androidTest
+│   │       │   └── java
+│   │       │       └── edu
+│   │       │           └── ntnu
+│   │       │               └── assignment_05
+│   │       │                   └── ExampleInstrumentedTest.kt
+│   │       ├── main
+│   │       │   ├── AndroidManifest.xml
+│   │       │   ├── java
+│   │       │   │   └── edu
+│   │       │   │       └── ntnu
+│   │       │   │           └── assignment_05
+│   │       │   │               ├── MainActivity.kt
+│   │       │   │               └── ui
+│   │       │   │                   └── theme
+│   │       │   │                       ├── Color.kt
+│   │       │   │                       ├── Theme.kt
+│   │       │   │                       └── Type.kt
+│   │       │   └── res
+│   │       │       ├── drawable
+│   │       │       │   ├── ic_launcher_background.xml
+│   │       │       │   └── ic_launcher_foreground.xml
+│   │       │       ├── layout
+│   │       │       │   └── activity_main.xml
+│   │       │       ├── mipmap-anydpi-v26
+│   │       │       │   ├── ic_launcher_round.xml
+│   │       │       │   └── ic_launcher.xml
+│   │       │       ├── mipmap-hdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-mdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-xhdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-xxhdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-xxxhdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── values
+│   │       │       │   ├── colors.xml
+│   │       │       │   ├── strings.xml
+│   │       │       │   └── themes.xml
+│   │       │       └── xml
+│   │       │           ├── backup_rules.xml
+│   │       │           └── data_extraction_rules.xml
+│   │       └── test
+│   │           └── java
+│   │               └── edu
+│   │                   └── ntnu
+│   │                       └── assignment_05
+│   │                           └── ExampleUnitTest.kt
+│   ├── assignment-05-demo_tallspill_app.gif
+│   ├── build.gradle.kts
+│   ├── gradle
+│   │   ├── libs.versions.toml
+│   │   └── wrapper
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
+│   ├── gradle.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── local.properties
+│   └── settings.gradle.kts
+├── assignment_06
+│   ├── app
+│   │   ├── build
+│   │   │   ├── generated
+│   │   │   │   └── res
+│   │   │   │       ├── pngs
+│   │   │   │       │   └── debug
+│   │   │   │       └── resValues
+│   │   │   │           └── debug
+│   │   │   ├── intermediates
+│   │   │   │   ├── aar_metadata_check
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── checkDebugAarMetadata
+│   │   │   │   ├── annotation_processor_list
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── javaPreCompileDebug
+│   │   │   │   │           └── annotationProcessors.json
+│   │   │   │   ├── apk
+│   │   │   │   │   └── debug
+│   │   │   │   │       ├── app-debug.apk
+│   │   │   │   │       └── output-metadata.json
+│   │   │   │   ├── apk_ide_redirect_file
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── createDebugApkListingFileRedirect
+│   │   │   │   │           └── redirect.txt
+│   │   │   │   ├── app_metadata
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── writeDebugAppMetadata
+│   │   │   │   │           └── app-metadata.properties
+│   │   │   │   ├── assets
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugAssets
+│   │   │   │   ├── compatible_screen_manifest
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── createDebugCompatibleScreenManifests
+│   │   │   │   │           └── output-metadata.json
+│   │   │   │   ├── compile_and_runtime_not_namespaced_r_class_jar
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugResources
+│   │   │   │   │           └── R.jar
+│   │   │   │   ├── compressed_assets
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── compressDebugAssets
+│   │   │   │   │           └── out
+│   │   │   │   ├── data_binding_layout_info_type_merge
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugResources
+│   │   │   │   │           └── out
+│   │   │   │   ├── data_binding_layout_info_type_package
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── packageDebugResources
+│   │   │   │   │           └── out
+│   │   │   │   ├── desugar_graph
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   │               ├── currentProject
+│   │   │   │   │               │   ├── dirs_bucket_0
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_1
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_2
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_3
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_4
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_5
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_6
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── dirs_bucket_7
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_ba2e39d8be2501a4c94ca3524c789c58319c8541abfb94c9541e91ae0c2dd3cc_bucket_0
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_ba2e39d8be2501a4c94ca3524c789c58319c8541abfb94c9541e91ae0c2dd3cc_bucket_1
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_ba2e39d8be2501a4c94ca3524c789c58319c8541abfb94c9541e91ae0c2dd3cc_bucket_2
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_ba2e39d8be2501a4c94ca3524c789c58319c8541abfb94c9541e91ae0c2dd3cc_bucket_3
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_ba2e39d8be2501a4c94ca3524c789c58319c8541abfb94c9541e91ae0c2dd3cc_bucket_4
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_ba2e39d8be2501a4c94ca3524c789c58319c8541abfb94c9541e91ae0c2dd3cc_bucket_5
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   ├── jar_ba2e39d8be2501a4c94ca3524c789c58319c8541abfb94c9541e91ae0c2dd3cc_bucket_6
+│   │   │   │   │               │   │   └── graph.bin
+│   │   │   │   │               │   └── jar_ba2e39d8be2501a4c94ca3524c789c58319c8541abfb94c9541e91ae0c2dd3cc_bucket_7
+│   │   │   │   │               │       └── graph.bin
+│   │   │   │   │               ├── externalLibs
+│   │   │   │   │               ├── mixedScopes
+│   │   │   │   │               └── otherProjects
+│   │   │   │   ├── dex
+│   │   │   │   │   └── debug
+│   │   │   │   │       ├── mergeExtDexDebug
+│   │   │   │   │       │   ├── classes2.dex
+│   │   │   │   │       │   └── classes.dex
+│   │   │   │   │       ├── mergeLibDexDebug
+│   │   │   │   │       │   ├── 0
+│   │   │   │   │       │   ├── 1
+│   │   │   │   │       │   ├── 10
+│   │   │   │   │       │   ├── 11
+│   │   │   │   │       │   ├── 12
+│   │   │   │   │       │   ├── 13
+│   │   │   │   │       │   ├── 14
+│   │   │   │   │       │   ├── 15
+│   │   │   │   │       │   ├── 2
+│   │   │   │   │       │   ├── 3
+│   │   │   │   │       │   ├── 4
+│   │   │   │   │       │   ├── 5
+│   │   │   │   │       │   ├── 6
+│   │   │   │   │       │   ├── 7
+│   │   │   │   │       │   ├── 8
+│   │   │   │   │       │   └── 9
+│   │   │   │   │       └── mergeProjectDexDebug
+│   │   │   │   │           ├── 0
+│   │   │   │   │           │   └── classes.dex
+│   │   │   │   │           ├── 1
+│   │   │   │   │           │   └── classes.dex
+│   │   │   │   │           ├── 10
+│   │   │   │   │           ├── 11
+│   │   │   │   │           ├── 12
+│   │   │   │   │           ├── 13
+│   │   │   │   │           │   └── classes.dex
+│   │   │   │   │           ├── 14
+│   │   │   │   │           ├── 15
+│   │   │   │   │           ├── 2
+│   │   │   │   │           ├── 3
+│   │   │   │   │           ├── 4
+│   │   │   │   │           ├── 5
+│   │   │   │   │           ├── 6
+│   │   │   │   │           ├── 7
+│   │   │   │   │           ├── 8
+│   │   │   │   │           └── 9
+│   │   │   │   ├── dex_archive_input_jar_hashes
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── dex_number_of_buckets_file
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── duplicate_classes_check
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── checkDebugDuplicateClasses
+│   │   │   │   ├── external_file_lib_dex_archives
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── desugarDebugFileDependencies
+│   │   │   │   ├── external_libs_dex_archive
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── external_libs_dex_archive_with_artifact_transforms
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── incremental
+│   │   │   │   │   ├── debug
+│   │   │   │   │   │   ├── mergeDebugResources
+│   │   │   │   │   │   │   ├── compile-file-map.properties
+│   │   │   │   │   │   │   ├── merged.dir
+│   │   │   │   │   │   │   ├── merger.xml
+│   │   │   │   │   │   │   └── stripped.dir
+│   │   │   │   │   │   └── packageDebugResources
+│   │   │   │   │   │       ├── compile-file-map.properties
+│   │   │   │   │   │       ├── merged.dir
+│   │   │   │   │   │       ├── merger.xml
+│   │   │   │   │   │       └── stripped.dir
+│   │   │   │   │   ├── debug-mergeJavaRes
+│   │   │   │   │   │   ├── merge-state
+│   │   │   │   │   │   └── zip-cache
+│   │   │   │   │   │       ├── 00+jiQTNaqbAvw3USuH7Ok3Dmd0=
+│   │   │   │   │   │       ├── 0CC4P2t0B9ZsenAxTBYyCfvJ3cA=
+│   │   │   │   │   │       ├── 334geMyjNVJ+AS1MC3ZHlaEgSvU=
+│   │   │   │   │   │       ├── 3+oyNRW9Qsh1a6LXp9qZPOComeQ=
+│   │   │   │   │   │       ├── 4tYBEITDIU6qi_OdbrTyQTWOnnI=
+│   │   │   │   │   │       ├── 6XrnJse1mVqwWHv0ourL5w+Ld0w=
+│   │   │   │   │   │       ├── 7lNgD+icLZWjip2gHRv1Bo_DQeU=
+│   │   │   │   │   │       ├── 7yKLPzBYdCkKNJMXjT6c4s6yUbA=
+│   │   │   │   │   │       ├── 8MXQKPdKC+hu_luHRZ9MdaOk5sg=
+│   │   │   │   │   │       ├── _a42VSFLUOWqj6VxDdwmgZkB2+o=
+│   │   │   │   │   │       ├── A49xIfb4NONNI0K9DrJvuTeas7M=
+│   │   │   │   │   │       ├── ABaIAC8vDMh8JOCzCl_DZj_TcCk=
+│   │   │   │   │   │       ├── Ag721oc3jqnUUD9wnssrtPQd3Eo=
+│   │   │   │   │   │       ├── ahKtfLRkpr21DnYrBL_S69w9Llc=
+│   │   │   │   │   │       ├── b9XUA5EuXjVboj+H_sT1M+HDQfQ=
+│   │   │   │   │   │       ├── BlujXA5dSifWQOmVq0R6+vPV9yw=
+│   │   │   │   │   │       ├── cWTA_H5WDThVeBN7leXolIqFGzw=
+│   │   │   │   │   │       ├── CXI2KPTr4blfv7KOmcQ26KCZmVg=
+│   │   │   │   │   │       ├── dGYwxol7bs27+eQjVxCzsuemV0E=
+│   │   │   │   │   │       ├── DLlZjI_8BryOOlBGhjI+3m9ysmQ=
+│   │   │   │   │   │       ├── DXfEKu7pAICDs5AGm7wCf3t5ujM=
+│   │   │   │   │   │       ├── eQYkTrjLq2tTvbJPaZmLMm+wVm4=
+│   │   │   │   │   │       ├── FsVxfHsoa_LW6SGmVPiQe52JNrg=
+│   │   │   │   │   │       ├── GDb_R06K6Cp94YxIsw9t_1B0R7g=
+│   │   │   │   │   │       ├── gJkORnkZsQl0diXVXgPr7gAFNs0=
+│   │   │   │   │   │       ├── GtpURK+nCwUh_NIJdnWrqU3dKa8=
+│   │   │   │   │   │       ├── gUFlm4+6Ed+eX1w88WPAZrxo3dc=
+│   │   │   │   │   │       ├── gY11F91CEaIx7pLvbTMq1MCxpLQ=
+│   │   │   │   │   │       ├── h394iTuABPtw_LouimgaCzNqEIQ=
+│   │   │   │   │   │       ├── Hjlw9lOQSw4lfvUb_K+Q4j0umso=
+│   │   │   │   │   │       ├── HPvzhAeTmJjyL7uNfT16ck0TB10=
+│   │   │   │   │   │       ├── hwfH3oIC_CB0ARdu1NGgNr4+TW8=
+│   │   │   │   │   │       ├── +ImtFLRl3nQZXd6wDucNTW8qjXo=
+│   │   │   │   │   │       ├── i+s3eibxEBmjdhAaLIOzD40MHM8=
+│   │   │   │   │   │       ├── IYcnpHJDwngHEyK0390nb1RiNtU=
+│   │   │   │   │   │       ├── jOXIS5e9AYf_kK7PxDSBivQicPc=
+│   │   │   │   │   │       ├── K2+Qt7TMo3azTauo0oHC_Lnhwkw=
+│   │   │   │   │   │       ├── kaBXWTc2JWqJ2q1mEwFa9tqrIRA=
+│   │   │   │   │   │       ├── KvzCvyTsX24eOVzpj3TMc3crMaE=
+│   │   │   │   │   │       ├── Kx56XZWHVc+udxxysMMvt3+jsrA=
+│   │   │   │   │   │       ├── L3a3DV8cP0yUDdQ6fqkbsMCgdq4=
+│   │   │   │   │   │       ├── liLVLrW57JG8QH9OQjsBXRkCOgk=
+│   │   │   │   │   │       ├── M679iNtoWhxSJ6kQI3fgatDanHo=
+│   │   │   │   │   │       ├── mxbBgW5TJHaQjhgnGnqksX20xUI=
+│   │   │   │   │   │       ├── nAi+xQbig9ky7lLnUaVwcKCQ5BA=
+│   │   │   │   │   │       ├── NOlLjVRYQLAc+1jHpF1RplOcg2g=
+│   │   │   │   │   │       ├── nwtcycaf9o5A6QbXNqfU0pbLj7M=
+│   │   │   │   │   │       ├── phVaKbRxyW0n4VgepK8lfK74Csg=
+│   │   │   │   │   │       ├── P+p0Ci93ar+2dyxkYirmCeT+hhM=
+│   │   │   │   │   │       ├── PS2JhlhIfV1UmAbNaAvrt8Dr1HU=
+│   │   │   │   │   │       ├── rAoDBV9FvhViUViiP0JifkOhOGM=
+│   │   │   │   │   │       ├── s0cmYeWSTZSaQx6KUNn2Heoe9ME=
+│   │   │   │   │   │       ├── SJMOt5QgHRcAgkU7x5sJ6qxt1_8=
+│   │   │   │   │   │       ├── SkWJSjbF8_cJJ_7k08Jbr4KtfW4=
+│   │   │   │   │   │       ├── TeGQ7Y7AXoFSLG7CgL6BxJrDGgw=
+│   │   │   │   │   │       ├── TfwEqPMdkL8e5YcPN6KlFApfoaY=
+│   │   │   │   │   │       ├── tlGu6huperzZRDgOE3ssineSikw=
+│   │   │   │   │   │       ├── tTBQKKfYOe6Tqt_INeIPuhquEnE=
+│   │   │   │   │   │       ├── TwROu88d9IHa0_bx_1fY3+iWdcg=
+│   │   │   │   │   │       ├── UCyB1K0gkTvHCXyMYQBnpdA1y04=
+│   │   │   │   │   │       ├── UdWX8dmPCRbQfNRXACpq4Gmlobg=
+│   │   │   │   │   │       ├── uGUFATaMijFYeFOt7XEWOTICOkA=
+│   │   │   │   │   │       ├── vsXZsyudlLBMj4bTdY+rCIUqBRg=
+│   │   │   │   │   │       ├── WojW_ewU_EVN7Lt5dXiuhDNxQqo=
+│   │   │   │   │   │       ├── wPkKGYMP2lfUq_LpSjsnijLEKHA=
+│   │   │   │   │   │       ├── XCm04Vp5TwRBztZzv9h8Pxl9Wl0=
+│   │   │   │   │   │       ├── XlwlvKlLm1mJAFl_g+d+Y+ZbMWo=
+│   │   │   │   │   │       ├── xOpBU7QtbSLKKjby4avdpjaHcXE=
+│   │   │   │   │   │       ├── y6GbYeKkq3Fsuy+TctjBJal_2aw=
+│   │   │   │   │   │       ├── Y97vllikiit6p1RYaDIhLEoKIps=
+│   │   │   │   │   │       ├── YJ5tjbCnz3IkrO5dcGNVhIYjq6Y=
+│   │   │   │   │   │       ├── ytZCOQ4VhhzS_lBASsRU13q6G5g=
+│   │   │   │   │   │       ├── y+v92M9snFWz_QhprTyU3FOqwIo=
+│   │   │   │   │   │       ├── z7xRFb4qvUud4LDTHaHF7ZwCWJk=
+│   │   │   │   │   │       ├── ZfX7SNKUQHZtSR67PfG79sDPKcs=
+│   │   │   │   │   │       └── zstSpSEDLg1nTiDFKIibGFrjoeY=
+│   │   │   │   │   ├── mergeDebugAssets
+│   │   │   │   │   │   └── merger.xml
+│   │   │   │   │   ├── mergeDebugJniLibFolders
+│   │   │   │   │   │   └── merger.xml
+│   │   │   │   │   ├── mergeDebugShaders
+│   │   │   │   │   │   └── merger.xml
+│   │   │   │   │   └── packageDebug
+│   │   │   │   │       └── tmp
+│   │   │   │   │           └── debug
+│   │   │   │   │               ├── dex-renamer-state.txt
+│   │   │   │   │               └── zip-cache
+│   │   │   │   │                   ├── androidResources
+│   │   │   │   │                   └── javaResources0
+│   │   │   │   ├── java_res
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugJavaRes
+│   │   │   │   │           └── out
+│   │   │   │   │               ├── edu
+│   │   │   │   │               │   └── ntnu
+│   │   │   │   │               │       └── assignment_06
+│   │   │   │   │               │           └── ui
+│   │   │   │   │               │               └── theme
+│   │   │   │   │               └── META-INF
+│   │   │   │   │                   └── app_debug.kotlin_module
+│   │   │   │   ├── linked_resources_binary_format
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugResources
+│   │   │   │   │           ├── linked-resources-binary-format-debug.ap_
+│   │   │   │   │           └── output-metadata.json
+│   │   │   │   ├── local_only_symbol_list
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── parseDebugLocalResources
+│   │   │   │   │           └── R-def.txt
+│   │   │   │   ├── manifest_merge_blame_file
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugMainManifest
+│   │   │   │   │           └── manifest-merger-blame-debug-report.txt
+│   │   │   │   ├── merged_java_res
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugJavaResource
+│   │   │   │   │           └── base.jar
+│   │   │   │   ├── merged_jni_libs
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugJniLibFolders
+│   │   │   │   │           └── out
+│   │   │   │   ├── merged_manifest
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugMainManifest
+│   │   │   │   │           └── AndroidManifest.xml
+│   │   │   │   ├── merged_manifests
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugManifest
+│   │   │   │   │           ├── AndroidManifest.xml
+│   │   │   │   │           └── output-metadata.json
+│   │   │   │   ├── merged_res
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugResources
+│   │   │   │   │           ├── drawable_ic_launcher_background.xml.flat
+│   │   │   │   │           ├── drawable_ic_launcher_foreground.xml.flat
+│   │   │   │   │           ├── layout_activity_main.xml.flat
+│   │   │   │   │           ├── mipmap-anydpi-v26_ic_launcher_round.xml.flat
+│   │   │   │   │           ├── mipmap-anydpi-v26_ic_launcher.xml.flat
+│   │   │   │   │           ├── mipmap-hdpi_ic_launcher_round.webp.flat
+│   │   │   │   │           ├── mipmap-hdpi_ic_launcher.webp.flat
+│   │   │   │   │           ├── mipmap-mdpi_ic_launcher_round.webp.flat
+│   │   │   │   │           ├── mipmap-mdpi_ic_launcher.webp.flat
+│   │   │   │   │           ├── mipmap-xhdpi_ic_launcher_round.webp.flat
+│   │   │   │   │           ├── mipmap-xhdpi_ic_launcher.webp.flat
+│   │   │   │   │           ├── mipmap-xxhdpi_ic_launcher_round.webp.flat
+│   │   │   │   │           ├── mipmap-xxhdpi_ic_launcher.webp.flat
+│   │   │   │   │           ├── mipmap-xxxhdpi_ic_launcher_round.webp.flat
+│   │   │   │   │           ├── mipmap-xxxhdpi_ic_launcher.webp.flat
+│   │   │   │   │           ├── values-af_values-af.arsc.flat
+│   │   │   │   │           ├── values-am_values-am.arsc.flat
+│   │   │   │   │           ├── values-ar_values-ar.arsc.flat
+│   │   │   │   │           ├── values-as_values-as.arsc.flat
+│   │   │   │   │           ├── values-az_values-az.arsc.flat
+│   │   │   │   │           ├── values-be_values-be.arsc.flat
+│   │   │   │   │           ├── values-bg_values-bg.arsc.flat
+│   │   │   │   │           ├── values-bn_values-bn.arsc.flat
+│   │   │   │   │           ├── values-b+sr+Latn_values-b+sr+Latn.arsc.flat
+│   │   │   │   │           ├── values-bs_values-bs.arsc.flat
+│   │   │   │   │           ├── values-ca_values-ca.arsc.flat
+│   │   │   │   │           ├── values-cs_values-cs.arsc.flat
+│   │   │   │   │           ├── values-da_values-da.arsc.flat
+│   │   │   │   │           ├── values-de_values-de.arsc.flat
+│   │   │   │   │           ├── values-el_values-el.arsc.flat
+│   │   │   │   │           ├── values-en-rAU_values-en-rAU.arsc.flat
+│   │   │   │   │           ├── values-en-rCA_values-en-rCA.arsc.flat
+│   │   │   │   │           ├── values-en-rGB_values-en-rGB.arsc.flat
+│   │   │   │   │           ├── values-en-rIN_values-en-rIN.arsc.flat
+│   │   │   │   │           ├── values-en-rXC_values-en-rXC.arsc.flat
+│   │   │   │   │           ├── values-es-rUS_values-es-rUS.arsc.flat
+│   │   │   │   │           ├── values-es_values-es.arsc.flat
+│   │   │   │   │           ├── values-et_values-et.arsc.flat
+│   │   │   │   │           ├── values-eu_values-eu.arsc.flat
+│   │   │   │   │           ├── values-fa_values-fa.arsc.flat
+│   │   │   │   │           ├── values-fi_values-fi.arsc.flat
+│   │   │   │   │           ├── values-fr-rCA_values-fr-rCA.arsc.flat
+│   │   │   │   │           ├── values-fr_values-fr.arsc.flat
+│   │   │   │   │           ├── values-gl_values-gl.arsc.flat
+│   │   │   │   │           ├── values-gu_values-gu.arsc.flat
+│   │   │   │   │           ├── values-h720dp-v13_values-h720dp-v13.arsc.flat
+│   │   │   │   │           ├── values-hdpi-v4_values-hdpi-v4.arsc.flat
+│   │   │   │   │           ├── values-hi_values-hi.arsc.flat
+│   │   │   │   │           ├── values-hr_values-hr.arsc.flat
+│   │   │   │   │           ├── values-hu_values-hu.arsc.flat
+│   │   │   │   │           ├── values-hy_values-hy.arsc.flat
+│   │   │   │   │           ├── values-in_values-in.arsc.flat
+│   │   │   │   │           ├── values-is_values-is.arsc.flat
+│   │   │   │   │           ├── values-it_values-it.arsc.flat
+│   │   │   │   │           ├── values-iw_values-iw.arsc.flat
+│   │   │   │   │           ├── values-ja_values-ja.arsc.flat
+│   │   │   │   │           ├── values-ka_values-ka.arsc.flat
+│   │   │   │   │           ├── values-kk_values-kk.arsc.flat
+│   │   │   │   │           ├── values-km_values-km.arsc.flat
+│   │   │   │   │           ├── values-kn_values-kn.arsc.flat
+│   │   │   │   │           ├── values-ko_values-ko.arsc.flat
+│   │   │   │   │           ├── values-ky_values-ky.arsc.flat
+│   │   │   │   │           ├── values-land_values-land.arsc.flat
+│   │   │   │   │           ├── values-large-v4_values-large-v4.arsc.flat
+│   │   │   │   │           ├── values-ldltr-v21_values-ldltr-v21.arsc.flat
+│   │   │   │   │           ├── values-lo_values-lo.arsc.flat
+│   │   │   │   │           ├── values-lt_values-lt.arsc.flat
+│   │   │   │   │           ├── values-lv_values-lv.arsc.flat
+│   │   │   │   │           ├── values-mk_values-mk.arsc.flat
+│   │   │   │   │           ├── values-ml_values-ml.arsc.flat
+│   │   │   │   │           ├── values-mn_values-mn.arsc.flat
+│   │   │   │   │           ├── values-mr_values-mr.arsc.flat
+│   │   │   │   │           ├── values-ms_values-ms.arsc.flat
+│   │   │   │   │           ├── values-my_values-my.arsc.flat
+│   │   │   │   │           ├── values-nb_values-nb.arsc.flat
+│   │   │   │   │           ├── values-ne_values-ne.arsc.flat
+│   │   │   │   │           ├── values-night-v8_values-night-v8.arsc.flat
+│   │   │   │   │           ├── values-nl_values-nl.arsc.flat
+│   │   │   │   │           ├── values-or_values-or.arsc.flat
+│   │   │   │   │           ├── values-pa_values-pa.arsc.flat
+│   │   │   │   │           ├── values-pl_values-pl.arsc.flat
+│   │   │   │   │           ├── values-port_values-port.arsc.flat
+│   │   │   │   │           ├── values-pt-rBR_values-pt-rBR.arsc.flat
+│   │   │   │   │           ├── values-pt-rPT_values-pt-rPT.arsc.flat
+│   │   │   │   │           ├── values-pt_values-pt.arsc.flat
+│   │   │   │   │           ├── values-ro_values-ro.arsc.flat
+│   │   │   │   │           ├── values-ru_values-ru.arsc.flat
+│   │   │   │   │           ├── values-si_values-si.arsc.flat
+│   │   │   │   │           ├── values-sk_values-sk.arsc.flat
+│   │   │   │   │           ├── values-sl_values-sl.arsc.flat
+│   │   │   │   │           ├── values-sq_values-sq.arsc.flat
+│   │   │   │   │           ├── values-sr_values-sr.arsc.flat
+│   │   │   │   │           ├── values-sv_values-sv.arsc.flat
+│   │   │   │   │           ├── values-sw600dp-v13_values-sw600dp-v13.arsc.flat
+│   │   │   │   │           ├── values-sw_values-sw.arsc.flat
+│   │   │   │   │           ├── values-ta_values-ta.arsc.flat
+│   │   │   │   │           ├── values-te_values-te.arsc.flat
+│   │   │   │   │           ├── values-th_values-th.arsc.flat
+│   │   │   │   │           ├── values-tl_values-tl.arsc.flat
+│   │   │   │   │           ├── values-tr_values-tr.arsc.flat
+│   │   │   │   │           ├── values-uk_values-uk.arsc.flat
+│   │   │   │   │           ├── values-ur_values-ur.arsc.flat
+│   │   │   │   │           ├── values-uz_values-uz.arsc.flat
+│   │   │   │   │           ├── values-v16_values-v16.arsc.flat
+│   │   │   │   │           ├── values-v17_values-v17.arsc.flat
+│   │   │   │   │           ├── values-v18_values-v18.arsc.flat
+│   │   │   │   │           ├── values-v21_values-v21.arsc.flat
+│   │   │   │   │           ├── values-v22_values-v22.arsc.flat
+│   │   │   │   │           ├── values-v23_values-v23.arsc.flat
+│   │   │   │   │           ├── values-v24_values-v24.arsc.flat
+│   │   │   │   │           ├── values-v25_values-v25.arsc.flat
+│   │   │   │   │           ├── values-v26_values-v26.arsc.flat
+│   │   │   │   │           ├── values-v28_values-v28.arsc.flat
+│   │   │   │   │           ├── values_values.arsc.flat
+│   │   │   │   │           ├── values-vi_values-vi.arsc.flat
+│   │   │   │   │           ├── values-watch-v20_values-watch-v20.arsc.flat
+│   │   │   │   │           ├── values-watch-v21_values-watch-v21.arsc.flat
+│   │   │   │   │           ├── values-xlarge-v4_values-xlarge-v4.arsc.flat
+│   │   │   │   │           ├── values-zh-rCN_values-zh-rCN.arsc.flat
+│   │   │   │   │           ├── values-zh-rHK_values-zh-rHK.arsc.flat
+│   │   │   │   │           ├── values-zh-rTW_values-zh-rTW.arsc.flat
+│   │   │   │   │           ├── values-zu_values-zu.arsc.flat
+│   │   │   │   │           ├── xml_backup_rules.xml.flat
+│   │   │   │   │           └── xml_data_extraction_rules.xml.flat
+│   │   │   │   ├── merged_res_blame_folder
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugResources
+│   │   │   │   │           └── out
+│   │   │   │   │               ├── multi-v2
+│   │   │   │   │               │   ├── mergeDebugResources.json
+│   │   │   │   │               │   ├── values-af.json
+│   │   │   │   │               │   ├── values-am.json
+│   │   │   │   │               │   ├── values-ar.json
+│   │   │   │   │               │   ├── values-as.json
+│   │   │   │   │               │   ├── values-az.json
+│   │   │   │   │               │   ├── values-be.json
+│   │   │   │   │               │   ├── values-bg.json
+│   │   │   │   │               │   ├── values-bn.json
+│   │   │   │   │               │   ├── values-bs.json
+│   │   │   │   │               │   ├── values-b+sr+Latn.json
+│   │   │   │   │               │   ├── values-ca.json
+│   │   │   │   │               │   ├── values-cs.json
+│   │   │   │   │               │   ├── values-da.json
+│   │   │   │   │               │   ├── values-de.json
+│   │   │   │   │               │   ├── values-el.json
+│   │   │   │   │               │   ├── values-en-rAU.json
+│   │   │   │   │               │   ├── values-en-rCA.json
+│   │   │   │   │               │   ├── values-en-rGB.json
+│   │   │   │   │               │   ├── values-en-rIN.json
+│   │   │   │   │               │   ├── values-en-rXC.json
+│   │   │   │   │               │   ├── values-es.json
+│   │   │   │   │               │   ├── values-es-rUS.json
+│   │   │   │   │               │   ├── values-et.json
+│   │   │   │   │               │   ├── values-eu.json
+│   │   │   │   │               │   ├── values-fa.json
+│   │   │   │   │               │   ├── values-fi.json
+│   │   │   │   │               │   ├── values-fr.json
+│   │   │   │   │               │   ├── values-fr-rCA.json
+│   │   │   │   │               │   ├── values-gl.json
+│   │   │   │   │               │   ├── values-gu.json
+│   │   │   │   │               │   ├── values-h720dp-v13.json
+│   │   │   │   │               │   ├── values-hdpi-v4.json
+│   │   │   │   │               │   ├── values-hi.json
+│   │   │   │   │               │   ├── values-hr.json
+│   │   │   │   │               │   ├── values-hu.json
+│   │   │   │   │               │   ├── values-hy.json
+│   │   │   │   │               │   ├── values-in.json
+│   │   │   │   │               │   ├── values-is.json
+│   │   │   │   │               │   ├── values-it.json
+│   │   │   │   │               │   ├── values-iw.json
+│   │   │   │   │               │   ├── values-ja.json
+│   │   │   │   │               │   ├── values.json
+│   │   │   │   │               │   ├── values-ka.json
+│   │   │   │   │               │   ├── values-kk.json
+│   │   │   │   │               │   ├── values-km.json
+│   │   │   │   │               │   ├── values-kn.json
+│   │   │   │   │               │   ├── values-ko.json
+│   │   │   │   │               │   ├── values-ky.json
+│   │   │   │   │               │   ├── values-land.json
+│   │   │   │   │               │   ├── values-large-v4.json
+│   │   │   │   │               │   ├── values-ldltr-v21.json
+│   │   │   │   │               │   ├── values-lo.json
+│   │   │   │   │               │   ├── values-lt.json
+│   │   │   │   │               │   ├── values-lv.json
+│   │   │   │   │               │   ├── values-mk.json
+│   │   │   │   │               │   ├── values-ml.json
+│   │   │   │   │               │   ├── values-mn.json
+│   │   │   │   │               │   ├── values-mr.json
+│   │   │   │   │               │   ├── values-ms.json
+│   │   │   │   │               │   ├── values-my.json
+│   │   │   │   │               │   ├── values-nb.json
+│   │   │   │   │               │   ├── values-ne.json
+│   │   │   │   │               │   ├── values-night-v8.json
+│   │   │   │   │               │   ├── values-nl.json
+│   │   │   │   │               │   ├── values-or.json
+│   │   │   │   │               │   ├── values-pa.json
+│   │   │   │   │               │   ├── values-pl.json
+│   │   │   │   │               │   ├── values-port.json
+│   │   │   │   │               │   ├── values-pt.json
+│   │   │   │   │               │   ├── values-pt-rBR.json
+│   │   │   │   │               │   ├── values-pt-rPT.json
+│   │   │   │   │               │   ├── values-ro.json
+│   │   │   │   │               │   ├── values-ru.json
+│   │   │   │   │               │   ├── values-si.json
+│   │   │   │   │               │   ├── values-sk.json
+│   │   │   │   │               │   ├── values-sl.json
+│   │   │   │   │               │   ├── values-sq.json
+│   │   │   │   │               │   ├── values-sr.json
+│   │   │   │   │               │   ├── values-sv.json
+│   │   │   │   │               │   ├── values-sw600dp-v13.json
+│   │   │   │   │               │   ├── values-sw.json
+│   │   │   │   │               │   ├── values-ta.json
+│   │   │   │   │               │   ├── values-te.json
+│   │   │   │   │               │   ├── values-th.json
+│   │   │   │   │               │   ├── values-tl.json
+│   │   │   │   │               │   ├── values-tr.json
+│   │   │   │   │               │   ├── values-uk.json
+│   │   │   │   │               │   ├── values-ur.json
+│   │   │   │   │               │   ├── values-uz.json
+│   │   │   │   │               │   ├── values-v16.json
+│   │   │   │   │               │   ├── values-v17.json
+│   │   │   │   │               │   ├── values-v18.json
+│   │   │   │   │               │   ├── values-v21.json
+│   │   │   │   │               │   ├── values-v22.json
+│   │   │   │   │               │   ├── values-v23.json
+│   │   │   │   │               │   ├── values-v24.json
+│   │   │   │   │               │   ├── values-v25.json
+│   │   │   │   │               │   ├── values-v26.json
+│   │   │   │   │               │   ├── values-v28.json
+│   │   │   │   │               │   ├── values-vi.json
+│   │   │   │   │               │   ├── values-watch-v20.json
+│   │   │   │   │               │   ├── values-watch-v21.json
+│   │   │   │   │               │   ├── values-xlarge-v4.json
+│   │   │   │   │               │   ├── values-zh-rCN.json
+│   │   │   │   │               │   ├── values-zh-rHK.json
+│   │   │   │   │               │   ├── values-zh-rTW.json
+│   │   │   │   │               │   └── values-zu.json
+│   │   │   │   │               └── single
+│   │   │   │   │                   └── mergeDebugResources.json
+│   │   │   │   ├── merged_shaders
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mergeDebugShaders
+│   │   │   │   │           └── out
+│   │   │   │   ├── mixed_scope_dex_archive
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── navigation_json
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── extractDeepLinksDebug
+│   │   │   │   │           └── navigation.json
+│   │   │   │   ├── nested_resources_validation_report
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── generateDebugResources
+│   │   │   │   │           └── nestedResourcesValidationReport.txt
+│   │   │   │   ├── packaged_manifests
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugManifestForPackage
+│   │   │   │   │           ├── AndroidManifest.xml
+│   │   │   │   │           └── output-metadata.json
+│   │   │   │   ├── packaged_res
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── packageDebugResources
+│   │   │   │   │           ├── drawable
+│   │   │   │   │           │   ├── ic_launcher_background.xml
+│   │   │   │   │           │   └── ic_launcher_foreground.xml
+│   │   │   │   │           ├── layout
+│   │   │   │   │           │   └── activity_main.xml
+│   │   │   │   │           ├── mipmap-anydpi-v26
+│   │   │   │   │           │   ├── ic_launcher_round.xml
+│   │   │   │   │           │   └── ic_launcher.xml
+│   │   │   │   │           ├── mipmap-hdpi-v4
+│   │   │   │   │           │   ├── ic_launcher_round.webp
+│   │   │   │   │           │   └── ic_launcher.webp
+│   │   │   │   │           ├── mipmap-mdpi-v4
+│   │   │   │   │           │   ├── ic_launcher_round.webp
+│   │   │   │   │           │   └── ic_launcher.webp
+│   │   │   │   │           ├── mipmap-xhdpi-v4
+│   │   │   │   │           │   ├── ic_launcher_round.webp
+│   │   │   │   │           │   └── ic_launcher.webp
+│   │   │   │   │           ├── mipmap-xxhdpi-v4
+│   │   │   │   │           │   ├── ic_launcher_round.webp
+│   │   │   │   │           │   └── ic_launcher.webp
+│   │   │   │   │           ├── mipmap-xxxhdpi-v4
+│   │   │   │   │           │   ├── ic_launcher_round.webp
+│   │   │   │   │           │   └── ic_launcher.webp
+│   │   │   │   │           ├── values
+│   │   │   │   │           │   └── values.xml
+│   │   │   │   │           └── xml
+│   │   │   │   │               ├── backup_rules.xml
+│   │   │   │   │               └── data_extraction_rules.xml
+│   │   │   │   ├── project_dex_archive
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   │               ├── ChatClient$connectToServer$1.dex
+│   │   │   │   │               ├── ChatClient$readMessagesFromServer$2$1.dex
+│   │   │   │   │               ├── ChatClient$readMessagesFromServer$2$2.dex
+│   │   │   │   │               ├── ChatClient$readMessagesFromServer$2$3.dex
+│   │   │   │   │               ├── ChatClient$readMessagesFromServer$2.dex
+│   │   │   │   │               ├── ChatClient$sendMessage$1$1.dex
+│   │   │   │   │               ├── ChatClient$sendMessage$1$2.dex
+│   │   │   │   │               ├── ChatClient$sendMessage$1.dex
+│   │   │   │   │               ├── ChatClient.dex
+│   │   │   │   │               ├── edu
+│   │   │   │   │               │   └── ntnu
+│   │   │   │   │               │       └── assignment_06
+│   │   │   │   │               │           ├── ChatServer$handleClient$1.dex
+│   │   │   │   │               │           ├── ChatServer$sendMessageToClients$1.dex
+│   │   │   │   │               │           ├── ChatServer$startServer$1.dex
+│   │   │   │   │               │           ├── ChatServer.dex
+│   │   │   │   │               │           ├── MainActivity.dex
+│   │   │   │   │               │           └── ui
+│   │   │   │   │               │               └── theme
+│   │   │   │   │               │                   ├── ColorKt.dex
+│   │   │   │   │               │                   ├── ThemeKt.dex
+│   │   │   │   │               │                   └── TypeKt.dex
+│   │   │   │   │               ├── f02fa210f74211f16e52b329fdc80096e6441e2e6e97bb1638c0f7606600b0bb_0.jar
+│   │   │   │   │               ├── f02fa210f74211f16e52b329fdc80096e6441e2e6e97bb1638c0f7606600b0bb_1.jar
+│   │   │   │   │               ├── f02fa210f74211f16e52b329fdc80096e6441e2e6e97bb1638c0f7606600b0bb_2.jar
+│   │   │   │   │               ├── f02fa210f74211f16e52b329fdc80096e6441e2e6e97bb1638c0f7606600b0bb_3.jar
+│   │   │   │   │               ├── f02fa210f74211f16e52b329fdc80096e6441e2e6e97bb1638c0f7606600b0bb_4.jar
+│   │   │   │   │               ├── f02fa210f74211f16e52b329fdc80096e6441e2e6e97bb1638c0f7606600b0bb_5.jar
+│   │   │   │   │               ├── f02fa210f74211f16e52b329fdc80096e6441e2e6e97bb1638c0f7606600b0bb_6.jar
+│   │   │   │   │               └── f02fa210f74211f16e52b329fdc80096e6441e2e6e97bb1638c0f7606600b0bb_7.jar
+│   │   │   │   ├── runtime_symbol_list
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugResources
+│   │   │   │   │           └── R.txt
+│   │   │   │   ├── signing_config_versions
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── writeDebugSigningConfigVersions
+│   │   │   │   │           └── signing-config-versions.json
+│   │   │   │   ├── source_set_path_map
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── mapDebugSourceSetPaths
+│   │   │   │   │           └── file-map.txt
+│   │   │   │   ├── stable_resource_ids_file
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugResources
+│   │   │   │   │           └── stableIds.txt
+│   │   │   │   ├── sub_project_dex_archive
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── dexBuilderDebug
+│   │   │   │   │           └── out
+│   │   │   │   ├── symbol_list_with_package_name
+│   │   │   │   │   └── debug
+│   │   │   │   │       └── processDebugResources
+│   │   │   │   │           └── package-aware-r.txt
+│   │   │   │   └── validate_signing_config
+│   │   │   │       └── debug
+│   │   │   │           └── validateSigningDebug
+│   │   │   ├── kotlin
+│   │   │   │   └── compileDebugKotlin
+│   │   │   │       ├── cacheable
+│   │   │   │       │   ├── caches-jvm
+│   │   │   │       │   │   ├── inputs
+│   │   │   │       │   │   │   ├── source-to-output.tab
+│   │   │   │       │   │   │   ├── source-to-output.tab_i
+│   │   │   │       │   │   │   ├── source-to-output.tab_i.len
+│   │   │   │       │   │   │   ├── source-to-output.tab.keystream
+│   │   │   │       │   │   │   ├── source-to-output.tab.keystream.len
+│   │   │   │       │   │   │   ├── source-to-output.tab.len
+│   │   │   │       │   │   │   └── source-to-output.tab.values.at
+│   │   │   │       │   │   ├── jvm
+│   │   │   │       │   │   │   └── kotlin
+│   │   │   │       │   │   │       ├── class-attributes.tab
+│   │   │   │       │   │   │       ├── class-attributes.tab_i
+│   │   │   │       │   │   │       ├── class-attributes.tab_i.len
+│   │   │   │       │   │   │       ├── class-attributes.tab.keystream
+│   │   │   │       │   │   │       ├── class-attributes.tab.keystream.len
+│   │   │   │       │   │   │       ├── class-attributes.tab.len
+│   │   │   │       │   │   │       ├── class-attributes.tab.values.at
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab_i
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab_i.len
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab.keystream
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab.keystream.len
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab.len
+│   │   │   │       │   │   │       ├── class-fq-name-to-source.tab.values.at
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab_i
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab_i.len
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab.keystream
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab.keystream.len
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab.len
+│   │   │   │       │   │   │       ├── internal-name-to-source.tab.values.at
+│   │   │   │       │   │   │       ├── package-parts.tab
+│   │   │   │       │   │   │       ├── package-parts.tab_i
+│   │   │   │       │   │   │       ├── package-parts.tab_i.len
+│   │   │   │       │   │   │       ├── package-parts.tab.keystream
+│   │   │   │       │   │   │       ├── package-parts.tab.keystream.len
+│   │   │   │       │   │   │       ├── package-parts.tab.len
+│   │   │   │       │   │   │       ├── package-parts.tab.values.at
+│   │   │   │       │   │   │       ├── proto.tab
+│   │   │   │       │   │   │       ├── proto.tab_i
+│   │   │   │       │   │   │       ├── proto.tab_i.len
+│   │   │   │       │   │   │       ├── proto.tab.keystream
+│   │   │   │       │   │   │       ├── proto.tab.keystream.len
+│   │   │   │       │   │   │       ├── proto.tab.len
+│   │   │   │       │   │   │       ├── proto.tab.values.at
+│   │   │   │       │   │   │       ├── source-to-classes.tab
+│   │   │   │       │   │   │       ├── source-to-classes.tab_i
+│   │   │   │       │   │   │       ├── source-to-classes.tab_i.len
+│   │   │   │       │   │   │       ├── source-to-classes.tab.keystream
+│   │   │   │       │   │   │       ├── source-to-classes.tab.keystream.len
+│   │   │   │       │   │   │       ├── source-to-classes.tab.len
+│   │   │   │       │   │   │       ├── source-to-classes.tab.values.at
+│   │   │   │       │   │   │       ├── subtypes.tab
+│   │   │   │       │   │   │       ├── subtypes.tab_i
+│   │   │   │       │   │   │       ├── subtypes.tab_i.len
+│   │   │   │       │   │   │       ├── subtypes.tab.keystream
+│   │   │   │       │   │   │       ├── subtypes.tab.keystream.len
+│   │   │   │       │   │   │       ├── subtypes.tab.len
+│   │   │   │       │   │   │       ├── subtypes.tab.values.at
+│   │   │   │       │   │   │       ├── supertypes.tab
+│   │   │   │       │   │   │       ├── supertypes.tab_i
+│   │   │   │       │   │   │       ├── supertypes.tab_i.len
+│   │   │   │       │   │   │       ├── supertypes.tab.keystream
+│   │   │   │       │   │   │       ├── supertypes.tab.keystream.len
+│   │   │   │       │   │   │       ├── supertypes.tab.len
+│   │   │   │       │   │   │       └── supertypes.tab.values.at
+│   │   │   │       │   │   └── lookups
+│   │   │   │       │   │       ├── counters.tab
+│   │   │   │       │   │       ├── file-to-id.tab
+│   │   │   │       │   │       ├── file-to-id.tab_i
+│   │   │   │       │   │       ├── file-to-id.tab_i.len
+│   │   │   │       │   │       ├── file-to-id.tab.keystream
+│   │   │   │       │   │       ├── file-to-id.tab.keystream.len
+│   │   │   │       │   │       ├── file-to-id.tab.len
+│   │   │   │       │   │       ├── file-to-id.tab.values.at
+│   │   │   │       │   │       ├── id-to-file.tab
+│   │   │   │       │   │       ├── id-to-file.tab_i
+│   │   │   │       │   │       ├── id-to-file.tab_i.len
+│   │   │   │       │   │       ├── id-to-file.tab.keystream
+│   │   │   │       │   │       ├── id-to-file.tab.keystream.len
+│   │   │   │       │   │       ├── id-to-file.tab.len
+│   │   │   │       │   │       ├── id-to-file.tab.values.at
+│   │   │   │       │   │       ├── lookups.tab
+│   │   │   │       │   │       ├── lookups.tab_i
+│   │   │   │       │   │       ├── lookups.tab_i.len
+│   │   │   │       │   │       ├── lookups.tab.keystream
+│   │   │   │       │   │       ├── lookups.tab.keystream.len
+│   │   │   │       │   │       ├── lookups.tab.len
+│   │   │   │       │   │       └── lookups.tab.values.at
+│   │   │   │       │   └── last-build.bin
+│   │   │   │       ├── classpath-snapshot
+│   │   │   │       │   └── shrunk-classpath-snapshot.bin
+│   │   │   │       └── local-state
+│   │   │   │           └── build-history.bin
+│   │   │   ├── outputs
+│   │   │   │   └── logs
+│   │   │   │       └── manifest-merger-debug-report.txt
+│   │   │   └── tmp
+│   │   │       └── kotlin-classes
+│   │   │           └── debug
+│   │   │               ├── ChatClient$connectToServer$1.class
+│   │   │               ├── ChatClient$readMessagesFromServer$2$1.class
+│   │   │               ├── ChatClient$readMessagesFromServer$2$2.class
+│   │   │               ├── ChatClient$readMessagesFromServer$2$3.class
+│   │   │               ├── ChatClient$readMessagesFromServer$2.class
+│   │   │               ├── ChatClient$sendMessage$1$1.class
+│   │   │               ├── ChatClient$sendMessage$1$2.class
+│   │   │               ├── ChatClient$sendMessage$1.class
+│   │   │               ├── ChatClient.class
+│   │   │               ├── edu
+│   │   │               │   └── ntnu
+│   │   │               │       └── assignment_06
+│   │   │               │           ├── ChatServer$handleClient$1.class
+│   │   │               │           ├── ChatServer$sendMessageToClients$1.class
+│   │   │               │           ├── ChatServer$startServer$1.class
+│   │   │               │           ├── ChatServer.class
+│   │   │               │           ├── MainActivity.class
+│   │   │               │           └── ui
+│   │   │               │               └── theme
+│   │   │               │                   ├── ColorKt.class
+│   │   │               │                   ├── ThemeKt.class
+│   │   │               │                   └── TypeKt.class
+│   │   │               └── META-INF
+│   │   │                   └── app_debug.kotlin_module
+│   │   ├── build.gradle.kts
+│   │   ├── proguard-rules.pro
+│   │   └── src
+│   │       ├── androidTest
+│   │       │   └── java
+│   │       │       └── edu
+│   │       │           └── ntnu
+│   │       │               └── assignment_06
+│   │       │                   └── ExampleInstrumentedTest.kt
+│   │       ├── main
+│   │       │   ├── AndroidManifest.xml
+│   │       │   ├── java
+│   │       │   │   └── edu
+│   │       │   │       └── ntnu
+│   │       │   │           └── assignment_06
+│   │       │   │               ├── ChatClient.kt
+│   │       │   │               ├── ChatServer.kt
+│   │       │   │               ├── MainActivity.kt
+│   │       │   │               └── ui
+│   │       │   │                   └── theme
+│   │       │   │                       ├── Color.kt
+│   │       │   │                       ├── Theme.kt
+│   │       │   │                       └── Type.kt
+│   │       │   └── res
+│   │       │       ├── drawable
+│   │       │       │   ├── ic_launcher_background.xml
+│   │       │       │   └── ic_launcher_foreground.xml
+│   │       │       ├── layout
+│   │       │       │   └── activity_main.xml
+│   │       │       ├── mipmap-anydpi-v26
+│   │       │       │   ├── ic_launcher_round.xml
+│   │       │       │   └── ic_launcher.xml
+│   │       │       ├── mipmap-hdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-mdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-xhdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-xxhdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-xxxhdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── values
+│   │       │       │   ├── colors.xml
+│   │       │       │   ├── strings.xml
+│   │       │       │   └── themes.xml
+│   │       │       └── xml
+│   │       │           ├── backup_rules.xml
+│   │       │           └── data_extraction_rules.xml
+│   │       └── test
+│   │           └── java
+│   │               └── edu
+│   │                   └── ntnu
+│   │                       └── assignment_06
+│   │                           └── ExampleUnitTest.kt
+│   ├── build.gradle.kts
+│   ├── chat_demo_01.gif
+│   ├── chat_demo_02.gif
+│   ├── gradle
+│   │   ├── libs.versions.toml
+│   │   └── wrapper
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
+│   ├── gradle.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── local.properties
+│   └── settings.gradle.kts
+├── assignment_07
+│   ├── app
+│   │   ├── build.gradle.kts
+│   │   ├── proguard-rules.pro
+│   │   └── src
+│   │       ├── androidTest
+│   │       │   └── java
+│   │       │       └── edu
+│   │       │           └── ntnu
+│   │       │               └── assignment_07
+│   │       │                   └── ExampleInstrumentedTest.kt
+│   │       ├── main
+│   │       │   ├── AndroidManifest.xml
+│   │       │   ├── java
+│   │       │   │   └── edu
+│   │       │   │       └── ntnu
+│   │       │   │           └── assignment_07
+│   │       │   │               ├── MainActivity.kt
+│   │       │   │               └── ui
+│   │       │   │                   └── theme
+│   │       │   │                       ├── Color.kt
+│   │       │   │                       ├── Theme.kt
+│   │       │   │                       └── Type.kt
+│   │       │   └── res
+│   │       │       ├── drawable
+│   │       │       │   ├── ic_launcher_background.xml
+│   │       │       │   └── ic_launcher_foreground.xml
+│   │       │       ├── layout
+│   │       │       │   └── activity_main.xml
+│   │       │       ├── mipmap-anydpi-v26
+│   │       │       │   ├── ic_launcher_round.xml
+│   │       │       │   └── ic_launcher.xml
+│   │       │       ├── mipmap-hdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-mdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-xhdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-xxhdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── mipmap-xxxhdpi
+│   │       │       │   ├── ic_launcher_round.webp
+│   │       │       │   └── ic_launcher.webp
+│   │       │       ├── values
+│   │       │       │   ├── colors.xml
+│   │       │       │   ├── strings.xml
+│   │       │       │   └── themes.xml
+│   │       │       └── xml
+│   │       │           ├── backup_rules.xml
+│   │       │           └── data_extraction_rules.xml
+│   │       └── test
+│   │           └── java
+│   │               └── edu
+│   │                   └── ntnu
+│   │                       └── assignment_07
+│   │                           └── ExampleUnitTest.kt
+│   ├── build.gradle.kts
+│   ├── gradle
+│   │   ├── libs.versions.toml
+│   │   └── wrapper
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
+│   ├── gradle.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── local.properties
+│   └── settings.gradle.kts
+├── assignment_08_project
+│   ├── idatt2506-project-assignment.md
+│   └── idatt2506-project-assignment.pdf
+├── LICENSE
+├── README
+└── tree.txt
+
+1228 directories, 1988 files
