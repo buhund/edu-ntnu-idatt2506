@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">exercise02</string>
+    <string name="add">Adder</string>
+    <string name="multiplication">Multipliser</string>
+    <string name="answer">Svar:</string>
+    <string name="upper_limit">Øvre grense:</string>
+    <string name="correct">Riktig!</string>
+    <string name="wrong">Feil. Riktig svar er %1$s</string>
+</resources>
