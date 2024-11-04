@@ -15,24 +15,23 @@ class ColorPickerActivity : AppCompatActivity() {
 
         sharedPreferences = getSharedPreferences("AppPreferences", MODE_PRIVATE)
 
-        // Knapper for tema-valg
         findViewById<Button>(R.id.button_dark_mode).setOnClickListener {
-            setBackgroundColor("#333333") // Mørkegrå for mørk modus
+            setBackgroundColor("#333333") // Mørkegrå bakgrunn for mørk modus som ikke er ikke er billigvarianten med "vi bare inverterte fargene"
         }
 
         findViewById<Button>(R.id.button_hackerman).setOnClickListener {
-            setBackgroundColor("#000000") // Svart for hackerman modus
+            setBackgroundColor("#000000") // Svart bakgrunn for Hackerman modus
         }
 
         findViewById<Button>(R.id.button_light_mode).setOnClickListener {
-            setBackgroundColor("#FFFFFF") // Hvit for lys modus
+            setBackgroundColor("#FFFFFF") // Hvit bakgrunn for lys/default modus
         }
 
         // Tilbakeknapp for å gå tilbake til hovedskjermen
         findViewById<Button>(R.id.button_back).setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-            finish() // Avslutt denne aktiviteten for å unngå å ha den i tilbake-stakken
+            finish() // Avslutt aktiviteten fjerne den fra tilbake-stacken
         }
     }
 

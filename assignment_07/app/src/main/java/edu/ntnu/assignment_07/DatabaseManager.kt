@@ -52,7 +52,7 @@ class DatabaseManager(context: Context) : SQLiteOpenHelper(context, DATABASE_NAM
                 db.close()
             }
         }
-        return -1  // Indikerer at filmen allerede finnes
+        return -1  // Indikerer at filmen allerede finnes.
     }
 
     private fun filmExists(title: String, director: String): Boolean {
@@ -173,7 +173,7 @@ class DatabaseManager(context: Context) : SQLiteOpenHelper(context, DATABASE_NAM
         }
         cursor.close()
         db.close()
-        return directors.toList().sorted() // Sorterer alfabetisk
+        return directors.toList().sorted() // Sorterer alfabetisk!
     }
 
     fun getUniqueActors(): List<String> {

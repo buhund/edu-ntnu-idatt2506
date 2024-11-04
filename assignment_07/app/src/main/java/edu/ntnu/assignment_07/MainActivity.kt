@@ -16,32 +16,35 @@ import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
     private lateinit var databaseManager: DatabaseManager
+    private lateinit var fileWriterHelper: FileWriterHelper
     private lateinit var recyclerView: RecyclerView
+    private var textColor: Int = Color.BLACK // Standard skriftfarge
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Hent lagret bakgrunnsfarge fra SharedPreferences
+        // Initialiser SharedPreferences for bakgrunnsfarge og skriftfarge
         val sharedPreferences = getSharedPreferences("AppPreferences", MODE_PRIVATE)
         val backgroundColor = sharedPreferences.getString("backgroundColor", "#FFFFFF") // Standard: hvit bakgrunn
 
-        // Sett bakgrunnsfarge på RecyclerView eller hele layouten
-        recyclerView = findViewById(R.id.recyclerView)
-        recyclerView.setBackgroundColor(Color.parseColor(backgroundColor))
-
-        // Bestem skriftfarge basert på bakgrunnsfargen
-        val textColor = when (backgroundColor) {
+        // Sett skriftfarge basert på bakgrunnsfarge
+        textColor = when (backgroundColor) {
             "#333333" -> Color.WHITE   // Mørk modus: hvit skrift
             "#000000" -> Color.GREEN   // Hackerman: grønn tekst
             "#FFFFFF" -> Color.BLACK   // Lys modus: svart tekst
-            else -> Color.BLACK        // Standardfarge
+            else -> Color.BLACK        // Standardfarge (svart tekst)
         }
+
+        // Sett bakgrunnsfarge på RecyclerView/hele layouten
+        recyclerView = findViewById(R.id.recyclerView)
+        recyclerView.setBackgroundColor(Color.parseColor(backgroundColor))
 
         val toolbar: androidx.appcompat.widget.Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
         databaseManager = DatabaseManager(this)
+        fileWriterHelper = FileWriterHelper(this) // Initialiserer fileWriterHelper
         recyclerView = findViewById(R.id.recyclerView)
 
         // Tøm databasen før innsetting
@@ -52,20 +55,22 @@ class MainActivity : AppCompatActivity() {
         val films = fileReaderHelper.parseFilmsFromFile(R.raw.films)
         databaseManager.insertFilms(films)
 
-        // Sett opp RecyclerView
+        // Skriv filmene til en lokal fil
+        fileWriterHelper.writeFilmsToFile(films, "saved_films.txt")
+
         recyclerView.layoutManager = LinearLayoutManager(this)
-        displayAllFilms(textColor)
+        displayAllFilms()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.filter_menu, menu)  // Legger til menyen i verktøylinjen
+        menuInflater.inflate(R.menu.filter_menu, menu)
         return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.filter_all -> {
-                displayAllFilms(Color.BLACK) // Bruk standard skriftfarge
+                displayAllFilms()
                 Toast.makeText(this, "Viser alle filmer", Toast.LENGTH_SHORT).show()
                 return true
             }
@@ -78,7 +83,6 @@ class MainActivity : AppCompatActivity() {
                 return true
             }
             R.id.select_background_color -> {
-                // Naviger til ColorPickerActivity
                 val intent = Intent(this, ColorPickerActivity::class.java)
                 startActivity(intent)
                 return true
@@ -91,7 +95,6 @@ class MainActivity : AppCompatActivity() {
         val directors = databaseManager.getUniqueDirectors()
         val builder = AlertDialog.Builder(this)
 
-        // Opprett en tilpasset layout for dialogens tittel med en tilbake-knapp
         val customTitleView = LayoutInflater.from(this).inflate(R.layout.dialog_title, null)
         val backButton = customTitleView.findViewById<Button>(R.id.button_back)
         val titleTextView = customTitleView.findViewById<TextView>(R.id.dialog_title_text)
@@ -105,10 +108,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Viser filmer av $selectedDirector", Toast.LENGTH_SHORT).show()
         }
 
-        // Opprett og vis dialog
         val alertDialog = builder.create()
-
-        // Sett opp tilbake-knapp til å lukke dialogen
         backButton.setOnClickListener {
             alertDialog.dismiss()
         }
@@ -120,12 +120,10 @@ class MainActivity : AppCompatActivity() {
         val actors = databaseManager.getUniqueActors()
         val builder = AlertDialog.Builder(this)
 
-        // Opprett en tilpasset layout for dialogens tittel med en tilbake-knapp
         val customTitleView = LayoutInflater.from(this).inflate(R.layout.dialog_title, null)
         val backButton = customTitleView.findViewById<Button>(R.id.button_back)
         val titleTextView = customTitleView.findViewById<TextView>(R.id.dialog_title_text)
 
-        // Sett riktig tekst for skuespillerdialogen
         titleTextView.text = "Velg skuespiller"
 
         builder.setCustomTitle(customTitleView)
@@ -135,10 +133,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Viser filmer med $selectedActor", Toast.LENGTH_SHORT).show()
         }
 
-        // Opprett og vis dialogen
         val alertDialog = builder.create()
-
-        // Sett opp tilbake-knappen til å lukke dialogen
         backButton.setOnClickListener {
             alertDialog.dismiss()
         }
@@ -146,18 +141,18 @@ class MainActivity : AppCompatActivity() {
         alertDialog.show()
     }
 
-    private fun displayAllFilms(textColor: Int) {
+    private fun displayAllFilms() {
         val films = databaseManager.getAllFilms()
         recyclerView.adapter = FilmAdapter(films, textColor)
     }
 
     private fun displayFilmsByDirector(director: String) {
         val films = databaseManager.getFilmsByDirector(director)
-        recyclerView.adapter = FilmAdapter(films, Color.BLACK)
+        recyclerView.adapter = FilmAdapter(films, textColor)
     }
 
     private fun displayFilmsByActor(actor: String) {
         val films = databaseManager.getFilmsByActor(actor)
-        recyclerView.adapter = FilmAdapter(films, Color.BLACK)
+        recyclerView.adapter = FilmAdapter(films, textColor)
     }
 }
