@@ -1,9 +1,7 @@
-/**
- * src/main/java/edu/ntnu/assignment_07/MainActivity.kt
- */
-
 package edu.ntnu.assignment_07
 
+import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.Menu
@@ -24,6 +22,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Hent lagret bakgrunnsfarge fra SharedPreferences
+        val sharedPreferences = getSharedPreferences("AppPreferences", MODE_PRIVATE)
+        val backgroundColor = sharedPreferences.getString("backgroundColor", "#FFFFFF") // Standard: hvit bakgrunn
+
+        // Sett bakgrunnsfarge på RecyclerView eller hele layouten
+        recyclerView = findViewById(R.id.recyclerView)
+        recyclerView.setBackgroundColor(Color.parseColor(backgroundColor))
+
+        // Bestem skriftfarge basert på bakgrunnsfargen
+        val textColor = when (backgroundColor) {
+            "#333333" -> Color.WHITE   // Mørk modus: hvit skrift
+            "#000000" -> Color.GREEN   // Hackerman: grønn tekst
+            "#FFFFFF" -> Color.BLACK   // Lys modus: svart tekst
+            else -> Color.BLACK        // Standardfarge
+        }
+
         val toolbar: androidx.appcompat.widget.Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
@@ -40,7 +54,7 @@ class MainActivity : AppCompatActivity() {
 
         // Sett opp RecyclerView
         recyclerView.layoutManager = LinearLayoutManager(this)
-        displayAllFilms()
+        displayAllFilms(textColor)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -51,7 +65,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.filter_all -> {
-                displayAllFilms()
+                displayAllFilms(Color.BLACK) // Bruk standard skriftfarge
                 Toast.makeText(this, "Viser alle filmer", Toast.LENGTH_SHORT).show()
                 return true
             }
@@ -61,6 +75,12 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.filter_by_actor -> {
                 showActorSelectionDialog()
+                return true
+            }
+            R.id.select_background_color -> {
+                // Naviger til ColorPickerActivity
+                val intent = Intent(this, ColorPickerActivity::class.java)
+                startActivity(intent)
                 return true
             }
         }
@@ -76,7 +96,6 @@ class MainActivity : AppCompatActivity() {
         val backButton = customTitleView.findViewById<Button>(R.id.button_back)
         val titleTextView = customTitleView.findViewById<TextView>(R.id.dialog_title_text)
 
-        // Sett riktig tekst for regissørdialogen
         titleTextView.text = "Velg regissør"
 
         builder.setCustomTitle(customTitleView)
@@ -86,10 +105,10 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Viser filmer av $selectedDirector", Toast.LENGTH_SHORT).show()
         }
 
-        // Opprett og vis dialogen
+        // Opprett og vis dialog
         val alertDialog = builder.create()
 
-        // Sett opp tilbake-knappen til å lukke dialogen
+        // Sett opp tilbake-knapp til å lukke dialogen
         backButton.setOnClickListener {
             alertDialog.dismiss()
         }
@@ -127,21 +146,18 @@ class MainActivity : AppCompatActivity() {
         alertDialog.show()
     }
 
-
-    private fun displayAllFilms() {
+    private fun displayAllFilms(textColor: Int) {
         val films = databaseManager.getAllFilms()
-        recyclerView.adapter = FilmAdapter(films)
+        recyclerView.adapter = FilmAdapter(films, textColor)
     }
 
     private fun displayFilmsByDirector(director: String) {
         val films = databaseManager.getFilmsByDirector(director)
-        recyclerView.adapter = FilmAdapter(films)
+        recyclerView.adapter = FilmAdapter(films, Color.BLACK)
     }
 
     private fun displayFilmsByActor(actor: String) {
         val films = databaseManager.getFilmsByActor(actor)
-        recyclerView.adapter = FilmAdapter(films)
+        recyclerView.adapter = FilmAdapter(films, Color.BLACK)
     }
 }
-
-// End of class MainActivity

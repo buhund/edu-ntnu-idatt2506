@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- src/main/res/menu/filter_menu.xml -->
 
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/filter_all"
         android:title="Vis alle filmer"
@@ -14,4 +15,9 @@
         android:id="@+id/filter_by_actor"
         android:title="Filmer med skuespiller"
         android:showAsAction="never" />
+    <item
+        android:id="@+id/select_background_color"
+        android:title="Velg bakgrunnsfarge"
+        app:showAsAction="never" />
+
 </menu>

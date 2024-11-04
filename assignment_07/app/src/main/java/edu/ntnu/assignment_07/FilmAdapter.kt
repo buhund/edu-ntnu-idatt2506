@@ -1,7 +1,3 @@
-/**
- * src/main/java/edu/ntnu/assignment_07/FilmAdapter.kt
- */
-
 package edu.ntnu.assignment_07
 
 import android.view.LayoutInflater
@@ -10,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class FilmAdapter(private val films: List<Film>) : RecyclerView.Adapter<FilmAdapter.FilmViewHolder>() {
+class FilmAdapter(private val films: List<Film>, private val textColor: Int) : RecyclerView.Adapter<FilmAdapter.FilmViewHolder>() {
 
     class FilmViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val titleTextView: TextView = view.findViewById(R.id.textTitle)
@@ -28,6 +24,11 @@ class FilmAdapter(private val films: List<Film>) : RecyclerView.Adapter<FilmAdap
         holder.titleTextView.text = film.title
         holder.directorTextView.text = "Director: ${film.director}"
         holder.actorsTextView.text = "Actors: ${film.actors.joinToString(", ")}"
+
+        // Sett skriftfarge basert på valgt farge
+        holder.titleTextView.setTextColor(textColor)
+        holder.directorTextView.setTextColor(textColor)
+        holder.actorsTextView.setTextColor(textColor)
     }
 
     override fun getItemCount(): Int = films.size
