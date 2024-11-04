@@ -1,10 +1,11 @@
 /**
- * Class: src/edu/ntnu/assignment_07/Film
+ * src/main/java/edu/ntnu/assignment_07/Film
  */
+
 package edu.ntnu.assignment_07
 
 /**
- * Android have Movie as a reserved class name, so we're using Film instead.
+ * Android/Kotlin har Movie som et reservert klassenavn, så bruker Film i stedet.
  */
 data class Film(
     val title: String,
@@ -12,3 +13,4 @@ data class Film(
     val actors: List<String>
 )
 
+// End of class Film

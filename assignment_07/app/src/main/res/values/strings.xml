@@ -1,5 +1,3 @@
 <resources>
     <string name="app_name">assignment_07</string>
-    <string name="director_text">Regissør: %1$s</string>
-    <string name="actors_text">Skuespillere: %1$s</string>
 </resources>
