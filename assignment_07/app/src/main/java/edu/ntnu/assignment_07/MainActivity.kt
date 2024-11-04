@@ -5,8 +5,11 @@
 package edu.ntnu.assignment_07
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -67,26 +70,63 @@ class MainActivity : AppCompatActivity() {
     private fun showDirectorSelectionDialog() {
         val directors = databaseManager.getUniqueDirectors()
         val builder = AlertDialog.Builder(this)
-        builder.setTitle("Velg en regissør")
-        builder.setItems(directors.toTypedArray()) { _, which ->
+
+        // Opprett en tilpasset layout for dialogens tittel med en tilbake-knapp
+        val customTitleView = LayoutInflater.from(this).inflate(R.layout.dialog_title, null)
+        val backButton = customTitleView.findViewById<Button>(R.id.button_back)
+        val titleTextView = customTitleView.findViewById<TextView>(R.id.dialog_title_text)
+
+        // Sett riktig tekst for regissørdialogen
+        titleTextView.text = "Velg regissør"
+
+        builder.setCustomTitle(customTitleView)
+        builder.setItems(directors.toTypedArray()) { dialog, which ->
             val selectedDirector = directors[which]
             displayFilmsByDirector(selectedDirector)
             Toast.makeText(this, "Viser filmer av $selectedDirector", Toast.LENGTH_SHORT).show()
         }
-        builder.show()
+
+        // Opprett og vis dialogen
+        val alertDialog = builder.create()
+
+        // Sett opp tilbake-knappen til å lukke dialogen
+        backButton.setOnClickListener {
+            alertDialog.dismiss()
+        }
+
+        alertDialog.show()
     }
 
     private fun showActorSelectionDialog() {
         val actors = databaseManager.getUniqueActors()
         val builder = AlertDialog.Builder(this)
-        builder.setTitle("Velg en skuespiller")
-        builder.setItems(actors.toTypedArray()) { _, which ->
+
+        // Opprett en tilpasset layout for dialogens tittel med en tilbake-knapp
+        val customTitleView = LayoutInflater.from(this).inflate(R.layout.dialog_title, null)
+        val backButton = customTitleView.findViewById<Button>(R.id.button_back)
+        val titleTextView = customTitleView.findViewById<TextView>(R.id.dialog_title_text)
+
+        // Sett riktig tekst for skuespillerdialogen
+        titleTextView.text = "Velg skuespiller"
+
+        builder.setCustomTitle(customTitleView)
+        builder.setItems(actors.toTypedArray()) { dialog, which ->
             val selectedActor = actors[which]
             displayFilmsByActor(selectedActor)
             Toast.makeText(this, "Viser filmer med $selectedActor", Toast.LENGTH_SHORT).show()
         }
-        builder.show()
+
+        // Opprett og vis dialogen
+        val alertDialog = builder.create()
+
+        // Sett opp tilbake-knappen til å lukke dialogen
+        backButton.setOnClickListener {
+            alertDialog.dismiss()
+        }
+
+        alertDialog.show()
     }
+
 
     private fun displayAllFilms() {
         val films = databaseManager.getAllFilms()
@@ -103,7 +143,5 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = FilmAdapter(films)
     }
 }
-
-
 
 // End of class MainActivity
