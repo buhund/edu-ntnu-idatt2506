@@ -40,17 +40,39 @@ class DatabaseManager(context: Context) : SQLiteOpenHelper(context, DATABASE_NAM
     }
 
     fun insertFilm(film: Film): Long {
-        val db = this.writableDatabase
-        val values = ContentValues().apply {
-            put(COLUMN_TITLE, film.title)
-            put(COLUMN_DIRECTOR, film.director)
-            put(COLUMN_ACTORS, film.actors.joinToString(", "))
-        }
+        if (!filmExists(film.title, film.director)) {
+            val db = this.writableDatabase
+            val values = ContentValues().apply {
+                put(COLUMN_TITLE, film.title)
+                put(COLUMN_DIRECTOR, film.director)
+                put(COLUMN_ACTORS, film.actors.joinToString(", "))
+            }
 
-        return db.insert(TABLE_FILM, null, values).also {
-            db.close()
+            return db.insert(TABLE_FILM, null, values).also {
+                db.close()
+            }
         }
+        return -1  // Indikerer at filmen allerede finnes
     }
+
+    // Metode for å sjekke om en film allerede finnes i databasen
+    private fun filmExists(title: String, director: String): Boolean {
+        val db = this.readableDatabase
+        val cursor = db.query(
+            TABLE_FILM,
+            arrayOf(COLUMN_ID),
+            "$COLUMN_TITLE = ? AND $COLUMN_DIRECTOR = ?",
+            arrayOf(title, director),
+            null,
+            null,
+            null
+        )
+        val exists = cursor.count > 0
+        cursor.close()
+        db.close()
+        return exists
+    }
+
 
     fun insertFilms(films: List<Film>) {
         films.forEach { insertFilm(it) }
@@ -74,6 +96,11 @@ class DatabaseManager(context: Context) : SQLiteOpenHelper(context, DATABASE_NAM
         return films
     }
 
+    fun clearDatabase() {
+        writableDatabase.use { db ->
+            db.execSQL("DELETE FROM $TABLE_FILM")
+        }
+    }
 
 }
 

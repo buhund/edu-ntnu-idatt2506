@@ -24,6 +24,9 @@ class MainActivity : AppCompatActivity() {
         fileWriterHelper = FileWriterHelper(this)
         val fileReaderHelper = FileReaderHelper(this)
 
+        // Tøm databasen før innsetting
+        databaseManager.clearDatabase()
+
         // Les filmer fra fil og sett dem inn i databasen
         val films = fileReaderHelper.parseFilmsFromFile(R.raw.films)
         databaseManager.insertFilms(films)
@@ -36,8 +39,11 @@ class MainActivity : AppCompatActivity() {
 
         // Sett opp RecyclerView
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = FilmAdapter(films)
+        recyclerView.adapter = FilmAdapter(filmsFromDatabase)
     }
+
+
+
 }
 
 
