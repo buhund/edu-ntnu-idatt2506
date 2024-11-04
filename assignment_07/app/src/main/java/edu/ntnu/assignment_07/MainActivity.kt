@@ -5,6 +5,7 @@
 package edu.ntnu.assignment_07
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -33,6 +34,9 @@ class MainActivity : AppCompatActivity() {
 
         // Skriv filmer til en ny lokal fil
         fileWriterHelper.writeFilmsToFile(films, "saved_films.txt")
+
+        // Debug toast muffin
+        Toast.makeText(this, "Data has been loaded successfully!", Toast.LENGTH_SHORT).show()
 
         // Hent filmer fra databasen
         val filmsFromDatabase = databaseManager.getAllFilms()

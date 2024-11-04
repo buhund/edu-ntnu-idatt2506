@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- src/main/res/menu/filter_menu.xml -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/filter_all"
+        android:title="Vis alle filmer" />
+    <item
+        android:id="@+id/filter_by_director"
+        android:title="Filmer av regissør" />
+    <item
+        android:id="@+id/filter_by_actor"
+        android:title="Filmer med skuespiller" />
+</menu>
