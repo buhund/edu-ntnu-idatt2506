@@ -4,11 +4,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/filter_all"
-        android:title="Vis alle filmer" />
+        android:title="Vis alle filmer"
+        android:showAsAction="never" />
     <item
         android:id="@+id/filter_by_director"
-        android:title="Filmer av regissør" />
+        android:title="Filmer av regissør"
+        android:showAsAction="never" />
     <item
         android:id="@+id/filter_by_actor"
-        android:title="Filmer med skuespiller" />
+        android:title="Filmer med skuespiller"
+        android:showAsAction="never" />
 </menu>
