@@ -1,6 +1,6 @@
 # assignment_08_project
 
-Cross Platform To-Do App
+Multi-Platform To Do List App
 
 ## Getting Started
 
